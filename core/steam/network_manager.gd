@@ -3,12 +3,12 @@ extends Node
 const PACKET_READ_LIMIT: int = 32
 
 var lobby_id: int = 0
-var lobby_members: Array = []
+var lobby_members: Array[Dictionary] = []
 var lobby_members_max: int = 10
 var lobby_name: String = ""
 var steam_id: int = 0
 var steam_username: String = ""
-var channel : int = 0
+var channel: int = 0
 var max_messages: int = 10
 
 func _ready() -> void:
@@ -23,7 +23,7 @@ func _ready() -> void:
 	Steam.network_messages_session_failed.connect(_on_network_messages_session_failed)
 	# Check for command line arguments
 	# check_command_line()
-	
+
 func _process(_delta) -> void:
 	Steam.run_callbacks()
 
@@ -31,11 +31,11 @@ func _process(_delta) -> void:
 	if lobby_id > 0:
 		read_messages()
 	
-func create_lobby(lobby_type:Steam.LobbyType) -> void:
+func create_lobby(lobby_type: Steam.LobbyType) -> void:
 	print("creating lobby of type %s" % lobby_type)
-# Make sure a lobby is not already set
+	# Make sure a lobby is not already set
 	if lobby_id == 0:
-		Steam.createLobby(lobby_type, lobby_members_max) 
+		Steam.createLobby(lobby_type, lobby_members_max)
 
 func _on_lobby_created(success: Steam.Result, this_lobby_id: int) -> void:
 	if success == 1:
@@ -52,7 +52,7 @@ func _on_lobby_created(success: Steam.Result, this_lobby_id: int) -> void:
 		# Allow P2P connections to fallback to being relayed through Steam if needed
 		var set_relay: bool = Steam.allowP2PPacketRelay(true)
 		print("Allowing Steam to be relay backup: %s" % set_relay)
-		
+
 func _on_open_lobby_list_pressed() -> void:
 	# Set distance to worldwide
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
@@ -63,21 +63,22 @@ func _on_open_lobby_list_pressed() -> void:
 func _on_lobby_match_list(these_lobbies: Array) -> void:
 	for this_lobby in these_lobbies:
 		# Pull lobby data from Steam, these are specific to our example
-		var lobby_name: String = Steam.getLobbyData(this_lobby, "name")
-		var lobby_mode: String = Steam.getLobbyData(this_lobby, "mode")
+		var this_lobby_name: String = Steam.getLobbyData(this_lobby, "name")
 
 		# Get the current number of members
 		var lobby_num_members: int = Steam.getNumLobbyMembers(this_lobby)
 
+		print("Lobby %s: %s - %s Player(s)" % [this_lobby, this_lobby_name, lobby_num_members])
+
 		# Create a button for the lobby
 		var lobby_button: Button = Button.new()
-		lobby_button.set_text("Lobby %s: %s [%s] - %s Player(s)" % [this_lobby, lobby_name, lobby_mode, lobby_num_members])
+		lobby_button.set_text("Lobby %s: %s - %s Player(s)" % [this_lobby, this_lobby_name, lobby_num_members])
 		lobby_button.set_size(Vector2(800, 50))
 		lobby_button.set_name("lobby_%s" % this_lobby)
 		lobby_button.connect("pressed", Callable(self, "join_lobby").bind(this_lobby))
 
 		# Add the new lobby to the list
-		$Lobbies/Scroll/List.add_child(lobby_button)
+		get_tree().get_current_scene().get_node("Margin/UIContainer/LobbyList/LobbyList/Lobbies").add_child(lobby_button)
 
 func join_lobby(this_lobby_id: int) -> void:
 	print("Attempting to join lobby %s" % lobby_id)
@@ -147,7 +148,7 @@ func get_lobby_members() -> void:
 		var member_steam_name: String = Steam.getFriendPersonaName(member_steam_id)
 
 		# Add them to the list
-		lobby_members.append({"steam_id":member_steam_id, "steam_name":member_steam_name})
+		lobby_members.append({"steam_id": member_steam_id, "steam_name": member_steam_name})
 		
 # A user's information has changed
 func _on_persona_change(this_steam_id: int, _flag: int) -> void:
@@ -163,7 +164,7 @@ func make_p2p_handshake() -> void:
 
 	send_message({"message": "handshake", "from": steam_id})
 	
-func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id: int, chat_state: int) -> void:
+func _on_lobby_chat_update(_this_lobby_id: int, change_id: int, _making_change_id: int, chat_state: int) -> void:
 	# Get the user who has made the lobby change
 	var changer_name: String = Steam.getFriendPersonaName(change_id)
 
@@ -203,7 +204,6 @@ func leave_lobby() -> void:
 		for this_member in lobby_members:
 			# Make sure this isn't your Steam ID
 			if this_member['steam_id'] != steam_id:
-
 				# Close the P2P session using the Networking class
 				Steam.closeP2PSessionWithUser(this_member['steam_id'])
 
@@ -224,7 +224,6 @@ func _on_network_messages_session_request(remote_id: int) -> void:
 
 func read_messages() -> void:
 	# The maximum number of messages you want to read per call
-
 	var messages: Array = Steam.receiveMessagesOnChannel(channel, max_messages)
 
 	# There is a packet
@@ -238,6 +237,7 @@ func read_messages() -> void:
 
 			# Print the packet to output
 			print("Message Payload: %s" % message.payload)
+			print("Message Sender: %s" % message_sender)
 
 			# Append logic here to deal with message data. 
 			
@@ -257,5 +257,5 @@ func send_message(packet_data: Dictionary) -> void:
 			if this_member['steam_id'] != steam_id:
 				Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
 				
-func _on_network_messages_session_failed(steam_id: int, session_error: int, state: int, debug_msg: String) -> void:
+func _on_network_messages_session_failed(_steam_id: int, _session_error: int, _state: int, debug_msg: String) -> void:
 	print(debug_msg)

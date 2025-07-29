@@ -15,6 +15,16 @@ run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SteamInit="res://core/steam/steam_init.gd"
+SteamAuthManager="*res://core/steam/auth_manager.gd"
+SteamNetworkManager="*res://core/steam/network_manager.gd"
+
 [debug]
 
 file_logging/enable_file_logging=true
+
+[steam]
+
+initialization/app_id=480

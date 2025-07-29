@@ -1,3 +1,5 @@
-[gd_scene format=3 uid="uid://v4ig244w3w2r"]
+[gd_scene format=3 uid="uid://dlb0sgggh4xnp"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Lobby" type="Control"]
+layout_mode = 3
+anchors_preset = 0
