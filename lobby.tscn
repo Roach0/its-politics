@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://dlb0sgggh4xnp"]
-
-[node name="Lobby" type="Control"]
-layout_mode = 3
-anchors_preset = 0
