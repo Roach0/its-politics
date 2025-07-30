@@ -1,9 +1,47 @@
-[gd_scene format=3 uid="uid://dj3w6er7rutat"]
+[gd_scene load_steps=2 format=3 uid="uid://dj3w6er7rutat"]
 
-[node name="LobbyUi" type="Control"]
-layout_mode = 3
+[ext_resource type="Script" uid="uid://dpa0n15y7r21c" path="res://features/multiplayer/lobby_ui.gd" id="1_ppahj"]
+
+[node name="LobbyUi" type="VBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 25
+script = ExtResource("1_ppahj")
+
+[node name="LobbyName" type="RichTextLabel" parent="."]
+layout_mode = 2
+text = "Label"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="PlayersPanel" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayersLabel" type="RichTextLabel" parent="PlayersPanel"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+text = "Players"
+fit_content = true
+
+[node name="PlayerList" type="VBoxContainer" parent="PlayersPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 25
+
+[node name="BackButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Back"
+
+[node name="StartButton" type="Button" parent="ButtonContainer"]
+layout_mode = 2
+text = "Start Game"
+
+[connection signal="pressed" from="ButtonContainer/BackButton" to="." method="_on_back_button_pressed"]

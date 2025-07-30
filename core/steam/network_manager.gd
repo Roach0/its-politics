@@ -1,11 +1,15 @@
 extends Node
 
+signal lobby_entered
+signal lobby_members_changed
+
 const PACKET_READ_LIMIT: int = 32
 
+var lobby_list_ui: Control
 var lobby_id: int = 0
 var lobby_members: Array[Dictionary] = []
 var lobby_members_max: int = 10
-var lobby_name: String = ""
+var lobby_name: String = "Victor Test - Game1"
 var steam_id: int = 0
 var steam_username: String = ""
 var channel: int = 0
@@ -30,7 +34,7 @@ func _process(_delta) -> void:
 	# If the player is connected, read packets
 	if lobby_id > 0:
 		read_messages()
-	
+
 func create_lobby(lobby_type: Steam.LobbyType) -> void:
 	print("creating lobby of type %s" % lobby_type)
 	# Make sure a lobby is not already set
@@ -53,6 +57,8 @@ func _on_lobby_created(success: Steam.Result, this_lobby_id: int) -> void:
 		var set_relay: bool = Steam.allowP2PPacketRelay(true)
 		print("Allowing Steam to be relay backup: %s" % set_relay)
 
+		lobby_entered.emit()
+
 func _on_open_lobby_list_pressed() -> void:
 	# Set distance to worldwide
 	Steam.addRequestLobbyListDistanceFilter(Steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
@@ -61,9 +67,14 @@ func _on_open_lobby_list_pressed() -> void:
 	Steam.requestLobbyList()
 
 func _on_lobby_match_list(these_lobbies: Array) -> void:
+	for child in lobby_list_ui.get_children():
+		child.queue_free()
+
 	for this_lobby in these_lobbies:
 		# Pull lobby data from Steam, these are specific to our example
 		var this_lobby_name: String = Steam.getLobbyData(this_lobby, "name")
+		if this_lobby_name != lobby_name:
+			continue
 
 		# Get the current number of members
 		var lobby_num_members: int = Steam.getNumLobbyMembers(this_lobby)
@@ -78,7 +89,7 @@ func _on_lobby_match_list(these_lobbies: Array) -> void:
 		lobby_button.connect("pressed", Callable(self, "join_lobby").bind(this_lobby))
 
 		# Add the new lobby to the list
-		get_tree().get_current_scene().get_node("Margin/UIContainer/LobbyList/LobbyList/Lobbies").add_child(lobby_button)
+		lobby_list_ui.add_child(lobby_button)
 
 func join_lobby(this_lobby_id: int) -> void:
 	print("Attempting to join lobby %s" % lobby_id)
@@ -100,6 +111,8 @@ func _on_lobby_joined(this_lobby_id: int, _permissions: int, _locked: bool, resp
 
 		# Make the initial handshake
 		make_p2p_handshake()
+
+		lobby_entered.emit()
 
 	# Else it failed for some reason
 	else:
@@ -131,7 +144,7 @@ func _on_lobby_join_requested(this_lobby_id: int, friend_id: int) -> void:
 
 	# Attempt to join the lobby
 	join_lobby(this_lobby_id)
-	
+
 func get_lobby_members() -> void:
 	# Clear your previous lobby list
 	lobby_members.clear()
@@ -149,7 +162,10 @@ func get_lobby_members() -> void:
 
 		# Add them to the list
 		lobby_members.append({"steam_id": member_steam_id, "steam_name": member_steam_name})
-		
+
+	print("Lobby members: %s" % lobby_members)
+	lobby_members_changed.emit()
+
 # A user's information has changed
 func _on_persona_change(this_steam_id: int, _flag: int) -> void:
 	# Make sure you're in a lobby and this user is valid or Steam might spam your console log
@@ -158,12 +174,12 @@ func _on_persona_change(this_steam_id: int, _flag: int) -> void:
 
 		# Update the player list
 		get_lobby_members()
-		
+
 func make_p2p_handshake() -> void:
 	print("Sending P2P handshake to the lobby")
 
 	send_message({"message": "handshake", "from": steam_id})
-	
+
 func _on_lobby_chat_update(_this_lobby_id: int, change_id: int, _making_change_id: int, chat_state: int) -> void:
 	# Get the user who has made the lobby change
 	var changer_name: String = Steam.getFriendPersonaName(change_id)
@@ -190,7 +206,7 @@ func _on_lobby_chat_update(_this_lobby_id: int, change_id: int, _making_change_i
 
 	# Update the lobby now that a change has occurred
 	get_lobby_members()
-	
+
 func leave_lobby() -> void:
 	# If in a lobby, leave it
 	if lobby_id != 0:
@@ -209,7 +225,7 @@ func leave_lobby() -> void:
 
 		# Clear the local lobby list
 		lobby_members.clear()
-		
+
 func _on_network_messages_session_request(remote_id: int) -> void:
 	# Get the requester's name
 	var this_requester: String = Steam.getFriendPersonaName(remote_id)
@@ -220,7 +236,7 @@ func _on_network_messages_session_request(remote_id: int) -> void:
 
 	# Make the initial handshake
 	make_p2p_handshake()
-		
+
 
 func read_messages() -> void:
 	# The maximum number of messages you want to read per call
@@ -239,23 +255,21 @@ func read_messages() -> void:
 			print("Message Payload: %s" % message.payload)
 			print("Message Sender: %s" % message_sender)
 
-			# Append logic here to deal with message data. 
-			
+			# Append logic here to deal with message data.
+
 func send_message(packet_data: Dictionary) -> void:
-			# Set the send_type and channel
+	# Set the send_type and channel
 	var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
 
 	# Create a data array to send the data through
 	var this_data: PackedByteArray
 	this_data.append_array(var_to_bytes(packet_data))
 
-	# If sending a packet to everyone
-		# If there is more than one user, send packets
 	if lobby_members.size() > 1:
 		# Loop through all members that aren't you
 		for this_member in lobby_members:
 			if this_member['steam_id'] != steam_id:
 				Steam.sendMessageToUser(this_member['steam_id'], this_data, send_type, channel)
-				
+
 func _on_network_messages_session_failed(_steam_id: int, _session_error: int, _state: int, debug_msg: String) -> void:
 	print(debug_msg)

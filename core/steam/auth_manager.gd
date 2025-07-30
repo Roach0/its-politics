@@ -7,11 +7,11 @@ func _ready() -> void:
 	Steam.get_auth_session_ticket_response.connect(_on_get_auth_session_ticket_response)
 	Steam.validate_auth_ticket_response.connect(_on_validate_auth_ticket_response)
 	auth_ticket = Steam.getAuthSessionTicket()
-	
+
 func _on_get_auth_session_ticket_response(this_auth_ticket: int, result: int) -> void:
 	print("Auth session result: %s" % result)
 	print("Auth session ticket handle: %s" % this_auth_ticket)
-	
+
 	# Callback from attempting to validate the auth ticket
 func _on_validate_auth_ticket_response(auth_id: int, response: Steam.AuthSessionResponse, owner_id: int) -> void:
 	print("Ticket Owner: %s" % auth_id)
@@ -51,10 +51,10 @@ func validate_auth_session(ticket: Dictionary, steam_id: int) -> void:
 		client_auth_tickets.append({"id": steam_id, "ticket": ticket.id})
 
 	# You can now add the client to the game
-	
+
 func cancel_auth_ticket() -> void:
 	Steam.cancelAuthTicket(auth_ticket.id)
-	
+
 func end_client_sessions() -> void:
 	for this_client_ticket in client_auth_tickets:
 		Steam.endAuthSession(this_client_ticket.id)
