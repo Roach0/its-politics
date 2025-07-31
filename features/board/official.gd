@@ -10,7 +10,6 @@ signal official_died(official: Official)
 var official_id: String
 var death_time: int  # Time To Die
 var assets: Array[Asset] = []
-var position_id: int = -1
 
 func _init(id: String, initial_ttp: int):
 	official_id = id
