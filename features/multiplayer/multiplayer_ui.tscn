@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b36o56q6xggnc"]
+[gd_scene load_steps=5 format=3 uid="uid://b36o56q6xggnc"]
 
 [ext_resource type="Script" uid="uid://cyqrnhfc0uwjr" path="res://features/multiplayer/multiplayer_ui.gd" id="1_31732"]
+[ext_resource type="PackedScene" uid="uid://b4j5wljk030dq" path="res://features/multiplayer/lobby_list_ui.tscn" id="2_eqf5h"]
+[ext_resource type="PackedScene" uid="uid://dj3w6er7rutat" path="res://features/multiplayer/lobby_ui.tscn" id="3_3k1aj"]
+[ext_resource type="PackedScene" uid="uid://ca5os7gg7c3dn" path="res://features/multiplayer/owner_left_ui.tscn" id="4_3k1aj"]
 
 [node name="MultiplayerUi" type="Control"]
 layout_mode = 3
@@ -22,3 +25,13 @@ theme_override_constants/margin_left = 150
 theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 150
 theme_override_constants/margin_bottom = 50
+
+[node name="LobbyListUi" parent="Margin" instance=ExtResource("2_eqf5h")]
+layout_mode = 2
+
+[node name="LobbyUi" parent="Margin" instance=ExtResource("3_3k1aj")]
+visible = false
+layout_mode = 2
+
+[node name="OwnerLeftUi" parent="." instance=ExtResource("4_3k1aj")]
+visible = false

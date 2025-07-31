@@ -3,11 +3,19 @@
 [ext_resource type="Script" uid="uid://dpa0n15y7r21c" path="res://features/multiplayer/lobby_ui.gd" id="1_ppahj"]
 
 [node name="LobbyUi" type="VBoxContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = -68.0
+offset_right = 83.0
+offset_bottom = 68.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_constants/separation = 25
 script = ExtResource("1_ppahj")
 
@@ -38,10 +46,11 @@ theme_override_constants/separation = 25
 
 [node name="BackButton" type="Button" parent="ButtonContainer"]
 layout_mode = 2
-text = "Back"
+text = "Leave Game"
 
 [node name="StartButton" type="Button" parent="ButtonContainer"]
 layout_mode = 2
+disabled = true
 text = "Start Game"
 
 [connection signal="pressed" from="ButtonContainer/BackButton" to="." method="_on_back_button_pressed"]

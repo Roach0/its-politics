@@ -1,5 +1,6 @@
 extends Node
 
+var steam_id: int = 0
 var auth_ticket : Dictionary = {}
 var client_auth_tickets : Array[Dictionary] = []
 
@@ -7,6 +8,7 @@ func _ready() -> void:
 	Steam.get_auth_session_ticket_response.connect(_on_get_auth_session_ticket_response)
 	Steam.validate_auth_ticket_response.connect(_on_validate_auth_ticket_response)
 	auth_ticket = Steam.getAuthSessionTicket()
+	steam_id = Steam.getSteamID()
 
 func _on_get_auth_session_ticket_response(this_auth_ticket: int, result: int) -> void:
 	print("Auth session result: %s" % result)
