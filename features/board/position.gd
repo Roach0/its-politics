@@ -1,4 +1,4 @@
-class_name Board
+class_name Position
 extends Node2D
 
 signal position_vacated(position_id: int)

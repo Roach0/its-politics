@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://o4y34unq16f8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="Control2"]
+layout_mode = 1
+anchor_right = 48.0
+anchor_bottom = 27.0
+offset_right = -1880.0
+offset_bottom = -1040.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="Control2/Control"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2

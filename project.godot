@@ -25,6 +25,11 @@ SteamNetworkManager="*res://core/steam/network_manager.gd"
 
 file_logging/enable_file_logging=true
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
 [steam]
 
 initialization/app_id=480
