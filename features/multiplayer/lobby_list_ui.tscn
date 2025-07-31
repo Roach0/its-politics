@@ -3,10 +3,17 @@
 [ext_resource type="Script" uid="uid://bcdwnm5n7yn1c" path="res://features/multiplayer/lobby_list_ui.gd" id="1_oalcj"]
 
 [node name="LobbyListUi" type="VBoxContainer"]
-offset_left = 150.0
-offset_top = 50.0
-offset_right = 1002.0
-offset_bottom = 598.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -426.0
+offset_top = -274.0
+offset_right = 426.0
+offset_bottom = 274.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 25
