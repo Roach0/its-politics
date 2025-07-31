@@ -15,11 +15,11 @@ func change_government(new_gov_type: String):
 	for pos_id in positions:
 		if positions[pos_id].has_official():
 			current_officials[pos_id] = positions[pos_id].get_official()
-	
+
 	# Update board layout
 	current_government = load_government_type(new_gov_type)
 	setup_positions()
-	
+
 	# Handle official transitions/deaths based on new government rules
 	handle_government_transition(current_officials)
 

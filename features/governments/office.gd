@@ -1,4 +1,4 @@
 class_name Office
-extends Node2D
+extends Panel
 
 var official: Official
