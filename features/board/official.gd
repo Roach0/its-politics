@@ -2,39 +2,33 @@
 class_name Official
 extends Node2D
 
-signal ttp_updated(new_value: int)
-signal asset_added(asset: Asset)
-signal asset_removed(asset: Asset)
-signal official_died()
+signal death_time_updated(official: Official, new_value: int)
+signal asset_added(official: Official, asset: Asset)
+signal asset_removed(official: Official, asset: Asset)
+signal official_died(official: Official)
 
 var official_id: String
-var ttp: int  # Time To Play
+var death_time: int  # Time To Die
 var assets: Array[Asset] = []
-var position_id: int = -1
 
 func _init(id: String, initial_ttp: int):
 	official_id = id
-	ttp = initial_ttp
+	death_time = initial_ttp
 
-func add_asset(asset: Asset) -> bool:
+func add_asset(asset: Asset):
 	assets.append(asset)
-	asset_added.emit(asset)
-	return true
+	asset_added.emit(self, asset)
 
-func remove_asset(asset: Asset) -> bool:
-	var idx = assets.find(asset)
-	if idx != -1:
-		assets.remove_at(idx)
-		asset_removed.emit(asset)
-		return true
-	return false
+func remove_asset(index: int):
+	var asset = assets[index]
+	assets.remove_at(index)
+	asset_removed.emit(self, asset)
 
-func update_ttp(delta: int):
-	ttp += delta
-	if ttp <= 0:
+func update_death_time(delta: int):
+	death_time += delta
+	if death_time <= 0:
 		die()
-	ttp_updated.emit(ttp)
+	death_time_updated.emit(self, death_time)
 
 func die():
-	official_died.emit()
-	queue_free()
+	official_died.emit(self)
