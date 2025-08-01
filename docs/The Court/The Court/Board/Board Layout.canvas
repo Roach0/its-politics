@@ -8,7 +8,7 @@
 		{"id":"63b876d62ca02403","type":"file","file":"Board/Card/Card.canvas","x":-580,"y":-480,"width":200,"height":440,"color":"5"},
 		{"id":"8054d109421283b0","x":-380,"y":-480,"width":640,"height":600,"type":"file","file":"Board/Government/Government.canvas"},
 		{"id":"3591953a21dd24e3","type":"file","file":"Board/Game Panel/Game Panel.canvas","x":260,"y":-480,"width":200,"height":600,"color":"2"},
-		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy/Economy.canvas","x":-580,"y":-40,"width":200,"height":160,"color":"6"}
+		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy/Economy Area.canvas","x":-580,"y":-40,"width":200,"height":160,"color":"6"}
 	],
 	"edges":[]
 }

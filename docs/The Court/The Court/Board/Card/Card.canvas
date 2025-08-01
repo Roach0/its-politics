@@ -1,17 +1,22 @@
 {
 	"nodes":[
-		{"id":"a3464055eca4fc54","type":"group","x":-2180,"y":-1800,"width":531,"height":800,"label":"Card Type"},
-		{"id":"74fa2439b5d17237","type":"file","file":"Card.md","x":-1600,"y":-827,"width":427,"height":522},
-		{"id":"5f0c7563eee7c832","type":"text","text":"Play Cost\n","x":-762,"y":-857,"width":250,"height":60},
+		{"id":"a3464055eca4fc54","type":"group","x":-2180,"y":-1800,"width":531,"height":800,"label":"Card Types"},
+		{"id":"5c26f11e01d33aa4","x":-1360,"y":-1800,"width":584,"height":700,"type":"group","label":"Base Card Layout"},
 		{"id":"9c96de42e58bbbfc","type":"file","file":"Contract.md","x":-2160,"y":-1760,"width":491,"height":220},
 		{"id":"9eed1a2507bddf70","type":"file","file":"Policy.md","x":-2160,"y":-1500,"width":491,"height":220},
-		{"id":"8e1da873378b4c2f","type":"text","text":" Economy Cost\n","x":-887,"y":-566,"width":250,"height":60},
-		{"id":"50b38adf01b7480f","type":"text","text":"TTP","x":-1173,"y":-917,"width":250,"height":60,"color":"1"},
-		{"id":"bfbc5f7e0ec67bf9","type":"text","text":"Optional Element","x":-1173,"y":-1390,"width":250,"height":60,"color":"1"},
-		{"id":"7604fa0760f548ee","type":"file","file":"Board/Card/Card Types/Official.md","x":-2440,"y":-360,"width":491,"height":220},
-		{"id":"1ed4da52c3a486b6","x":-2160,"y":-1240,"width":491,"height":220,"type":"file","file":"Board/Card/Card Types/Official.canvas"}
+		{"id":"1ed4da52c3a486b6","type":"file","file":"Board/Card/Card Types/Official.canvas","x":-2160,"y":-1240,"width":491,"height":220},
+		{"id":"bfbc5f7e0ec67bf9","type":"text","text":"Optional Element","x":-1080,"y":-375,"width":250,"height":60,"color":"1"},
+		{"id":"50b38adf01b7480f","type":"text","text":"TTP","x":-1080,"y":98,"width":250,"height":60,"color":"1"},
+		{"id":"8e1da873378b4c2f","type":"text","text":" Economy Cost\n","x":-794,"y":449,"width":250,"height":60},
+		{"id":"5f0c7563eee7c832","type":"text","text":"Play Cost\n","x":-669,"y":158,"width":250,"height":60},
+		{"id":"27604b14212eeaa5","type":"text","text":"Official Name","x":-1340,"y":-1780,"width":544,"height":111,"color":"5"},
+		{"id":"9fe6f055ac78cb8f","type":"text","text":"Official Portrait","x":-1340,"y":-1669,"width":544,"height":269,"color":"5"},
+		{"id":"835a214b9d891707","type":"text","text":"Play Effect - For Official Cards, this is typically 'assign of start election for this official on the office this is played.'","x":-1340,"y":-1400,"width":544,"height":180,"color":"2"},
+		{"id":"85b956c976c7f297","type":"text","text":"Play Cost","x":-1340,"y":-1220,"width":544,"height":100,"color":"6"},
+		{"id":"3960c41f81a40b0a","type":"text","text":"Death Timer - Inactive","x":-1560,"y":-760,"width":124,"height":111,"color":"6"}
 	],
 	"edges":[
-		{"id":"d22f338c514c2e76","fromNode":"a3464055eca4fc54","fromSide":"bottom","toNode":"74fa2439b5d17237","toSide":"left"}
+		{"id":"d565a8802130b102","fromNode":"1ed4da52c3a486b6","fromSide":"right","toNode":"3960c41f81a40b0a","toSide":"left","label":"Optional Component"},
+		{"id":"ecec1b9c766e8438","fromNode":"3960c41f81a40b0a","fromSide":"right","toNode":"5c26f11e01d33aa4","toSide":"left"}
 	]
 }

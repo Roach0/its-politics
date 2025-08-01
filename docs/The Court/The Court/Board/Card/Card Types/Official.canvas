@@ -18,7 +18,7 @@
 		{"id":"66a9c2d804285775","x":1384,"y":0,"width":250,"height":60,"type":"text","text":""},
 		{"id":"4684efa9c124346b","x":640,"y":20,"width":272,"height":280,"type":"text","text":""},
 		{"id":"b65cfa4631733a74","type":"file","file":"Board/Card/Effects.md","x":300,"y":900,"width":503,"height":180,"color":"3"},
-		{"id":"87fc133bd226e86a","type":"file","file":"Board/Economy/Cost & Economy.md","x":-736,"y":-100,"width":400,"height":400,"color":"3"}
+		{"id":"87fc133bd226e86a","type":"file","file":"Board/Economy/Card Cost, Economy & Liquidation.md","x":-736,"y":-100,"width":400,"height":400,"color":"3"}
 	],
 	"edges":[
 		{"id":"73e7dc952ddc8900","fromNode":"3ca0c62d72881c6b","fromSide":"top","toNode":"a7d74a283cc80d33","toSide":"bottom"},
