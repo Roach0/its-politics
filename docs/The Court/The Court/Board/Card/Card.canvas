@@ -8,7 +8,7 @@
 		{"id":"8e1da873378b4c2f","type":"text","text":" Economy Cost\n","x":-887,"y":-566,"width":250,"height":60},
 		{"id":"50b38adf01b7480f","type":"text","text":"TTP","x":-1173,"y":-917,"width":250,"height":60,"color":"1"},
 		{"id":"bfbc5f7e0ec67bf9","type":"text","text":"Optional Element","x":-1173,"y":-1390,"width":250,"height":60,"color":"1"},
-		{"id":"7604fa0760f548ee","type":"file","file":"Board/Card/Official.md","x":-2440,"y":-360,"width":491,"height":220},
+		{"id":"7604fa0760f548ee","type":"file","file":"Board/Card/Card Types/Official.md","x":-2440,"y":-360,"width":491,"height":220},
 		{"id":"1ed4da52c3a486b6","x":-2160,"y":-1240,"width":491,"height":220,"type":"file","file":"Board/Card/Card Types/Official.canvas"}
 	],
 	"edges":[

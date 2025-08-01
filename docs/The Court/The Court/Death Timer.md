@@ -11,4 +11,5 @@
 - Active
 	- This state occurs while the Official occupies an Office.
 	- In this state, the timer reduces by 1 each time there is a 'Card Play'.
-	- Once timer reaches 
+	- Once timer reaches 0, the next card play will eliminate them.
+	- There are cards which will alter an officials death timer, increasing it or reducing it.
