@@ -1,17 +1,22 @@
 {
 	"nodes":[
-		{"id":"73505d4abf630410","type":"group","x":240,"y":-1000,"width":290,"height":340,"color":"#ffffff","label":"Key"},
+		{"id":"76c9e4a36d22b9d8","type":"group","x":800,"y":-1186,"width":880,"height":806,"label":"States"},
+		{"id":"73505d4abf630410","type":"group","x":220,"y":-1040,"width":320,"height":420,"color":"#ffffff","label":"Key"},
 		{"id":"2db1f2e6b7af3698","type":"text","text":"Position ID:\n\n- 1-5 physical location and flow control of the office.\n- Position presets determined by [[Government]] Type.\n- Offices can appear at any Position ID.","x":-603,"y":13,"width":456,"height":173,"color":"6"},
-		{"id":"732e451772a3ac21","type":"file","file":"Board/Government/Office/Office.md","x":240,"y":-521,"width":400,"height":461,"color":"4"},
 		{"id":"8ed09abd0bd4f931","type":"file","file":"Board/Government/Office/Office Types.md","x":-397,"y":-764,"width":250,"height":314,"color":"6"},
-		{"id":"3b3a554847c7a951","type":"text","text":"Outside System","x":260,"y":-740,"width":250,"height":60,"color":"3"},
-		{"id":"ef1cb6cdcf0062d9","type":"text","text":"Shared","x":260,"y":-820,"width":250,"height":60,"color":"6"},
-		{"id":"78f237543138bd24","type":"text","text":"System Child","x":260,"y":-900,"width":250,"height":60,"color":"5"},
-		{"id":"ea6d3b57a10a8784","type":"text","text":"System Result","x":260,"y":-980,"width":250,"height":60,"color":"4"},
 		{"id":"95ce1405260fc50b","type":"text","text":"Economy Focus:\n- Food\n- Health\n- Wealth","x":-1040,"y":-948,"width":250,"height":188,"color":"5"},
 		{"id":"93b0af87736a437d","type":"text","text":"Asset Focus\n\n- Tech\n- Intel\n- Profile","x":-1040,"y":-697,"width":250,"height":171,"color":"5"},
+		{"id":"9bd5325186315b46","type":"file","file":"Board/Government/Government Types.md","x":-1040,"y":-34,"width":250,"height":268,"color":"3"},
 		{"id":"b946b3f4476e0afc","type":"file","file":"Points & Scoring.md","x":-1040,"y":-450,"width":250,"height":268,"color":"3"},
-		{"id":"9bd5325186315b46","type":"file","file":"Board/Government/Government Types.md","x":-1040,"y":-34,"width":250,"height":268,"color":"3"}
+		{"id":"ea6d3b57a10a8784","type":"text","text":"System Result","x":260,"y":-1020,"width":250,"height":60,"color":"4"},
+		{"id":"78f237543138bd24","type":"text","text":"System Child","x":260,"y":-940,"width":250,"height":60,"color":"5"},
+		{"id":"ef1cb6cdcf0062d9","type":"text","text":"Shared","x":260,"y":-860,"width":250,"height":60,"color":"6"},
+		{"id":"3b3a554847c7a951","type":"text","text":"Outside System","x":260,"y":-780,"width":250,"height":60,"color":"3"},
+		{"id":"36466682eecca873","type":"text","text":"State","x":260,"y":-700,"width":250,"height":60,"color":"2"},
+		{"id":"f36d6cf4e4cb85c2","type":"text","text":"Occupied\n\n- This position is currently occupied by an official.\n- During scoring, it will calculate points based on it's scoring rules.\n- If an official is played on this office while in this state, it will move to an election state which takes it's current occupant and the official played as the arguments.","x":1120,"y":-1166,"width":250,"height":446,"color":"2"},
+		{"id":"016b14b301c3e7cc","type":"text","text":"Election\n\n- This position either has an occupying official which just had another official played on top of it - or - it has two or more officials with a flow that leads to it while it is empty.\n- When the election state is entered, it should be resolved immediately, without any other inputs required.\n- The election state will measure the theoretical sum of points gained by an official on the contested office during scoring.  The official with the higher possible point gain will win, an occupy the office.  The loser dies.","x":1400,"y":-1165,"width":250,"height":765,"color":"2"},
+		{"id":"bae102836ff1c8f9","type":"text","text":"Empty\n\n- This position currently has no official occupying it.\n- During scoring, it will not yield economic resources or points.\n- It will attempt to recruit an adjacent official on an office with a flow that points to it.\n- If it matches with two or more possible officials, it will move to an election state.\n- If it matches with a single official, that official will migrate to this office and the office will enter an occupied state.","x":840,"y":-1166,"width":250,"height":646,"color":"2"},
+		{"id":"732e451772a3ac21","type":"file","file":"Board/Government/Office/Office.md","x":200,"y":-495,"width":400,"height":461,"color":"4"}
 	],
 	"edges":[
 		{"id":"35bb895dd0797026","fromNode":"2db1f2e6b7af3698","fromSide":"right","toNode":"732e451772a3ac21","toSide":"left","color":"4","label":"position & flow data"},
@@ -19,6 +24,7 @@
 		{"id":"20dcef60b45f1c51","fromNode":"8ed09abd0bd4f931","fromSide":"left","toNode":"b946b3f4476e0afc","toSide":"right","color":"3","label":"shared"},
 		{"id":"6b13eec12d239369","fromNode":"2db1f2e6b7af3698","fromSide":"left","toNode":"9bd5325186315b46","toSide":"right","color":"3","label":"shared"},
 		{"id":"03193e0e01765b06","fromNode":"95ce1405260fc50b","fromSide":"right","toNode":"8ed09abd0bd4f931","toSide":"left","color":"5","label":"var"},
-		{"id":"6b40d3aca820758b","fromNode":"93b0af87736a437d","fromSide":"right","toNode":"8ed09abd0bd4f931","toSide":"left","color":"5","label":"var"}
+		{"id":"6b40d3aca820758b","fromNode":"93b0af87736a437d","fromSide":"right","toNode":"8ed09abd0bd4f931","toSide":"left","color":"5","label":"var"},
+		{"id":"feaf46eb581e6db2","fromNode":"732e451772a3ac21","fromSide":"right","toNode":"76c9e4a36d22b9d8","toSide":"bottom"}
 	]
 }
