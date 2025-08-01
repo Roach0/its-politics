@@ -1,10 +1,10 @@
 {
 	"nodes":[
-		{"id":"c2567f69b36d348b","type":"file","file":"Board/Government/Government.canvas","x":-480,"y":-360,"width":640,"height":600,"color":"4"},
+		{"id":"c2567f69b36d348b","type":"file","file":"Board/Government/Government Type Layouts.canvas","x":-480,"y":-360,"width":640,"height":600,"color":"4"},
 		{"id":"8e6972530a007840","type":"text","text":"Player Reader","x":480,"y":-482,"width":250,"height":60},
+		{"id":"9284c0b8f8f236a7","type":"text","text":"","x":730,"y":-300,"width":200,"height":600},
 		{"id":"63b876d62ca02403","type":"file","file":"Board/Card/Card.canvas","x":-680,"y":-360,"width":200,"height":440,"color":"5"},
-		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy/Economy.canvas","x":-680,"y":80,"width":200,"height":160,"color":"6"},
-		{"id":"9284c0b8f8f236a7","type":"text","text":"","x":730,"y":-300,"width":200,"height":600}
+		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy/Economy.canvas","x":-680,"y":80,"width":200,"height":160,"color":"6"}
 	],
 	"edges":[]
 }

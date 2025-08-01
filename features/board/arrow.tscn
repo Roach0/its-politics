@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://7vf7k7omei4c"]
+[gd_scene load_steps=0 format=3 uid="uid://7vf7k7omei4c"]
 
 [node name="Arrow" type="Polygon2D"]
 scale = Vector2(1.75, 1.75)

@@ -4,7 +4,6 @@
 		{"id":"683649af912f5c37","type":"group","x":-1400,"y":-680,"width":250,"height":644,"label":"Actions"},
 		{"id":"c574d30bcd74b2ad","type":"text","text":"Reset Play Tokens to 1","x":-625,"y":-660,"width":250,"height":60},
 		{"id":"229062d7f14c4e73","type":"text","text":"Run Elections","x":-625,"y":-506,"width":250,"height":60},
-		{"id":"e4f85163b7a66bd5","type":"file","file":"Game Phases/Points & Scoring.md","x":20,"y":-650,"width":360,"height":768,"color":"3"},
 		{"id":"1758f3f8907ed3aa","type":"text","text":"End Turn Button","x":-625,"y":-820,"width":250,"height":60,"color":"1"},
 		{"id":"d656c353868b430e","type":"text","text":"Apply Card Effect","x":-1040,"y":-527,"width":250,"height":60},
 		{"id":"d69acd5ca09aba2b","type":"text","text":"Extra Play Token Limit Reached? 2","x":-1040,"y":-236,"width":250,"height":60},
@@ -26,7 +25,8 @@
 		{"id":"cddb33861840ed50","type":"text","text":"Assign player 1","x":-1905,"y":-467,"width":250,"height":130},
 		{"id":"f9bec8d528063bd1","type":"text","text":"Game Start","x":-1905,"y":-720,"width":250,"height":60},
 		{"id":"1ceab97a813b6ba3","type":"text","text":"Reassign  Player 1","x":-1760,"y":-26,"width":250,"height":60},
-		{"id":"a4c3661e79a531ed","x":-2280,"y":-720,"width":250,"height":60,"type":"text","text":"Game End"}
+		{"id":"a4c3661e79a531ed","x":-2280,"y":-720,"width":250,"height":60,"type":"text","text":"Game End"},
+		{"id":"e4f85163b7a66bd5","type":"file","file":"Game Phases/Points & Scoring.md","x":0,"y":-794,"width":360,"height":768,"color":"3"}
 	],
 	"edges":[
 		{"id":"a1b4dcdfe070fbfd","fromNode":"54f19c1b4790332c","fromSide":"right","toNode":"d656c353868b430e","toSide":"left"},

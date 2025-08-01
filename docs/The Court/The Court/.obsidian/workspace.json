@@ -6,7 +6,7 @@
       {
         "id": "8be362a6d4b99821",
         "type": "tabs",
-        "dimension": 21.26081582200247,
+        "dimension": 46.321177223288544,
         "children": [
           {
             "id": "7379403f0f729f50",
@@ -47,25 +47,6 @@
             }
           },
           {
-            "id": "13781f6cc5b214a6",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Government/Government.canvas",
-                "viewState": {
-                  "x": 60.2108310031856,
-                  "y": -306.0752190856879,
-                  "zoom": -1.0432052769556193
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Government"
-            }
-          },
-          {
             "id": "3af8e602a334a9cf",
             "type": "leaf",
             "state": {
@@ -91,8 +72,8 @@
               "state": {
                 "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -770.6676572427277,
-                  "y": -110.28330814063054,
+                  "x": -452.2837545279706,
+                  "y": 87.54485689233428,
                   "zoom": -1
                 }
               },
@@ -107,15 +88,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government/Office/Office.canvas",
+                "file": "Board/Government/Government Type Layouts.canvas",
                 "viewState": {
-                  "x": -13.267596313365516,
-                  "y": -272.42681264963016,
-                  "zoom": -0.3333333333333332
+                  "x": -461.54532974071924,
+                  "y": -2781.72972972973,
+                  "zoom": -2.1231857223605775
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "title": "Government Type Layouts"
             }
           }
         ],
@@ -124,23 +105,25 @@
       {
         "id": "7b8fe469083d2574",
         "type": "tabs",
-        "dimension": 78.73918417799753,
+        "dimension": 53.678822776711456,
         "children": [
           {
             "id": "21af1fd6ff0652ad",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Board Layout.canvas",
+                "file": "Board/Government/Government.canvas",
                 "viewState": {
-                  "x": 94.38661010169358,
-                  "y": -168.91000522820548,
-                  "zoom": -0.556029999882502
+                  "x": -393.1697155081712,
+                  "y": 159.24187749110357,
+                  "zoom": -1.6666666666666665
                 }
               },
+              "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "Board Layout"
+              "title": "Government"
             }
           }
         ]
@@ -200,7 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 313.5
   },
   "right": {
     "id": "853b1c66f7212233",
@@ -290,25 +273,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad1e2131b27ab383",
+  "active": "17b3602a1ca37143",
   "lastOpenFiles": [
-    "Board/Economy",
+    "Board/Government/Government.canvas",
+    "Board/Government/Government Type Layouts.canvas",
+    "Board/Government/Government Types.md",
+    "Board/Government/Office/Office.canvas",
     "Game Phases/Game Phases.canvas",
+    "Board/Card/Card Types/Official.canvas",
+    "Board/Card/Card.canvas",
     "Board/Board Layout.canvas",
+    "Board/Economy",
     "Board/Economy/Economy.canvas",
     "Game Phases/Points & Scoring.md",
-    "Board/Government/Office/Office.canvas",
     "Board/Government/Office/Office.md",
-    "Board/Government/Government.canvas",
     "Game Phases",
     "Board/Government/Office/Office Types.md",
-    "Board/Card/Card Types/Official.canvas",
     "Position Types.md",
     "Board/Government/Office/Office ID.md",
-    "Board/Government/Government Types.md",
     "Board/Card/Card Types/Policy.canvas",
     "Board/Card/Card Types/Contract.canvas",
-    "Board/Card/Card.canvas",
     "Board/Government/Office",
     "Board/Card/Card Types",
     "_Core/GDP/Phase 2 Breakdown.md",
@@ -317,7 +301,6 @@
     "Board/Government",
     "Board",
     "Asset Pool.md",
-    "Assets.canvas",
     "Effect Types.md",
     "_Core/GDP/Phase 1 Breakdown.md",
     "Asset Types.md",
