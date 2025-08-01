@@ -3,22 +3,17 @@ aliases:
   - officials
 ---
 
-- Characters which occupy [[Office]].
-- These assets are the only real difference between characters while on the board.
-- Each character has a [[TTP]] (Time to play),  to ensure no character can rest on the board forever, all character spawn with a countdown timer before they pass away of natural causes. 
-
-
-*Ai Generated, will make more human*
+- Characters which occupy Offices.
 ### **Food** Combinations
 
-| Focus Pair     | Identity       | Essence                   |
-| -------------- | -------------- | ------------------------- |
-| Food + Food    | **Biarch**     | Life-system overlord      |
-| Food + Health  | **Metabolon**  | Nutrient/body regulator   |
-| Food + Wealth  | **Harvestrix** | Famine/feast marketeer    |
-| Food + Tech    | **Terragen**   | Planet-forging engineer   |
-| Food + Intel   | **Phytospy**   | Plant-data infiltrator    |
-| Food + Profile | **Gastrolite** | Elite consumption curator |
+| Focus Pair     | Identity       | Essence                   |     |
+| -------------- | -------------- | ------------------------- | --- |
+| Food + Food    | **Biarch**     | Life-system overlord      |     |
+| Food + Health  | **Metabolon**  | Nutrient/body regulator   |     |
+| Food + Wealth  | **Harvestrix** | Famine/feast marketeer    |     |
+| Food + Tech    | **Terragen**   | Planet-forging engineer   |     |
+| Food + Intel   | **Phytospy**   | Plant-data infiltrator    |     |
+| Food + Profile | **Gastrolite** | Elite consumption curator |     |
 
 ---
 

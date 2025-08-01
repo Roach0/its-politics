@@ -6,7 +6,7 @@
       {
         "id": "8be362a6d4b99821",
         "type": "tabs",
-        "dimension": 45.267224726336124,
+        "dimension": 47.52092723760464,
         "children": [
           {
             "id": "3af8e602a334a9cf",
@@ -48,8 +48,8 @@
               "state": {
                 "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -1004.5814335844295,
-                  "y": -208.74205373760452,
+                  "x": -863.4702759962036,
+                  "y": -516.1627899119537,
                   "zoom": -1.3333333333333333
                 }
               },
@@ -133,7 +133,7 @@
       {
         "id": "7b8fe469083d2574",
         "type": "tabs",
-        "dimension": 54.73277527366388,
+        "dimension": 52.47907276239536,
         "children": [
           {
             "id": "6d32f8bfa41a251d",
@@ -155,16 +155,13 @@
             "id": "7df6a30f1189de2c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Board/Card/Card Types/Official/Official.canvas",
-                "viewState": {
-                  "x": 445.9337565616954,
-                  "y": 140.19677518226604,
-                  "zoom": -1.5470142634978716
-                }
+                "file": "Board/Card/Card Types/Official/Official.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
+              "icon": "lucide-file",
               "title": "Official"
             }
           }
@@ -318,13 +315,16 @@
   },
   "active": "7df6a30f1189de2c",
   "lastOpenFiles": [
-    "Game Phases/Game Phases.canvas",
-    "Board/Card/Card Types/Official/Official Death.md",
     "Board/Card/Card Types/Official/Official.canvas",
+    "Game Phases/Game Phases.canvas",
+    "Effect Types.md",
+    "round.md",
+    "Rounds and Turns.md",
+    "Scoring.md",
+    "Board/Card/Card Types/Official/Official Death.md",
     "Board/Card/Card Types/Official/Assets & Asset Pool.md",
     "Board/Card/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
     "Asset Types.md",
-    "Rounds and Turns.md",
     "Asset Pool 1.md",
     "Puppet State.md",
     "Board/Card/Card Types/Official/Death Timer.md",
@@ -348,17 +348,14 @@
     "Board/Government/Office/Office Types.md",
     "Board/Government/Office/Office.md",
     "Game Phases/Turn Actions.md",
-    "Card Cosmetics & Styling.md",
+    "Board/Card/Card Types/Card Cosmetics & Styling.md",
     "Board/Game Panel",
     "Board/Government/Government Types.md",
     "Board/Economy",
     "Game Phases",
     "Position Types.md",
-    "Board/Government/Office/Office ID.md",
     "Board/Government/Office",
     "Board/Card/Card Types",
-    "_Core/GDP/Phase 2 Breakdown.md",
-    "_Core/GDP/Full Plan.md",
     "Board/Card",
     "Board/Government",
     "Board",
