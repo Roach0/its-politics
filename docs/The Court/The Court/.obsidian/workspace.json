@@ -65,8 +65,8 @@
               "state": {
                 "file": "Board/Board Layout.canvas",
                 "viewState": {
-                  "x": -171.82625136369165,
-                  "y": -80.28139159492684,
+                  "x": -211.6220265734991,
+                  "y": -229.98930786039278,
                   "zoom": -0.922225951938314
                 }
               },
@@ -111,8 +111,8 @@
               "state": {
                 "file": "Board/Card/Card.canvas",
                 "viewState": {
-                  "x": -1574.7961748788055,
-                  "y": -1041.1055410897811,
+                  "x": -1492.2513201764593,
+                  "y": -736.3245391118869,
                   "zoom": -1.6666666666666665
                 }
               },
@@ -120,9 +120,23 @@
               "icon": "lucide-layout-dashboard",
               "title": "Card"
             }
+          },
+          {
+            "id": "7df6a30f1189de2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Board/Card/Official.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Official"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,7 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 322.5
   },
   "right": {
     "id": "853b1c66f7212233",
@@ -271,12 +285,14 @@
   },
   "active": "ee935b51fcf03ac2",
   "lastOpenFiles": [
+    "Board/Card/Official.md",
+    "Board/Card/Card.canvas",
+    "Board/Board Layout.canvas",
+    "Board/Card/Assets.canvas",
     "Game Phases/Game Phases.canvas",
     "Board/Game Panel/Game Panel.canvas",
-    "Board/Board Layout.canvas",
     "Board/Card/Card Types/Official.canvas",
     "Board/Game Panel",
-    "Board/Card/Card.canvas",
     "Card.md",
     "Policy.md",
     "Contract.md",
@@ -292,8 +308,6 @@
     "Board/Government/Office/Office Types.md",
     "Position Types.md",
     "Board/Government/Office/Office ID.md",
-    "Board/Card/Card Types/Policy.canvas",
-    "Board/Card/Card Types/Contract.canvas",
     "Board/Government/Office",
     "Board/Card/Card Types",
     "_Core/GDP/Phase 2 Breakdown.md",
@@ -313,7 +327,6 @@
     "Scoring.md",
     "Flow.md",
     "TTP.md",
-    "Board/Card/Official.md",
     "Puppet State.md",
     "round.md",
     "points.md"
