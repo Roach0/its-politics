@@ -7,7 +7,7 @@
 		{"id":"95ce1405260fc50b","type":"text","text":"Economy Focus:\n- Food\n- Health\n- Wealth","x":-1040,"y":-948,"width":250,"height":188,"color":"5"},
 		{"id":"93b0af87736a437d","type":"text","text":"Asset Focus\n\n- Tech\n- Intel\n- Profile","x":-1040,"y":-697,"width":250,"height":171,"color":"5"},
 		{"id":"9bd5325186315b46","type":"file","file":"Board/Government/Government Types.md","x":-1040,"y":-34,"width":250,"height":268,"color":"3"},
-		{"id":"b946b3f4476e0afc","type":"file","file":"Points & Scoring.md","x":-1040,"y":-450,"width":250,"height":268,"color":"3"},
+		{"id":"b946b3f4476e0afc","type":"file","file":"Game Phases/Points & Scoring.md","x":-1040,"y":-450,"width":250,"height":268,"color":"3"},
 		{"id":"ea6d3b57a10a8784","type":"text","text":"System Result","x":260,"y":-1020,"width":250,"height":60,"color":"4"},
 		{"id":"78f237543138bd24","type":"text","text":"System Child","x":260,"y":-940,"width":250,"height":60,"color":"5"},
 		{"id":"ef1cb6cdcf0062d9","type":"text","text":"Shared","x":260,"y":-860,"width":250,"height":60,"color":"6"},

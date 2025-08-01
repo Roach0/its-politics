@@ -6,6 +6,7 @@
       {
         "id": "8be362a6d4b99821",
         "type": "tabs",
+        "dimension": 21.26081582200247,
         "children": [
           {
             "id": "7379403f0f729f50",
@@ -84,18 +85,20 @@
           {
             "id": "576067bd4091dc69",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government/Office/Office.canvas",
+                "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -220.63912087151658,
-                  "y": -596.0354136168372,
-                  "zoom": -1.4360072731259674
+                  "x": -770.6676572427277,
+                  "y": -110.28330814063054,
+                  "zoom": -1
                 }
               },
+              "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "title": "Game Phases"
             }
           },
           {
@@ -117,6 +120,30 @@
           }
         ],
         "currentTab": 4
+      },
+      {
+        "id": "7b8fe469083d2574",
+        "type": "tabs",
+        "dimension": 78.73918417799753,
+        "children": [
+          {
+            "id": "21af1fd6ff0652ad",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Board Layout.canvas",
+                "viewState": {
+                  "x": 94.38661010169358,
+                  "y": -168.91000522820548,
+                  "zoom": -0.556029999882502
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Board Layout"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,21 +290,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "576067bd4091dc69",
+  "active": "ad1e2131b27ab383",
   "lastOpenFiles": [
-    "Board/Government/Office/Office Types.md",
-    "Board/Government/Office/Office.md",
-    "Board/Card/Card Types/Official.canvas",
+    "Board/Economy",
+    "Game Phases/Game Phases.canvas",
+    "Board/Board Layout.canvas",
+    "Board/Economy/Economy.canvas",
+    "Game Phases/Points & Scoring.md",
     "Board/Government/Office/Office.canvas",
+    "Board/Government/Office/Office.md",
+    "Board/Government/Government.canvas",
+    "Game Phases",
+    "Board/Government/Office/Office Types.md",
+    "Board/Card/Card Types/Official.canvas",
     "Position Types.md",
     "Board/Government/Office/Office ID.md",
     "Board/Government/Government Types.md",
     "Board/Card/Card Types/Policy.canvas",
     "Board/Card/Card Types/Contract.canvas",
     "Board/Card/Card.canvas",
-    "Board/Board.canvas",
-    "Points & Scoring.md",
-    "Board/Government/Government.canvas",
     "Board/Government/Office",
     "Board/Card/Card Types",
     "_Core/GDP/Phase 2 Breakdown.md",
@@ -286,10 +317,8 @@
     "Board/Government",
     "Board",
     "Asset Pool.md",
-    "Economy.canvas",
     "Assets.canvas",
     "Effect Types.md",
-    "Government Types 1.canvas",
     "_Core/GDP/Phase 1 Breakdown.md",
     "Asset Types.md",
     "Assets.md",
