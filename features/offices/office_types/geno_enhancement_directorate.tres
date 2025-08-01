@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="OfficeType" load_steps=5 format=3 uid="uid://c5muhpxmboew0"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_6k7h6"]
+[ext_resource type="Script" uid="uid://dnkgdwmmhntuu" path="res://features/offices/office_types/office_type.gd" id="2_1dw3g"]
+[ext_resource type="Resource" uid="uid://dlo0acqbara63" path="res://features/offices/focuses/health.tres" id="2_7vpxd"]
+[ext_resource type="Resource" uid="uid://co0ccyeqi4dit" path="res://features/offices/focuses/profile.tres" id="3_wldwy"]
+
+[resource]
+script = ExtResource("2_1dw3g")
+name = "Geno-Enhancement Directorate"
+focuses = Array[ExtResource("1_6k7h6")]([ExtResource("2_7vpxd"), ExtResource("3_wldwy")])
+metadata/_custom_type_script = "uid://dnkgdwmmhntuu"

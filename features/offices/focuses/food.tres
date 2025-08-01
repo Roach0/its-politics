@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Focus" load_steps=2 format=3 uid="uid://dkri5jeid0xeo"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_tnu17"]
+
+[resource]
+script = ExtResource("1_tnu17")
+name = "Food"
+category = 0
+metadata/_custom_type_script = "uid://r4qu2l4xys6f"

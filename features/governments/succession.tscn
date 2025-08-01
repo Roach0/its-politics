@@ -1,74 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://dr8a2u5oij8qp"]
+[gd_scene load_steps=4 format=3 uid="uid://dr8a2u5oij8qp"]
 
 [ext_resource type="Script" uid="uid://bxt7cspfo0o0g" path="res://features/governments/government.gd" id="1_06hvg"]
-[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/governments/office.tscn" id="2_6xedt"]
+[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/offices/office.tscn" id="2_6xedt"]
+[ext_resource type="Resource" uid="uid://7ah0ie6jvu2i" path="res://features/governments/government_types/succession.tres" id="2_o6tbs"]
 
-[node name="Succession" type="Control"]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -256.0
-offset_top = -256.0
-offset_right = 256.0
-offset_bottom = 256.0
+[node name="Succession" type="Node2D"]
+physics_interpolation_mode = 2
 script = ExtResource("1_06hvg")
+government_type = ExtResource("2_o6tbs")
 metadata/_custom_type_script = "uid://bxt7cspfo0o0g"
 
 [node name="Office" parent="." instance=ExtResource("2_6xedt")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 184.0
-offset_top = 0.0
-offset_right = 328.0
-offset_bottom = 176.0
 
 [node name="Office2" parent="." instance=ExtResource("2_6xedt")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 368.0
-offset_top = 120.0
-offset_right = 512.0
-offset_bottom = 296.0
 
 [node name="Office3" parent="." instance=ExtResource("2_6xedt")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 0.0
-offset_top = 336.0
-offset_right = 143.0
-offset_bottom = 512.0
 
 [node name="Office4" parent="." instance=ExtResource("2_6xedt")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 184.0
-offset_top = 336.0
-offset_right = 328.0
-offset_bottom = 513.0
 
 [node name="Office5" parent="." instance=ExtResource("2_6xedt")]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 368.0
-offset_top = 336.0
-offset_right = 511.0
-offset_bottom = 512.0

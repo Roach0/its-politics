@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Focus" load_steps=2 format=3 uid="uid://dlo0acqbara63"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_uyt5l"]
+
+[resource]
+script = ExtResource("1_uyt5l")
+name = "Health"
+category = 0
+metadata/_custom_type_script = "uid://r4qu2l4xys6f"

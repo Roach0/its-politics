@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Focus" load_steps=2 format=3 uid="uid://co0ccyeqi4dit"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_u2jtd"]
+
+[resource]
+script = ExtResource("1_u2jtd")
+name = "Profile"
+category = 1
+metadata/_custom_type_script = "uid://r4qu2l4xys6f"
