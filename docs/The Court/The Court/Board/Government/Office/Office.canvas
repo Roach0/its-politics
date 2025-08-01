@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"73505d4abf630410","type":"group","x":240,"y":-1000,"width":290,"height":340,"color":"#ffffff","label":"Key"},
+		{"id":"2db1f2e6b7af3698","type":"text","text":"Position ID:\n\n- 1-5 physical location and flow control of the office.\n- Position presets determined by [[Government]] Type.\n- Offices can appear at any Position ID.","x":-603,"y":13,"width":456,"height":173,"color":"6"},
+		{"id":"732e451772a3ac21","type":"file","file":"Board/Government/Office/Office.md","x":240,"y":-521,"width":400,"height":461,"color":"4"},
+		{"id":"8ed09abd0bd4f931","type":"file","file":"Board/Government/Office/Office Types.md","x":-397,"y":-764,"width":250,"height":314,"color":"6"},
+		{"id":"3b3a554847c7a951","type":"text","text":"Outside System","x":260,"y":-740,"width":250,"height":60,"color":"3"},
+		{"id":"ef1cb6cdcf0062d9","type":"text","text":"Shared","x":260,"y":-820,"width":250,"height":60,"color":"6"},
+		{"id":"78f237543138bd24","type":"text","text":"System Child","x":260,"y":-900,"width":250,"height":60,"color":"5"},
+		{"id":"ea6d3b57a10a8784","type":"text","text":"System Result","x":260,"y":-980,"width":250,"height":60,"color":"4"},
+		{"id":"95ce1405260fc50b","type":"text","text":"Economy Focus:\n- Food\n- Health\n- Wealth","x":-1040,"y":-948,"width":250,"height":188,"color":"5"},
+		{"id":"93b0af87736a437d","type":"text","text":"Asset Focus\n\n- Tech\n- Intel\n- Profile","x":-1040,"y":-697,"width":250,"height":171,"color":"5"},
+		{"id":"b946b3f4476e0afc","type":"file","file":"Points & Scoring.md","x":-1040,"y":-450,"width":250,"height":268,"color":"3"},
+		{"id":"9bd5325186315b46","type":"file","file":"Board/Government/Government Types.md","x":-1040,"y":-34,"width":250,"height":268,"color":"3"}
+	],
+	"edges":[
+		{"id":"35bb895dd0797026","fromNode":"2db1f2e6b7af3698","fromSide":"right","toNode":"732e451772a3ac21","toSide":"left","color":"4","label":"position & flow data"},
+		{"id":"b69e1d56b8697ed5","fromNode":"8ed09abd0bd4f931","fromSide":"right","toNode":"732e451772a3ac21","toSide":"left","color":"4","label":"name & scoring data"},
+		{"id":"20dcef60b45f1c51","fromNode":"8ed09abd0bd4f931","fromSide":"left","toNode":"b946b3f4476e0afc","toSide":"right","color":"3","label":"shared"},
+		{"id":"6b13eec12d239369","fromNode":"2db1f2e6b7af3698","fromSide":"left","toNode":"9bd5325186315b46","toSide":"right","color":"3","label":"shared"},
+		{"id":"03193e0e01765b06","fromNode":"95ce1405260fc50b","fromSide":"right","toNode":"8ed09abd0bd4f931","toSide":"left","color":"5","label":"var"},
+		{"id":"6b40d3aca820758b","fromNode":"93b0af87736a437d","fromSide":"right","toNode":"8ed09abd0bd4f931","toSide":"left","color":"5","label":"var"}
+	]
+}

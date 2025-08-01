@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"9d82881f44381473","type":"group","x":615,"y":-1800,"width":1600,"height":690,"label":"Council"},
+		{"id":"302756a60afc1ed5","type":"group","x":-800,"y":-2000,"width":930,"height":690,"label":"Succession"},
+		{"id":"2f5050816e1bebec","type":"group","x":615,"y":-3000,"width":1185,"height":530,"label":"Autocratic"},
+		{"id":"ee93b1e149525b35","type":"group","x":325,"y":-2300,"width":290,"height":300,"label":"Types"},
+		{"id":"8013b319ec744d94","type":"text","text":"position & economy types: \n\n- Food: 34\n\t- agriculture\n\t- wildlife\n\t- nutrition\n- Housing: 3\n\t- construction\n\t- architecture\n\t- colony\n- Health: 5\n\t- safety\n\t- mental\n\t- physical\n- Wealth: 10\n\t- commerce\n\t- business\n\t- education","x":-1480,"y":-470,"width":250,"height":554,"color":"5"},
+		{"id":"e0deb0c3e17d02ba","type":"text","text":"1","x":1080,"y":-2980,"width":250,"height":220},
+		{"id":"a8546a8fbebe2fb5","type":"text","text":"2","x":635,"y":-2710,"width":250,"height":220},
+		{"id":"f6a432e4f992a60b","type":"text","text":"5","x":-780,"y":-1550,"width":250,"height":220},
+		{"id":"3cf518cbd2750b6e","type":"text","text":"1","x":-460,"y":-1980,"width":250,"height":220},
+		{"id":"a5765235ab168f3a","type":"text","text":"4","x":-460,"y":-1550,"width":250,"height":220},
+		{"id":"bed71afe39cf1ce6","type":"text","text":"2","x":-140,"y":-1830,"width":250,"height":220},
+		{"id":"11b6739e3f158e2e","type":"text","text":"3","x":-140,"y":-1550,"width":250,"height":220},
+		{"id":"77e5b4b27c6e1bbf","type":"text","text":"3","x":930,"y":-2710,"width":250,"height":220},
+		{"id":"40f39bf275cda0cb","type":"text","text":"4","x":1230,"y":-2710,"width":250,"height":220},
+		{"id":"01f2c01d85229350","type":"text","text":"5","x":1530,"y":-2710,"width":250,"height":220},
+		{"id":"1cc66e0e40983197","type":"text","text":"2","x":965,"y":-1520,"width":250,"height":220},
+		{"id":"c9079a92d3bf9870","type":"text","text":"1","x":1285,"y":-1520,"width":250,"height":220},
+		{"id":"dbab92c6c98c54c3","type":"text","text":"5","x":1615,"y":-1520,"width":250,"height":220},
+		{"id":"b75cc7fa9e58998a","type":"text","text":"4","x":1935,"y":-1520,"width":250,"height":220},
+		{"id":"69a10c9671a4a8cb","type":"text","text":"3","x":655,"y":-1520,"width":250,"height":220},
+		{"id":"d8d32b372b35a9d7","type":"text","text":"Succession","x":345,"y":-2175,"width":250,"height":60},
+		{"id":"fde34a1b2f89f1e2","type":"text","text":"Council","x":345,"y":-2080,"width":250,"height":60},
+		{"id":"ea341f057ad09ed3","type":"text","text":"Autogratic","x":345,"y":-2280,"width":250,"height":60},
+		{"id":"d66aa494a3766138","x":-610,"y":-2910,"width":400,"height":400,"type":"file","file":"Board/Government/Office/Office.canvas"},
+		{"id":"d7badbdc8c2a8b66","x":-140,"y":-3133,"width":250,"height":223,"color":"3","type":"text","text":"Governments are Office Layouts, representing a physical state of the game board."}
+	],
+	"edges":[
+		{"id":"136f7be6e87d1b72","fromNode":"bed71afe39cf1ce6","fromSide":"left","toNode":"3cf518cbd2750b6e","toSide":"right"},
+		{"id":"5c3ead6cdafb04a1","fromNode":"f6a432e4f992a60b","fromSide":"right","toNode":"a5765235ab168f3a","toSide":"left"},
+		{"id":"821d44d55383d7e5","fromNode":"a5765235ab168f3a","fromSide":"right","toNode":"11b6739e3f158e2e","toSide":"left"},
+		{"id":"c504a53c7f80195a","fromNode":"b75cc7fa9e58998a","fromSide":"bottom","toNode":"69a10c9671a4a8cb","toSide":"bottom"},
+		{"id":"e81a3f1a5b072e33","fromNode":"69a10c9671a4a8cb","fromSide":"right","toNode":"1cc66e0e40983197","toSide":"left"},
+		{"id":"11de9da808a0228a","fromNode":"1cc66e0e40983197","fromSide":"right","toNode":"c9079a92d3bf9870","toSide":"left"},
+		{"id":"f5b293476f3026ea","fromNode":"c9079a92d3bf9870","fromSide":"right","toNode":"dbab92c6c98c54c3","toSide":"left"},
+		{"id":"478c48341db1f7e9","fromNode":"dbab92c6c98c54c3","fromSide":"right","toNode":"b75cc7fa9e58998a","toSide":"left"},
+		{"id":"f4a81fa3632e6c99","fromNode":"d8d32b372b35a9d7","fromSide":"left","toNode":"302756a60afc1ed5","toSide":"top"},
+		{"id":"858907828c23637b","fromNode":"fde34a1b2f89f1e2","fromSide":"right","toNode":"9d82881f44381473","toSide":"top"},
+		{"id":"96775984b55220aa","fromNode":"ea341f057ad09ed3","fromSide":"right","toNode":"2f5050816e1bebec","toSide":"bottom"},
+		{"id":"ff8192f22c1145ad","fromNode":"d7badbdc8c2a8b66","fromSide":"bottom","toNode":"d66aa494a3766138","toSide":"right","color":"3"}
+	]
+}

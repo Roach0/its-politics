@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"1a533a5b985d9109","x":-260,"y":-540,"width":634,"height":100,"type":"group","label":"Types"},
+		{"id":"4029780db172c56b","type":"text","text":"Contract - Applied to Officials","x":-240,"y":-520,"width":250,"height":60},
+		{"id":"d94ec506c23ab4d8","type":"text","text":"Policy - Applied to Office","x":104,"y":-520,"width":250,"height":60},
+		{"id":"9f4df77ecb5bb409","type":"text","text":"- Contract Cards\n\n- Contracts are focused on manipulating the state of assets.\n\n- ","x":-548,"y":-260,"width":308,"height":355},
+		{"id":"f4d08bc9fd4d3073","type":"text","text":"- Policy Cards\n- Policy cards are focused on manipulating the state of offices.\n- These will target office types","x":354,"y":-260,"width":308,"height":355}
+	],
+	"edges":[
+		{"id":"7ec7beee53e41850","fromNode":"4029780db172c56b","fromSide":"bottom","toNode":"9f4df77ecb5bb409","toSide":"top"},
+		{"id":"fc72508e3c5a2f4a","fromNode":"d94ec506c23ab4d8","fromSide":"bottom","toNode":"f4d08bc9fd4d3073","toSide":"top"}
+	]
+}

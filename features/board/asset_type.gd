@@ -1,0 +1,2 @@
+class_name Asset_Effect
+extends Resource

@@ -1,0 +1,311 @@
+{
+  "main": {
+    "id": "6c87a10b4c8b9a0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8be362a6d4b99821",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7379403f0f729f50",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Board.canvas",
+                "viewState": {
+                  "x": -534.4522208121826,
+                  "y": -440.5689720812185,
+                  "zoom": -0.2745076434537285
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Board"
+            }
+          },
+          {
+            "id": "a4a498906af85d1c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Card/Card.canvas",
+                "viewState": {
+                  "x": 118.7556694303168,
+                  "y": -217.0609796658689,
+                  "zoom": -0.3333333333333333
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Card"
+            }
+          },
+          {
+            "id": "13781f6cc5b214a6",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Government/Government.canvas",
+                "viewState": {
+                  "x": 60.2108310031856,
+                  "y": -306.0752190856879,
+                  "zoom": -1.0432052769556193
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Government"
+            }
+          },
+          {
+            "id": "3af8e602a334a9cf",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Card/Card Types/Official.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Official"
+            }
+          },
+          {
+            "id": "576067bd4091dc69",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Government/Office/Office.canvas",
+                "viewState": {
+                  "x": -220.63912087151658,
+                  "y": -596.0354136168372,
+                  "zoom": -1.4360072731259674
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Office"
+            }
+          },
+          {
+            "id": "17b3602a1ca37143",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Government/Office/Office.canvas",
+                "viewState": {
+                  "x": -13.267596313365516,
+                  "y": -272.42681264963016,
+                  "zoom": -0.3333333333333332
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Office"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2f6e257a6b3d41c",
+    "type": "split",
+    "children": [
+      {
+        "id": "279aee1e10f53cac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad1e2131b27ab383",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "106c3047f654dafb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c23817cb9857a48f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257.5
+  },
+  "right": {
+    "id": "853b1c66f7212233",
+    "type": "split",
+    "children": [
+      {
+        "id": "55c989d960a6d49a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc54b25b6c0034f0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Government Types 1.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Government Types 1"
+            }
+          },
+          {
+            "id": "1b6c5d94df87f119",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Government Types 1.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Government Types 1"
+            }
+          },
+          {
+            "id": "4ff2b9d5ca1f166c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5689e87344d22b95",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Government Types 1.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Government Types 1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "576067bd4091dc69",
+  "lastOpenFiles": [
+    "Board/Government/Office/Office Types.md",
+    "Board/Government/Office/Office.md",
+    "Board/Card/Card Types/Official.canvas",
+    "Board/Government/Office/Office.canvas",
+    "Position Types.md",
+    "Board/Government/Office/Office ID.md",
+    "Board/Government/Government Types.md",
+    "Board/Card/Card Types/Policy.canvas",
+    "Board/Card/Card Types/Contract.canvas",
+    "Board/Card/Card.canvas",
+    "Board/Board.canvas",
+    "Points & Scoring.md",
+    "Board/Government/Government.canvas",
+    "Board/Government/Office",
+    "Board/Card/Card Types",
+    "_Core/GDP/Phase 2 Breakdown.md",
+    "_Core/GDP/Full Plan.md",
+    "Board/Card",
+    "Board/Government",
+    "Board",
+    "Asset Pool.md",
+    "Economy.canvas",
+    "Assets.canvas",
+    "Effect Types.md",
+    "Government Types 1.canvas",
+    "_Core/GDP/Phase 1 Breakdown.md",
+    "Asset Types.md",
+    "Assets.md",
+    "Card Types.md",
+    "_Core/GDP",
+    "_Core",
+    "Rounds and Turns.md",
+    "Scoring.md",
+    "Flow.md",
+    "TTP.md",
+    "Officials.md",
+    "Puppet State.md",
+    "round.md",
+    "points.md",
+    "Asset.md",
+    "official.md",
+    "Official.md"
+  ]
+}

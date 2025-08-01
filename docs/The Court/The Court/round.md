@@ -1,0 +1,1 @@
+- At the end of each round [[points]] will be added to each players [[Scoring|score]]
