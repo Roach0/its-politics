@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Focus" load_steps=2 format=3 uid="uid://c85m0skfpkm5q"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_40bt2"]
+
+[resource]
+script = ExtResource("1_40bt2")
+name = "Wealth"
+category = 0
+metadata/_custom_type_script = "uid://r4qu2l4xys6f"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="OfficeType" load_steps=5 format=3 uid="uid://b4gjr7tfee5ix"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_qpghp"]
+[ext_resource type="Resource" uid="uid://c85m0skfpkm5q" path="res://features/offices/focuses/wealth.tres" id="2_62wt7"]
+[ext_resource type="Script" uid="uid://dnkgdwmmhntuu" path="res://features/offices/office_types/office_type.gd" id="2_xox0e"]
+[ext_resource type="Resource" uid="uid://co0ccyeqi4dit" path="res://features/offices/focuses/profile.tres" id="3_kjtbk"]
+
+[resource]
+script = ExtResource("2_xox0e")
+name = "Void Collective"
+focuses = Array[ExtResource("1_qpghp")]([ExtResource("2_62wt7"), ExtResource("3_kjtbk")])
+metadata/_custom_type_script = "uid://dnkgdwmmhntuu"

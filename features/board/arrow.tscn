@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://7vf7k7omei4c"]
+
+[node name="Arrow" type="Polygon2D"]
+scale = Vector2(1.75, 1.75)
+polygon = PackedVector2Array(-4, 0, -2, -3.42857, 0, 0, -2.11964, 0)

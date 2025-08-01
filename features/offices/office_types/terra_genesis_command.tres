@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="OfficeType" load_steps=5 format=3 uid="uid://beeake54hlql3"]
+
+[ext_resource type="Script" uid="uid://r4qu2l4xys6f" path="res://features/offices/focuses/focus.gd" id="1_11vj6"]
+[ext_resource type="Script" uid="uid://dnkgdwmmhntuu" path="res://features/offices/office_types/office_type.gd" id="1_varg6"]
+[ext_resource type="Resource" uid="uid://dkri5jeid0xeo" path="res://features/offices/focuses/food.tres" id="2_pvq7r"]
+[ext_resource type="Resource" uid="uid://du77mofx6mv3h" path="res://features/offices/focuses/tech.tres" id="3_gelae"]
+
+[resource]
+script = ExtResource("1_varg6")
+name = "Terra-Genesis Command"
+focuses = Array[ExtResource("1_11vj6")]([ExtResource("2_pvq7r"), ExtResource("3_gelae")])
+metadata/_custom_type_script = "uid://dnkgdwmmhntuu"

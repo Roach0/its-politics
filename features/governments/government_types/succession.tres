@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GovernmentType" load_steps=2 format=3 uid="uid://7ah0ie6jvu2i"]
+
+[ext_resource type="Script" uid="uid://xu80j8nxr2bo" path="res://features/governments/government_types/government_type.gd" id="1_o6chy"]
+
+[resource]
+script = ExtResource("1_o6chy")
+name = "Succession"
+allowed_promotions = Dictionary[int, Array]({
+1: [0],
+2: [1],
+4: [3]
+})
+metadata/_custom_type_script = "uid://xu80j8nxr2bo"

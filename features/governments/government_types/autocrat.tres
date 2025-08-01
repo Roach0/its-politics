@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="GovernmentType" load_steps=2 format=3 uid="uid://ustqmvesrs2i"]
+
+[ext_resource type="Script" uid="uid://xu80j8nxr2bo" path="res://features/governments/government_types/government_type.gd" id="1_e3nuv"]
+
+[resource]
+script = ExtResource("1_e3nuv")
+name = "Autocrat"
+allowed_promotions = Dictionary[int, Array]({})
+metadata/_custom_type_script = "uid://xu80j8nxr2bo"

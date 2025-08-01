@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GovernmentType" load_steps=2 format=3 uid="uid://dbaxlmbipj4j8"]
+
+[ext_resource type="Script" uid="uid://xu80j8nxr2bo" path="res://features/governments/government_types/government_type.gd" id="1_v3lim"]
+
+[resource]
+script = ExtResource("1_v3lim")
+name = "Council"
+allowed_promotions = Dictionary[int, Array]({
+0: [4],
+1: [0],
+2: [1],
+3: [2],
+4: [3]
+})
+metadata/_custom_type_script = "uid://xu80j8nxr2bo"
