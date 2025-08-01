@@ -48,9 +48,9 @@
               "state": {
                 "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -659.0536448074002,
-                  "y": -339.4457792866235,
-                  "zoom": -1
+                  "x": -1004.5814335844295,
+                  "y": -208.74205373760452,
+                  "zoom": -1.3333333333333333
                 }
               },
               "pinned": true,
@@ -157,15 +157,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Card/Card.canvas",
+                "file": "Board/Card/Card Types/Official/Official.canvas",
                 "viewState": {
-                  "x": -1365.9039898546232,
-                  "y": -955.2593593648492,
-                  "zoom": -0.7339962310873418
+                  "x": 445.9337565616954,
+                  "y": 140.19677518226604,
+                  "zoom": -1.5470142634978716
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Card"
+              "title": "Official"
             }
           }
         ],
@@ -316,14 +316,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "576067bd4091dc69",
+  "active": "7df6a30f1189de2c",
   "lastOpenFiles": [
+    "Game Phases/Game Phases.canvas",
+    "Board/Card/Card Types/Official/Official Death.md",
+    "Board/Card/Card Types/Official/Official.canvas",
+    "Board/Card/Card Types/Official/Assets & Asset Pool.md",
+    "Board/Card/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
+    "Asset Types.md",
+    "Rounds and Turns.md",
+    "Asset Pool 1.md",
+    "Puppet State.md",
+    "Board/Card/Card Types/Official/Death Timer.md",
+    "Card.md",
     "Board/Card/Card.canvas",
     "Board/Board Layout.canvas",
     "Board/Government/Office/Office.canvas",
     "Game Phases/Points & Scoring.md",
     "Board/Economy/Card Cost, Economy & Liquidation.md",
-    "Game Phases/Game Phases.canvas",
     "Board/Government/Government.canvas",
     "Board/Card/Effects.md",
     "Board/Card/Card Types/Official",
@@ -331,21 +341,15 @@
     "Board/Card/Card Types/Card Types.md",
     "Board/Card/Card Types/Policy.md",
     "Board/Card/Card Types/Official/Official.md",
-    "Board/Card/Card Types/Official/Official.canvas",
     "Board/Card/Card Types/Policy.canvas",
     "Board/Card/Card Types/Contract.canvas",
-    "Assets & Coup Conditions.md",
     "Board/Economy/Economy Area.canvas",
     "Board/Government/Government Type Layouts.canvas",
     "Board/Government/Office/Office Types.md",
     "Board/Government/Office/Office.md",
     "Game Phases/Turn Actions.md",
-    "Death Timer.md",
-    "Board/Card/Card Types/Official/Asset Pool.md",
-    "Asset Pool 1.md",
     "Card Cosmetics & Styling.md",
     "Board/Game Panel",
-    "Card.md",
     "Board/Government/Government Types.md",
     "Board/Economy",
     "Game Phases",
@@ -358,10 +362,6 @@
     "Board/Card",
     "Board/Government",
     "Board",
-    "Effect Types.md",
-    "_Core/GDP/Phase 1 Breakdown.md",
-    "Asset Types.md",
-    "Assets & Coup Conditions.md",
     "_Core/GDP"
   ]
 }
