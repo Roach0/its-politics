@@ -6,8 +6,9 @@ Points are the win condition for players.  They are set to a threshold.  Once th
  There are three main methods to getting points:
 *(Ordered from most to least point gain)*
 
-##### Enact a coup - fulfill a coup condition you own.
-- Each official 
+##### Enact a coup
+- Coup Conditions are activated after the players turn, if an official with a Coup Condition fulfills their requirements and are scored, their coup pays out and the government is changed to the corresponding government type indicated in the coup condition statement.
+- More can be found on Coup Conditions in [[Assets & Coup Conditions]]
 ##### Score Assets
 - Occurs at the end of a players turn.
 
