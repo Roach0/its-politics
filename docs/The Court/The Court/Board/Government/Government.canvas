@@ -1,6 +1,18 @@
 {
 	"nodes":[
-		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government/Office/Office.canvas","x":-120,"y":-240,"width":400,"height":400}
+		{"id":"93f2668d4fcc1c46","x":-771,"y":-1220,"width":930,"height":690,"type":"group","label":"Example Government"},
+		{"id":"c8401b30ae34af5f","type":"text","text":"3","x":-111,"y":-770,"width":250,"height":220,"color":"4"},
+		{"id":"5db2e4bb49006305","type":"text","text":"2","x":-111,"y":-1050,"width":250,"height":220,"color":"4"},
+		{"id":"65a82745fd08b4e7","type":"text","text":"4","x":-431,"y":-770,"width":250,"height":220,"color":"4"},
+		{"id":"d42f094e88ba8cd2","type":"text","text":"1","x":-431,"y":-1200,"width":250,"height":220,"color":"4"},
+		{"id":"575b9b91a4c08da1","type":"text","text":"5","x":-751,"y":-770,"width":250,"height":220,"color":"4"},
+		{"id":"3a1581b18adbe34b","x":-111,"y":-1480,"width":250,"height":60,"color":"4","type":"text","text":"Offices"},
+		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government/Office/Office.canvas","x":360,"y":-1230,"width":400,"height":400,"color":"4"},
+		{"id":"ac88e1da4bd337db","x":-111,"y":-1420,"width":250,"height":60,"type":"text","text":""}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"dc9fd2ec37fe5597","fromNode":"65a82745fd08b4e7","fromSide":"right","toNode":"c8401b30ae34af5f","toSide":"left"},
+		{"id":"487e5723359a6c7d","fromNode":"5db2e4bb49006305","fromSide":"left","toNode":"d42f094e88ba8cd2","toSide":"right"},
+		{"id":"1302e7c19eddbca0","fromNode":"575b9b91a4c08da1","fromSide":"right","toNode":"65a82745fd08b4e7","toSide":"left"}
+	]
 }

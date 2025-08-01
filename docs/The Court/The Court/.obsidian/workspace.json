@@ -6,44 +6,18 @@
       {
         "id": "8be362a6d4b99821",
         "type": "tabs",
-        "dimension": 46.321177223288544,
+        "dimension": 46.18138424821002,
         "children": [
           {
             "id": "7379403f0f729f50",
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Board.canvas",
-                "viewState": {
-                  "x": -534.4522208121826,
-                  "y": -440.5689720812185,
-                  "zoom": -0.2745076434537285
-                }
-              },
+              "type": "empty",
+              "state": {},
               "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Board"
-            }
-          },
-          {
-            "id": "a4a498906af85d1c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Card/Card.canvas",
-                "viewState": {
-                  "x": 118.7556694303168,
-                  "y": -217.0609796658689,
-                  "zoom": -0.3333333333333333
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Card"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
@@ -54,8 +28,8 @@
               "state": {
                 "file": "Board/Card/Card Types/Official.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
+                  "x": 278,
+                  "y": -115.5,
                   "zoom": 0
                 }
               },
@@ -72,9 +46,9 @@
               "state": {
                 "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -452.2837545279706,
-                  "y": 87.54485689233428,
-                  "zoom": -1
+                  "x": -1154.4499176659347,
+                  "y": -669.0591650392068,
+                  "zoom": -1.6666666666666665
                 }
               },
               "pinned": true,
@@ -83,29 +57,31 @@
             }
           },
           {
-            "id": "17b3602a1ca37143",
+            "id": "ee935b51fcf03ac2",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government/Government Type Layouts.canvas",
+                "file": "Board/Board Layout.canvas",
                 "viewState": {
-                  "x": -461.54532974071924,
-                  "y": -2781.72972972973,
-                  "zoom": -2.1231857223605775
+                  "x": -171.82625136369165,
+                  "y": -80.28139159492684,
+                  "zoom": -0.922225951938314
                 }
               },
+              "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "Government Type Layouts"
+              "title": "Board Layout"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "7b8fe469083d2574",
         "type": "tabs",
-        "dimension": 53.678822776711456,
+        "dimension": 53.81861575178998,
         "children": [
           {
             "id": "21af1fd6ff0652ad",
@@ -116,17 +92,37 @@
               "state": {
                 "file": "Board/Government/Government.canvas",
                 "viewState": {
-                  "x": -393.1697155081712,
-                  "y": 159.24187749110357,
-                  "zoom": -1.6666666666666665
+                  "x": -70.03644743251883,
+                  "y": -1041.019211636713,
+                  "zoom": -0.6666666666666667
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Government"
             }
+          },
+          {
+            "id": "a4a498906af85d1c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Card/Card.canvas",
+                "viewState": {
+                  "x": -1574.7961748788055,
+                  "y": -1041.1055410897811,
+                  "zoom": -1.6666666666666665
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Card"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 200
   },
   "right": {
     "id": "853b1c66f7212233",
@@ -273,16 +269,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "17b3602a1ca37143",
+  "active": "ee935b51fcf03ac2",
   "lastOpenFiles": [
+    "Game Phases/Game Phases.canvas",
+    "Board/Game Panel/Game Panel.canvas",
+    "Board/Board Layout.canvas",
+    "Board/Card/Card Types/Official.canvas",
+    "Board/Game Panel",
+    "Board/Card/Card.canvas",
+    "Card.md",
+    "Policy.md",
+    "Contract.md",
     "Board/Government/Government.canvas",
+    "Board/Government/Office/Office.canvas",
     "Board/Government/Government Type Layouts.canvas",
     "Board/Government/Government Types.md",
-    "Board/Government/Office/Office.canvas",
-    "Game Phases/Game Phases.canvas",
-    "Board/Card/Card Types/Official.canvas",
-    "Board/Card/Card.canvas",
-    "Board/Board Layout.canvas",
     "Board/Economy",
     "Board/Economy/Economy.canvas",
     "Game Phases/Points & Scoring.md",
@@ -312,12 +313,9 @@
     "Scoring.md",
     "Flow.md",
     "TTP.md",
-    "Officials.md",
+    "Board/Card/Official.md",
     "Puppet State.md",
     "round.md",
-    "points.md",
-    "Asset.md",
-    "official.md",
-    "Official.md"
+    "points.md"
   ]
 }
