@@ -4,11 +4,11 @@ signal lobby_entered
 signal lobby_members_changed
 signal owner_left
 signal lobby_list_refreshed(lobby_buttons: Array[Button])
+signal game_started
 
 const PACKET_READ_LIMIT: int = 32
 
 var lobby_id: int = 0
-var owner_id: int = 0
 var lobby_members: Array[Dictionary] = []
 var lobby_members_max: int = 10
 var lobby_name: String = "Victor Test - Game1"
@@ -48,7 +48,6 @@ func _on_lobby_created(success: Steam.Result, this_lobby_id: int) -> void:
 		# Set the lobby ID
 		lobby_id = this_lobby_id
 		print("Created a lobby: %s" % lobby_id)
-		owner_id = Steam.getLobbyOwner(lobby_id)
 		# Set this lobby as joinable, just in case, though this should be done by default
 		Steam.setLobbyJoinable(lobby_id, true)
 
@@ -69,8 +68,8 @@ func _on_open_lobby_list_pressed() -> void:
 	Steam.requestLobbyList()
 
 func _on_lobby_match_list(these_lobbies: Array) -> void:
-	lobby_list_refreshed.emit([])
 	var lobby_buttons: Array[Button] = []
+	lobby_list_refreshed.emit(lobby_buttons)
 	for this_lobby in these_lobbies:
 		# Pull lobby data from Steam, these are specific to our example
 		var this_lobby_name: String = Steam.getLobbyData(this_lobby, "name")
@@ -110,7 +109,6 @@ func _on_lobby_joined(this_lobby_id: int, _permissions: int, _locked: bool, resp
 		print("Lobby joined successfully")
 		# Set this lobby ID as your lobby ID
 		lobby_id = this_lobby_id
-		owner_id = Steam.getLobbyOwner(lobby_id)
 
 		# Get the lobby members
 		get_lobby_members()
@@ -184,7 +182,7 @@ func _on_persona_change(this_steam_id: int, _flag: int) -> void:
 func make_p2p_handshake() -> void:
 	print("Sending P2P handshake to the lobby")
 
-	send_message({"message": "handshake", "from": SteamAuthManager.steam_id})
+	send_message({"message": "handshake"})
 
 func _on_lobby_chat_update(_this_lobby_id: int, change_id: int, _making_change_id: int, chat_state: int) -> void:
 	# Get the user who has made the lobby change
@@ -199,7 +197,7 @@ func _on_lobby_chat_update(_this_lobby_id: int, change_id: int, _making_change_i
 		print("%s has left the lobby." % changer_name)
 
 		# Check if the person who left was the owner
-		if change_id == owner_id:
+		if change_id == Steam.getLobbyOwner(lobby_id):
 			print("The owner has left the lobby!")
 			owner_left.emit()
 
@@ -226,7 +224,6 @@ func leave_lobby() -> void:
 
 		# Wipe the Steam lobby ID then display the default lobby ID and player list title
 		lobby_id = 0
-		owner_id = 0
 
 		# Close session with all users
 		for this_member in lobby_members:
@@ -267,6 +264,18 @@ func read_messages() -> void:
 			print("Message Payload: %s" % message.payload)
 			print("Message Sender: %s" % message_sender)
 
+			handle_message(message_sender, message.payload)
+
+func handle_message(sender_id: int, payload: Dictionary) -> void:
+	print("Message: %s" % payload)
+	match payload.message:
+		"start_game":
+			if is_owner(sender_id):
+				TurnManager.start_game(lobby_members)
+				game_started.emit()
+			else:
+				print("Non-owner tried to start game. Ignoring.")
+
 func send_message(packet_data: Dictionary) -> void:
 	# Set the send_type and channel
 	var send_type: int = Steam.NETWORKING_SEND_RELIABLE_NO_NAGLE
@@ -284,6 +293,17 @@ func send_message(packet_data: Dictionary) -> void:
 func _on_network_messages_session_failed(_steam_id: int, _session_error: int, _state: int, debug_msg: String) -> void:
 	print(debug_msg)
 
-func is_owner() -> bool:
-	print("Owner ID: %s, Steam ID: %s" % [owner_id, SteamAuthManager.steam_id])
-	return owner_id == SteamAuthManager.steam_id
+func is_owner(sender_id: int = 0) -> bool:
+	var current_owner: int = Steam.getLobbyOwner(lobby_id)
+	if sender_id == 0:
+		return current_owner == SteamAuthManager.steam_id
+
+	return sender_id == current_owner
+
+func start_game() -> void:
+	if is_owner():
+		send_message({"message": "start_game"})
+		TurnManager.start_game(lobby_members)
+		game_started.emit()
+	else:
+		print("You are not the owner of the lobby")

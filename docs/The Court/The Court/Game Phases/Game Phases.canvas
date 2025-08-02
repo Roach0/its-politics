@@ -13,7 +13,7 @@
 		{"id":"f596e4623053d05d","type":"text","text":"Determine Winner","x":-2280,"y":-397,"width":250,"height":60},
 		{"id":"1758f3f8907ed3aa","type":"text","text":"End Turn Button","x":-1380,"y":-785,"width":210,"height":50,"color":"1"},
 		{"id":"54f19c1b4790332c","type":"text","text":"Card Play\n\n- Initiated when a card is played in the government area.","x":-1380,"y":-690,"width":210,"height":163,"color":"1"},
-		{"id":"2233736081bec38f","x":-1020,"y":-980,"width":250,"height":60,"type":"text","text":"Token Limit Reached?"},
+		{"id":"2233736081bec38f","type":"text","text":"Token Limit Reached?","x":-1020,"y":-980,"width":250,"height":60},
 		{"id":"4d53837010c180c8","type":"text","text":"Play Token Available?","x":-1080,"y":-690,"width":250,"height":60},
 		{"id":"c574d30bcd74b2ad","type":"text","text":"Reset Play Tokens to 1","x":-1170,"y":-1240,"width":250,"height":60},
 		{"id":"229062d7f14c4e73","type":"text","text":"Run Elections","x":-625,"y":-1080,"width":250,"height":60},
@@ -24,7 +24,7 @@
 		{"id":"589f81f0ebd1460e","type":"text","text":"Add Play Token","x":-1120,"y":-326,"width":250,"height":60},
 		{"id":"d69acd5ca09aba2b","type":"text","text":"Extra Play Token Limit Reached? 2","x":-1040,"y":-196,"width":250,"height":60},
 		{"id":"1542be1962e0f088","type":"text","text":"Update Economy Resources","x":-1040,"y":-100,"width":250,"height":60},
-		{"id":"40e3d425b2f75a7c","x":-1080,"y":-596,"width":250,"height":60,"type":"text","text":"Update Death Timers"},
+		{"id":"40e3d425b2f75a7c","type":"text","text":"Update Death Timers","x":-1080,"y":-596,"width":250,"height":60},
 		{"id":"d656c353868b430e","type":"text","text":"Apply Card Effect","x":-1080,"y":-506,"width":250,"height":60,"color":"6"},
 		{"id":"e4f85163b7a66bd5","type":"file","file":"Game Phases/Points & Scoring.md","x":20,"y":-860,"width":360,"height":768,"color":"3"},
 		{"id":"0955ae372b21f84e","type":"text","text":"Score Assets","x":-625,"y":-577,"width":250,"height":50,"color":"6"}

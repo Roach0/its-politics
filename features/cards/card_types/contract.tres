@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CardType" load_steps=2 format=3 uid="uid://dp6vgd0efo0v3"]
+
+[ext_resource type="Script" uid="uid://ci45vxid8bc5r" path="res://features/cards/card_types/card_type.gd" id="1_nru02"]
+
+[resource]
+script = ExtResource("1_nru02")
+name = "Contract"
+target = 0
+metadata/_custom_type_script = "uid://ci45vxid8bc5r"

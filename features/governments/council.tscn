@@ -6,7 +6,6 @@
 
 [node name="Council" type="Node2D"]
 physics_interpolation_mode = 2
-position = Vector2(659, 579)
 script = ExtResource("1_0qla0")
 government_type = ExtResource("2_emdyo")
 metadata/_custom_type_script = "uid://bxt7cspfo0o0g"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Card" load_steps=3 format=3 uid="uid://clju00mfs7v6m"]
+
+[ext_resource type="Script" uid="uid://3qaqpbq44ebc" path="res://features/cards/card.gd" id="1_k6jql"]
+[ext_resource type="Resource" uid="uid://cbnnlrocci6gx" path="res://features/cards/card_types/official.tres" id="2_mlnml"]
+
+[resource]
+script = ExtResource("1_k6jql")
+name = "Test"
+description = "I am a test card. Hear me roar."
+type = ExtResource("2_mlnml")
+cost = 0
+metadata/_custom_type_script = "uid://3qaqpbq44ebc"

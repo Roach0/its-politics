@@ -1,34 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://cll6o2mrrcxq5"]
+[gd_scene format=3 uid="uid://cll6o2mrrcxq5"]
 
-[ext_resource type="PackedScene" uid="uid://1t1xrq7ctwcb" path="res://features/governments/autocrat.tscn" id="1_40fsv"]
-[ext_resource type="PackedScene" uid="uid://dgd13gj6my7ax" path="res://features/governments/council.tscn" id="2_wtf5i"]
-
-[node name="Board" type="Control"]
-layout_mode = 3
+[node name="Board" type="HBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="Autocrat" parent="." instance=ExtResource("1_40fsv")]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 260.0
-offset_top = 121.0
-offset_right = -892.0
-offset_bottom = -511.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Left" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
 
-[node name="Council" parent="." instance=ExtResource("2_wtf5i")]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1149.0
-offset_top = 464.0
-offset_right = -259.0
-offset_bottom = -104.0
+[node name="CardArea" type="ColorRect" parent="Left"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+color = Color(0.243137, 0.54902, 0.545098, 1)
+
+[node name="EconomyArea" type="ColorRect" parent="Left"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+color = Color(0.454902, 0.360784, 0.670588, 1)
+
+[node name="GovernmentArea" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.6
+color = Color(0.494118, 0.494118, 0.494118, 1)
+
+[node name="GamePanel" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+color = Color(0.67451, 0.454902, 0.215686, 1)

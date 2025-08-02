@@ -10,8 +10,8 @@ func _on_create_lobby_pressed() -> void:
     SteamNetworkManager.create_lobby(Steam.LOBBY_TYPE_PUBLIC)
 
 func _on_lobby_list_refreshed(lobby_buttons: Array[Button]) -> void:
-    for child in $LobbyList/Lobbies.get_children():
+    for child in $LobbyListContainer/LobbyList/Lobbies.get_children():
         child.queue_free()
 
     for lobby_button in lobby_buttons:
-        $LobbyList/Lobbies.add_child(lobby_button)
+        $LobbyListContainer/LobbyList/Lobbies.add_child(lobby_button)

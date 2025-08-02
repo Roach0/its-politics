@@ -19,15 +19,15 @@ size_flags_vertical = 3
 theme_override_constants/separation = 25
 script = ExtResource("1_oalcj")
 
-[node name="LobbyList" type="VBoxContainer" parent="."]
+[node name="LobbyListContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="LobbyList" type="ScrollContainer" parent="LobbyList"]
+[node name="LobbyList" type="ScrollContainer" parent="LobbyListContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Lobbies" type="VBoxContainer" parent="LobbyList/LobbyList"]
+[node name="Lobbies" type="VBoxContainer" parent="LobbyListContainer/LobbyList"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
