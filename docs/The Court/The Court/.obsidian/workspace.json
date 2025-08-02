@@ -4,31 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "8be362a6d4b99821",
+        "id": "911499ec7dadd2f0",
         "type": "tabs",
-        "dimension": 81.77720540888602,
         "children": [
           {
-            "id": "ee6a2d97e51f8b64",
+            "id": "71f1f7009bbba884",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Cards/Card.canvas",
+                "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -1810.5742847531228,
-                  "y": -1192.0928801663194,
-                  "zoom": 0.00883674475312246
+                  "x": -1729.065070461025,
+                  "y": -347.58144417523636,
+                  "zoom": 1.1102230246251565e-16
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
-              "title": "Card"
+              "title": "Game Phases"
             }
           },
           {
-            "id": "ee935b51fcf03ac2",
+            "id": "6200355428d473b7",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -36,9 +35,9 @@
               "state": {
                 "file": "Board/Board Layout.canvas",
                 "viewState": {
-                  "x": 402.65553245992777,
-                  "y": -196.25634734445572,
-                  "zoom": -0.5888926186049808
+                  "x": -40.471053327330864,
+                  "y": -193.6270900240306,
+                  "zoom": -0.026803080966188886
                 }
               },
               "pinned": true,
@@ -47,36 +46,41 @@
             }
           },
           {
-            "id": "11731071974edf72",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Cards/Card Types/Official/Official.canvas",
-                "viewState": {
-                  "x": 449,
-                  "y": 50,
-                  "zoom": -1.5651766586151428
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Official"
-            }
-          },
-          {
-            "id": "f2273c2799a285e3",
+            "id": "38c876d8d9776176",
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Game Phases/Points & Scoring.md",
-                "mode": "source",
-                "source": false
+                "file": "Board/Government/Government.canvas",
+                "viewState": {
+                  "x": -141.53651812006478,
+                  "y": -1181.091315177553,
+                  "zoom": -0.9999999999999998
+                }
               },
               "pinned": true,
-              "icon": "lucide-file",
-              "title": "Points & Scoring"
+              "icon": "lucide-layout-dashboard",
+              "title": "Government"
+            }
+          },
+          {
+            "id": "e4431165cf60da68",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Government/Government Type Layouts.canvas",
+                "viewState": {
+                  "x": -1017.6717660145752,
+                  "y": -4439.775588130922,
+                  "zoom": -0.9999999999999998
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Government Type Layouts"
             }
           },
           {
@@ -148,20 +152,45 @@
             }
           },
           {
-            "id": "7df6a30f1189de2c",
+            "id": "535930944b2dec7a",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Board/Cards/Card Types/Official/Official.md",
-                "mode": "source",
-                "source": false
+                "file": "Board/Government/Office/Office.canvas",
+                "viewState": {
+                  "x": 320,
+                  "y": -476,
+                  "zoom": -1.258028385721817
+                }
               },
-              "icon": "lucide-file",
-              "title": "Official"
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Office"
+            }
+          },
+          {
+            "id": "50542b166e730418",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Cards/Card.canvas",
+                "viewState": {
+                  "x": -36.15424789019164,
+                  "y": -1414.197726921162,
+                  "zoom": -0.683218203803255
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Card"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -353,8 +382,25 @@
     "Board/Government/Office",
     "Board/Cards/Card Types",
     "Board/Cards",
-    "Board/Government",
-    "Board",
-    "_Core/GDP"
+    "Board/Economy/Economy Area.canvas",
+    "Board/Card/Card.canvas",
+    "Game Phases/Points & Scoring.md",
+    "Board/Card/Card Types/Official.md",
+    "Board/Card/Card Types/Policy.md",
+    "Board/Card/Card Types/Card Types.md",
+    "Board/Card/Card Types/Contract.md",
+    "Board/Card/Effects.md",
+    "Assets & Coup Conditions.md",
+    "Game Phases/Turn Actions.md",
+    "Death Timer.md",
+    "Asset Pool.md",
+    "Asset Pool 1.md",
+    "Card Cosmetics & Styling.md",
+    "Board/Game Panel",
+    "Board/Economy",
+    "Game Phases",
+    "Board/Government/Office",
+    "Board/Card/Card Types",
+    "Board/Card"
   ]
 }

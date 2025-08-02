@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://bx4giispkbfxw"]
+[gd_scene load_steps=3 format=3 uid="uid://bx4giispkbfxw"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://kv2gme4d60ek" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b36o56q6xggnc" path="res://features/multiplayer/multiplayer_ui.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_0xm2m")
+
+[node name="MultiplayerUi" parent="." instance=ExtResource("1_ig7tw")]

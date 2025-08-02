@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdsgdem3lalkw"]
+
+[ext_resource type="Script" uid="uid://dml3vt7rjve07" path="res://features/cards/card_ui.gd" id="1_cnisj"]
+[ext_resource type="Resource" uid="uid://clju00mfs7v6m" path="res://features/cards/card_resources/test.tres" id="2_ka7wj"]
+
+[node name="CardUi" type="Node2D"]
+script = ExtResource("1_cnisj")
+card = ExtResource("2_ka7wj")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(150, 200)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -100.0
+offset_right = 75.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Layout" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+
+[node name="Name" type="RichTextLabel" parent="Panel/Layout"]
+layout_mode = 2
+text = "Name"
+fit_content = true
+
+[node name="Portrait" type="ColorRect" parent="Panel/Layout"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+
+[node name="Description" type="RichTextLabel" parent="Panel/Layout"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 12
+text = "Effect"
+fit_content = true
+
+[node name="Cost" type="RichTextLabel" parent="Panel/Layout"]
+layout_mode = 2
+text = "Cost"
+fit_content = true
