@@ -6,23 +6,20 @@
       {
         "id": "8be362a6d4b99821",
         "type": "tabs",
-        "dimension": 47.52092723760464,
+        "dimension": 61.23631680618158,
         "children": [
           {
             "id": "3af8e602a334a9cf",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Board/Government/Office/Office.canvas",
-                "viewState": {
-                  "x": -583.6280644757089,
-                  "y": -712.7190011314741,
-                  "zoom": -0.3633742889085296
-                }
+                "file": "Board/Economy Area/Card Cost, Economy & Liquidation.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "icon": "lucide-file",
+              "title": "Card Cost, Economy & Liquidation"
             }
           },
           {
@@ -31,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Board/Economy/Card Cost, Economy & Liquidation.md",
+                "file": "Board/Economy Area/Card Cost, Economy & Liquidation.md",
                 "mode": "source",
                 "source": false
               },
@@ -83,7 +80,7 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Card/Card Types/Official/Official.canvas",
+                "file": "Board/Cards/Card Types/Official/Official.canvas",
                 "viewState": {
                   "x": 449,
                   "y": 50,
@@ -129,7 +126,7 @@
       {
         "id": "7b8fe469083d2574",
         "type": "tabs",
-        "dimension": 52.47907276239536,
+        "dimension": 38.763683193818416,
         "children": [
           {
             "id": "6d32f8bfa41a251d",
@@ -138,7 +135,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Board/Economy/Card Cost, Economy & Liquidation.md",
+                "file": "Board/Economy Area/Card Cost, Economy & Liquidation.md",
                 "mode": "source",
                 "source": false
               },
@@ -153,7 +150,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Board/Card/Card Types/Official/Official.md",
+                "file": "Board/Cards/Card Types/Official/Official.md",
                 "mode": "source",
                 "source": false
               },
@@ -311,48 +308,48 @@
   },
   "active": "3af8e602a334a9cf",
   "lastOpenFiles": [
+    "Board/Economy Area/Economy Area.canvas",
+    "Board/Economy Area/Card Cost, Economy & Liquidation.md",
+    "Board/Cards/Card Types/Official/Official Death.md",
+    "Board/Cards/Card Types/Official/Official.md",
+    "Board/Cards/Card Types/Official/Official.canvas",
+    "Board/Cards/Card Types/Official/Death Timer.md",
+    "Board/Cards/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
+    "Board/Cards/Card Types/Official/Assets & Asset Pool.md",
+    "Board/Cards/Card.canvas",
+    "Board/Cards/Effects.md",
+    "Board/Government/Government Types.md",
+    "Board/Government/Government Type Layouts.canvas",
+    "Board/Government/Government.canvas",
+    "Board/Game Panel/Game Panel.canvas",
+    "Game Phases/Game Phases.canvas",
+    "Board/Government/Office/Office.canvas",
     "Game Phases/Points & Scoring.md",
     "Game Phases/Turn Actions.md",
-    "Board/Government/Office/Office.canvas",
-    "Board/Card/Card Types/Official/Official.md",
-    "Game Phases/Game Phases.canvas",
-    "Board/Card/Card Types/Official/Official.canvas",
     "Effect Types.md",
     "round.md",
     "Rounds and Turns.md",
     "Scoring.md",
-    "Board/Card/Card Types/Official/Official Death.md",
-    "Board/Card/Card Types/Official/Assets & Asset Pool.md",
-    "Board/Card/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
     "Asset Types.md",
     "Asset Pool 1.md",
     "Puppet State.md",
-    "Board/Card/Card Types/Official/Death Timer.md",
     "Card.md",
-    "Board/Card/Card.canvas",
     "Board/Board Layout.canvas",
-    "Board/Economy/Card Cost, Economy & Liquidation.md",
-    "Board/Government/Government.canvas",
-    "Board/Card/Effects.md",
-    "Board/Card/Card Types/Official",
-    "Board/Card/Card Types/Contract.md",
-    "Board/Card/Card Types/Card Types.md",
-    "Board/Card/Card Types/Policy.md",
+    "Board/Cards/Card Types/Official",
+    "Board/Cards/Card Types/Contract.md",
+    "Board/Cards/Card Types/Card Types.md",
+    "Board/Cards/Card Types/Policy.md",
     "Board/Card/Card Types/Policy.canvas",
-    "Board/Card/Card Types/Contract.canvas",
-    "Board/Economy/Economy Area.canvas",
-    "Board/Government/Government Type Layouts.canvas",
     "Board/Government/Office/Office Types.md",
     "Board/Government/Office/Office.md",
     "Board/Card/Card Types/Card Cosmetics & Styling.md",
     "Board/Game Panel",
-    "Board/Government/Government Types.md",
-    "Board/Economy",
+    "Board/Economy Area",
     "Game Phases",
     "Position Types.md",
     "Board/Government/Office",
-    "Board/Card/Card Types",
-    "Board/Card",
+    "Board/Cards/Card Types",
+    "Board/Cards",
     "Board/Government",
     "Board",
     "_Core/GDP"
