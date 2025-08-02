@@ -11,7 +11,7 @@
 #### Breakdown
 - The Economy is a shared resource pool.  When any card is played, it requires a combination of economy resources.
 
-#### Economy Resources:
+#### Economy Resources
 - There are 3 Economy Resource Types:  The Max for each is 100,  the crisis threshold for each is 30.
 	- Health
 	- Food
