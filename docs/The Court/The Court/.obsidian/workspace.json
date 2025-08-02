@@ -16,9 +16,9 @@
               "state": {
                 "file": "Board/Government/Office/Office.canvas",
                 "viewState": {
-                  "x": -166.18114384728722,
-                  "y": -313.2821171403342,
-                  "zoom": -1.3633742889085294
+                  "x": -583.6280644757089,
+                  "y": -712.7190011314741,
+                  "zoom": -0.3633742889085296
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -48,8 +48,8 @@
               "state": {
                 "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": -863.4702759962036,
-                  "y": -516.1627899119537,
+                  "x": -533.3709609237468,
+                  "y": -322.13494822814323,
                   "zoom": -1.3333333333333333
                 }
               },
@@ -98,17 +98,14 @@
             "id": "a1090a85dbdcccb4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Board/Government/Office/Office.canvas",
-                "viewState": {
-                  "x": 320,
-                  "y": -476,
-                  "zoom": -1.7638962509672234
-                }
+                "file": "Game Phases/Points & Scoring.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "icon": "lucide-file",
+              "title": "Points & Scoring"
             }
           },
           {
@@ -127,8 +124,7 @@
               "title": "Points & Scoring"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "7b8fe469083d2574",
@@ -313,10 +309,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7df6a30f1189de2c",
+  "active": "3af8e602a334a9cf",
   "lastOpenFiles": [
-    "Board/Card/Card Types/Official/Official.canvas",
+    "Game Phases/Points & Scoring.md",
+    "Game Phases/Turn Actions.md",
+    "Board/Government/Office/Office.canvas",
+    "Board/Card/Card Types/Official/Official.md",
     "Game Phases/Game Phases.canvas",
+    "Board/Card/Card Types/Official/Official.canvas",
     "Effect Types.md",
     "round.md",
     "Rounds and Turns.md",
@@ -331,8 +331,6 @@
     "Card.md",
     "Board/Card/Card.canvas",
     "Board/Board Layout.canvas",
-    "Board/Government/Office/Office.canvas",
-    "Game Phases/Points & Scoring.md",
     "Board/Economy/Card Cost, Economy & Liquidation.md",
     "Board/Government/Government.canvas",
     "Board/Card/Effects.md",
@@ -340,14 +338,12 @@
     "Board/Card/Card Types/Contract.md",
     "Board/Card/Card Types/Card Types.md",
     "Board/Card/Card Types/Policy.md",
-    "Board/Card/Card Types/Official/Official.md",
     "Board/Card/Card Types/Policy.canvas",
     "Board/Card/Card Types/Contract.canvas",
     "Board/Economy/Economy Area.canvas",
     "Board/Government/Government Type Layouts.canvas",
     "Board/Government/Office/Office Types.md",
     "Board/Government/Office/Office.md",
-    "Game Phases/Turn Actions.md",
     "Board/Card/Card Types/Card Cosmetics & Styling.md",
     "Board/Game Panel",
     "Board/Government/Government Types.md",
