@@ -6,7 +6,9 @@ extends Resource
 @export var portrait: Texture2D
 @export var type: CardType
 @export var effect: CardEffect
-@export var cost: int
+@export var food_cost: int
+@export var wealth_cost: int
+@export var health_cost: int
 
 func apply_effect(target: Node) -> void:
     if type.can_apply_to(target):

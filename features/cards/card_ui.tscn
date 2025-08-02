@@ -1,54 +1,84 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdsgdem3lalkw"]
+[gd_scene load_steps=4 format=3 uid="uid://cdsgdem3lalkw"]
 
 [ext_resource type="Script" uid="uid://dml3vt7rjve07" path="res://features/cards/card_ui.gd" id="1_cnisj"]
 [ext_resource type="Resource" uid="uid://clju00mfs7v6m" path="res://features/cards/card_resources/test.tres" id="2_ka7wj"]
+[ext_resource type="Texture2D" uid="uid://b5tbyux473lsk" path="res://game_assets/card_assets/basic_card.png" id="3_l5nfe"]
 
 [node name="CardUi" type="Node2D"]
+position = Vector2(646, 318)
 script = ExtResource("1_cnisj")
 card = ExtResource("2_ka7wj")
 
-[node name="Panel" type="Panel" parent="."]
-custom_minimum_size = Vector2(150, 200)
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -75.0
-offset_top = -100.0
-offset_right = 75.0
-offset_bottom = 100.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+[node name="CardSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_l5nfe")
 
-[node name="Layout" type="VBoxContainer" parent="Panel"]
-layout_mode = 1
+[node name="Name" type="Label" parent="CardSprite"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -493.0
+offset_top = -690.0
+offset_right = -520.0
+offset_bottom = -1861.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_vertical = 3
-
-[node name="Name" type="RichTextLabel" parent="Panel/Layout"]
-layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 100
 text = "Name"
-fit_content = true
+vertical_alignment = 1
 
-[node name="Portrait" type="ColorRect" parent="Panel/Layout"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 2
+[node name="Description" type="Label" parent="CardSprite"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -520.0
+offset_top = 273.0
+offset_right = -530.0
+offset_bottom = -881.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 60
+text = "I am a card effect. I love being a card effect. I do card effect things."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
-[node name="Description" type="RichTextLabel" parent="Panel/Layout"]
-custom_minimum_size = Vector2(0, 50)
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 12
-text = "Effect"
-fit_content = true
+[node name="FoodCost" type="Label" parent="CardSprite"]
+offset_left = -387.0
+offset_top = 547.0
+offset_right = -167.0
+offset_bottom = 687.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 75
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Cost" type="RichTextLabel" parent="Panel/Layout"]
-layout_mode = 2
-text = "Cost"
-fit_content = true
+[node name="WealthCost" type="Label" parent="CardSprite"]
+offset_left = -60.0
+offset_top = 546.667
+offset_right = 160.0
+offset_bottom = 686.667
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 75
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthCost" type="Label" parent="CardSprite"]
+offset_left = 273.333
+offset_top = 546.667
+offset_right = 493.333
+offset_bottom = 686.667
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 75
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

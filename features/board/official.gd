@@ -7,13 +7,8 @@ signal asset_added(official: Official, asset: Asset)
 signal asset_removed(official: Official, asset: Asset)
 signal official_died(official: Official)
 
-var official_id: String
-var death_time: int # Time To Die
+var death_time: int
 var assets: Array[Asset] = []
-
-# func _init(id: String, initial_ttp: int):
-# 	official_id = id
-# 	death_time = initial_ttp
 
 func add_asset(asset: Asset):
 	assets.append(asset)

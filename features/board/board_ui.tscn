@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://cll6o2mrrcxq5"]
+[gd_scene load_steps=3 format=3 uid="uid://cll6o2mrrcxq5"]
 
-[node name="Board" type="HBoxContainer"]
+[ext_resource type="Script" uid="uid://b0r62eay7h0tq" path="res://features/board/board_ui.gd" id="1_vcn2k"]
+[ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
+
+[node name="BoardUi" type="HBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -8,32 +11,33 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_vcn2k")
 
 [node name="Left" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(300, 500)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 0
 size_flags_stretch_ratio = 0.2
 
 [node name="CardArea" type="ColorRect" parent="Left"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.7
+size_flags_stretch_ratio = 0.8
 color = Color(0.243137, 0.54902, 0.545098, 1)
 
 [node name="EconomyArea" type="ColorRect" parent="Left"]
 layout_mode = 2
 size_flags_vertical = 3
-size_flags_stretch_ratio = 0.3
+size_flags_stretch_ratio = 0.2
 color = Color(0.454902, 0.360784, 0.670588, 1)
 
 [node name="GovernmentArea" type="ColorRect" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(250, 500)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.6
 color = Color(0.494118, 0.494118, 0.494118, 1)
 
-[node name="GamePanel" type="ColorRect" parent="."]
+[node name="GamePanelUi" parent="." instance=ExtResource("1_w4tip")]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.2
-color = Color(0.67451, 0.454902, 0.215686, 1)

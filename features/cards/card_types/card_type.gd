@@ -4,15 +4,19 @@ extends Resource
 enum Target {
     OFFICIAL,
     OFFICE,
+    GOVERNMENT,
 }
 
 @export var name: String
 @export var target: Target
 
 func can_apply_to(target_node: Node) -> bool:
-    if target_node.is_in_group("officials"):
-        return target == Target.OFFICIAL
-    elif target_node.is_in_group("offices"):
-        return target == Target.OFFICE
-    else:
-        return false
+   match target:
+        Target.OFFICIAL:
+            return target_node is Official
+        Target.OFFICE:
+            return target_node is Office
+        Target.GOVERNMENT:
+            return target_node is Government
+        _:
+            return false

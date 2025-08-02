@@ -1,0 +1,87 @@
+[gd_scene load_steps=2 format=3 uid="uid://djhuadg0pcwn0"]
+
+[ext_resource type="Script" uid="uid://bhwrf723cu3i1" path="res://features/board/player_ui.gd" id="1_xisb7"]
+
+[node name="PlayerUi" type="VBoxContainer"]
+custom_minimum_size = Vector2(0, 175)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_xisb7")
+
+[node name="NameContainer" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+color = Color(0.243137, 0.54902, 0.545098, 1)
+
+[node name="Margin" type="MarginContainer" parent="NameContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="Name" type="RichTextLabel" parent="NameContainer/Margin"]
+layout_mode = 2
+text = "V!ctor"
+fit_content = true
+vertical_alignment = 1
+
+[node name="ScoreContainer" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+color = Color(0.454902, 0.360784, 0.670588, 1)
+
+[node name="Margin" type="MarginContainer" parent="ScoreContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="Score" type="RichTextLabel" parent="ScoreContainer/Margin"]
+layout_mode = 2
+text = "Current Score: 0"
+fit_content = true
+vertical_alignment = 1
+
+[node name="PointsContainer" type="ColorRect" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.7
+color = Color(0.411765, 0.207843, 0.458824, 1)
+
+[node name="Margin" type="MarginContainer" parent="PointsContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="Points" type="RichTextLabel" parent="PointsContainer/Margin"]
+layout_mode = 2
+text = "Points From: 3
+- Health : 2
+- Food : 1"
+fit_content = true
+vertical_alignment = 1

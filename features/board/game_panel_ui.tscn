@@ -1,0 +1,88 @@
+[gd_scene load_steps=3 format=3 uid="uid://chheuflylxxcs"]
+
+[ext_resource type="Script" uid="uid://72csv853gl0u" path="res://features/board/game_panel_ui.gd" id="1_m07hm"]
+[ext_resource type="PackedScene" uid="uid://djhuadg0pcwn0" path="res://features/board/player_ui.tscn" id="2_as7sc"]
+
+[node name="GamePanel" type="ColorRect"]
+custom_minimum_size = Vector2(300, 500)
+anchors_preset = -1
+anchor_left = 0.844
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 299.52
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+color = Color(0.827451, 0.545098, 0.235294, 1)
+script = ExtResource("1_m07hm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="RoundContainer" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 0
+color = Color(0.188235, 0.352941, 0.223529, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/RoundContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="Round" type="RichTextLabel" parent="MarginContainer/VBoxContainer/RoundContainer/MarginContainer"]
+layout_mode = 2
+text = "Round 0"
+
+[node name="PlayersContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+alignment = 1
+
+[node name="PlayerUi" parent="MarginContainer/VBoxContainer/PlayersContainer" instance=ExtResource("2_as7sc")]
+layout_mode = 2
+
+[node name="PlayerUi2" parent="MarginContainer/VBoxContainer/PlayersContainer" instance=ExtResource("2_as7sc")]
+layout_mode = 2
+
+[node name="PlayerUi3" parent="MarginContainer/VBoxContainer/PlayersContainer" instance=ExtResource("2_as7sc")]
+layout_mode = 2
+
+[node name="PlayerUi4" parent="MarginContainer/VBoxContainer/PlayersContainer" instance=ExtResource("2_as7sc")]
+layout_mode = 2
+
+[node name="EndTurnContainer" type="ColorRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+size_flags_vertical = 8
+color = Color(0.686275, 0.282353, 0.286275, 1)
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/EndTurnContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "End Turn"

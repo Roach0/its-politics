@@ -4,7 +4,7 @@ signal lobby_entered
 signal lobby_members_changed
 signal owner_left
 signal lobby_list_refreshed(lobby_buttons: Array[Button])
-signal game_started
+signal game_started(players: Array[Player])
 
 const PACKET_READ_LIMIT: int = 32
 
@@ -271,8 +271,8 @@ func handle_message(sender_id: int, payload: Dictionary) -> void:
 	match payload.message:
 		"start_game":
 			if is_owner(sender_id):
-				TurnManager.start_game(lobby_members)
-				game_started.emit()
+				var players: Array[Player] = get_players()
+				game_started.emit(players)
 			else:
 				print("Non-owner tried to start game. Ignoring.")
 
@@ -303,7 +303,14 @@ func is_owner(sender_id: int = 0) -> bool:
 func start_game() -> void:
 	if is_owner():
 		send_message({"message": "start_game"})
-		TurnManager.start_game(lobby_members)
-		game_started.emit()
+		var players: Array[Player] = get_players()
+		game_started.emit(players)
 	else:
 		print("You are not the owner of the lobby")
+
+func get_players() -> Array[Player]:
+	var players: Array[Player] = []
+	for member in lobby_members:
+		players.append(Player.new(member['steam_id'], member['steam_name']))
+	print("Players: %s" % players)
+	return players

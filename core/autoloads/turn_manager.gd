@@ -6,20 +6,19 @@ signal round_started(round_number: int)
 signal round_ended(round_number: int)
 
 var current_player_id: int = -1
-var players: Array[int] = []
+var players: Array[Player] = []
 var round_number: int = 0
 var first_player_index: int = 0
 
-func start_game(lobby_members: Array[Dictionary]):
-	for member in lobby_members:
-		players.append(member['steam_id'])
+func start_game(this_players: Array[Player]):
+	players = this_players
 	round_number = 1
 	first_player_index = 0
 	start_round()
 
 func start_round():
 	round_started.emit(round_number)
-	current_player_id = players[first_player_index]
+	current_player_id = players[first_player_index].steam_id
 	start_turn()
 
 func start_turn():
@@ -43,7 +42,7 @@ func _process_turn_end():
 	if next_index == first_player_index:
 		end_round()
 	else:
-		current_player_id = players[next_index]
+		current_player_id = players[next_index].steam_id
 		start_turn()
 
 func end_round():
