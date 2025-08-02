@@ -9,9 +9,9 @@
 		{"id":"9fe6f055ac78cb8f","type":"text","text":"Official Portrait","x":-1380,"y":-1669,"width":544,"height":269,"color":"5"},
 		{"id":"835a214b9d891707","type":"text","text":"Play Effect - For Official Cards, this is typically 'assign of start election for this official on the office this is played.'","x":-1380,"y":-1400,"width":544,"height":180,"color":"2"},
 		{"id":"85b956c976c7f297","type":"text","text":"Play Cost","x":-1380,"y":-1220,"width":544,"height":100,"color":"6"},
-		{"id":"142e063beb5972bd","type":"text","text":"This has it's own states, own class extending card.","x":-2114,"y":-906,"width":334,"height":106,"color":"3"},
 		{"id":"82d863f53458c3cd","type":"file","file":"Board/Cards/Card Types/Card Types & Card Alignments.md","x":-240,"y":-1780,"width":400,"height":400,"color":"3"},
-		{"id":"fe226eec1811a7cb","type":"text","text":"Alignment\n\n-health\n-wealth\n-food\n-persona\n-etc\n\n","x":-640,"y":-1730,"width":250,"height":300}
+		{"id":"fe226eec1811a7cb","type":"text","text":"Alignment\n\n-health\n-wealth\n-food\n-persona\n-etc\n\n","x":-640,"y":-1730,"width":250,"height":300},
+		{"id":"142e063beb5972bd","type":"text","text":"This has it's own states, own class extending card.","x":-2160,"y":-1020,"width":334,"height":106,"color":"3"}
 	],
 	"edges":[
 		{"id":"3aeb7c1ac1bfbb27","fromNode":"fe226eec1811a7cb","fromSide":"left","toNode":"5c26f11e01d33aa4","toSide":"right"},
