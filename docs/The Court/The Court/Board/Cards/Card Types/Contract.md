@@ -4,4 +4,7 @@ Contract - Applied to Officials
 
 - Contracts are focused on manipulating the state of assets.
 
-- 
+
+|     |     |
+| --- | --- |
+|     |     |
