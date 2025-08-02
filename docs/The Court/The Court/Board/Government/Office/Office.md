@@ -15,7 +15,7 @@ Mechanics:
 
 Flow Mechanic - When a position is empty, it may have a position flow leading to it from another position.  IF that other position is filled, the official filling it will shift over when a card is played, as long as the played card is not an official being played
 
-## Office Types & Unique Scoring
+## Office Unique ID & Unique Scoring
 #### Food + Tech = **Terra-Genesis Command** - ==Grow== - TGC
 - 
 
@@ -25,7 +25,7 @@ Flow Mechanic - When a position is empty, it may have a position flow leading to
 
 #### Health + Tech = **Cybernetics Bureau** - ==Convert== - CB
 
-#### Health + Intel = **Neuro Surveillance Division** - ==Exploit== - NSD
+#### Health + Intel = **Neuro Surveillance Agency** - ==Exploit== - NSA
 
 #### Health + Profile = **Geno-Enhancement Directorate** - ==Grow== GED
 

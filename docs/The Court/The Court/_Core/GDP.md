@@ -6,9 +6,6 @@
 
 - <input disabled="" type="checkbox"> Card Types Implementation
     - <input disabled="" type="checkbox"> Official Cards
-    - <input disabled="" type="checkbox"> Asset Cards
-    - <input disabled="" type="checkbox"> Ops Cards
-    - <input disabled="" type="checkbox"> Coup Cards
     - <input disabled="" type="checkbox"> Contract Cards
 - <input disabled="" type="checkbox"> Card Alignment System
     - <input disabled="" type="checkbox"> Procedural alignment generation
@@ -82,7 +79,7 @@
 - <input disabled="" type="checkbox"> Death Resolution
     - <input disabled="" type="checkbox"> Card payout system
     - <input disabled="" type="checkbox"> Official replacement hierarchy
-    - <input disabled="" type="checkbox"> Asset redistribution
+    <input enabled="" type="checkbox"> Asset redistribution
 
 ### Scoring System
 

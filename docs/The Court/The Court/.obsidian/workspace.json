@@ -6,6 +6,7 @@
       {
         "id": "911499ec7dadd2f0",
         "type": "tabs",
+        "dimension": 44.72329472329472,
         "children": [
           {
             "id": "71f1f7009bbba884",
@@ -119,12 +120,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Core/GDP.md",
+                "file": "Board/Government/Office/Office.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDP"
+              "title": "Office"
             }
           }
         ],
@@ -133,7 +134,7 @@
       {
         "id": "7b8fe469083d2574",
         "type": "tabs",
-        "dimension": 18.22279459111397,
+        "dimension": 55.27670527670527,
         "children": [
           {
             "id": "6d32f8bfa41a251d",
@@ -160,9 +161,9 @@
               "state": {
                 "file": "Board/Government/Office/Office.canvas",
                 "viewState": {
-                  "x": 320,
-                  "y": -476,
-                  "zoom": -1.258028385721817
+                  "x": -558.5094476490576,
+                  "y": -412.6706935636605,
+                  "zoom": -0.5913617190551506
                 }
               },
               "pinned": true,
@@ -179,8 +180,8 @@
               "state": {
                 "file": "Board/Cards/Card.canvas",
                 "viewState": {
-                  "x": -36.15424789019164,
-                  "y": -1414.197726921162,
+                  "x": -1649.9004555914755,
+                  "y": -1321.0661049841724,
                   "zoom": -0.683218203803255
                 }
               },
@@ -190,7 +191,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -337,33 +338,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad1e2131b27ab383",
+  "active": "535930944b2dec7a",
   "lastOpenFiles": [
-    "Board/Cards/Card Types/Official/Official Death.md",
+    "Board/Government/Office/Office.md",
+    "Board/Government/Office/Office.canvas",
+    "Board/Cards/Card Types/Official/Official.md",
+    "Board/Cards/Card Types/Official/Official.canvas",
+    "Board/Cards/Card.canvas",
     "_Core/GDP.md",
+    "Board/Cards/Card Types/Official/Official Death.md",
     "_Core/GDP/Full Plan.md",
     "_Core/GDP/Phase 2 Breakdown.md",
     "Game Phases/Game Phases.canvas",
     "Board/Game Panel/Game Panel.canvas",
     "Board/Economy Area/Economy Area.canvas",
     "Board/Economy Area/Card Cost, Economy & Liquidation.md",
-    "Board/Cards/Card.canvas",
     "Board/Cards/Effects.md",
     "Board/Cards/Card Types/Contract.md",
     "Board/Cards/Card Types/Card Types & Card Alignments.md",
-    "Board/Cards/Card Types/Official/Official.canvas",
-    "Board/Cards/Card Types/Official/Official.md",
     "Board/Cards/Card Types/Official/Death Timer.md",
     "Board/Cards/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
     "Board/Cards/Card Types/Official/Assets & Asset Pool.md",
     "Board/Government/Government Types.md",
     "Board/Government/Government Type Layouts.canvas",
     "Board/Government/Government.canvas",
-    "Board/Government/Office/Office.md",
     "Board/Government/Office/Office Types.md",
     "Board/Board Layout.canvas",
     "Board/Cards/Card Types/Policy.md",
-    "Board/Government/Office/Office.canvas",
     "Game Phases/Points & Scoring.md",
     "Game Phases/Turn Actions.md",
     "Effect Types.md",
@@ -373,7 +374,6 @@
     "Asset Types.md",
     "Asset Pool 1.md",
     "Puppet State.md",
-    "Card.md",
     "Board/Cards/Card Types/Official",
     "Board/Card/Card Types/Policy.canvas",
     "Board/Game Panel",
@@ -382,25 +382,8 @@
     "Board/Government/Office",
     "Board/Cards/Card Types",
     "Board/Cards",
-    "Board/Economy/Economy Area.canvas",
-    "Board/Card/Card.canvas",
-    "Game Phases/Points & Scoring.md",
-    "Board/Card/Card Types/Official.md",
-    "Board/Card/Card Types/Policy.md",
-    "Board/Card/Card Types/Card Types.md",
-    "Board/Card/Card Types/Contract.md",
-    "Board/Card/Effects.md",
-    "Assets & Coup Conditions.md",
-    "Game Phases/Turn Actions.md",
-    "Death Timer.md",
-    "Asset Pool.md",
-    "Asset Pool 1.md",
-    "Card Cosmetics & Styling.md",
     "Board/Game Panel",
     "Board/Economy",
-    "Game Phases",
-    "Board/Government/Office",
-    "Board/Card/Card Types",
-    "Board/Card"
+    "Game Phases"
   ]
 }
