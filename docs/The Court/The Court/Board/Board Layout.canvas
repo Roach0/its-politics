@@ -1,14 +1,14 @@
 {
 	"nodes":[
-		{"id":"cedca72f836713cf","type":"group","x":-600,"y":-880,"width":290,"height":280,"color":"#ffffff","label":"Key"},
-		{"id":"79795badd65838fe","type":"text","text":"Player Card Pool","x":-580,"y":-860,"width":250,"height":60,"color":"5"},
-		{"id":"89a4cd162c93b2be","type":"text","text":"Economy Area","x":-580,"y":-800,"width":250,"height":60,"color":"6"},
-		{"id":"30af324e9dce64ef","type":"text","text":"Government Area","x":-580,"y":-740,"width":250,"height":60,"color":"4"},
-		{"id":"b75e30b61b5b9ff8","type":"text","text":"Game Panel","x":-580,"y":-680,"width":250,"height":60,"color":"2"},
+		{"id":"cedca72f836713cf","type":"group","x":-580,"y":-880,"width":290,"height":280,"color":"#ffffff","label":"Key"},
 		{"id":"63b876d62ca02403","type":"file","file":"Board/Cards/Card.canvas","x":-580,"y":-480,"width":200,"height":440,"color":"5"},
-		{"id":"8054d109421283b0","x":-380,"y":-480,"width":640,"height":600,"type":"file","file":"Board/Government/Government.canvas"},
+		{"id":"8054d109421283b0","type":"file","file":"Board/Government/Government.canvas","x":-380,"y":-480,"width":640,"height":600,"color":"4"},
 		{"id":"3591953a21dd24e3","type":"file","file":"Board/Game Panel/Game Panel.canvas","x":260,"y":-480,"width":200,"height":600,"color":"2"},
-		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy Area/Economy Area.canvas","x":-580,"y":-40,"width":200,"height":160,"color":"6"}
+		{"id":"01b35821c18d9c34","type":"file","file":"Board/Economy Area/Economy Area.canvas","x":-580,"y":-40,"width":200,"height":160,"color":"6"},
+		{"id":"79795badd65838fe","type":"text","text":"Player Card Pool","x":-560,"y":-860,"width":250,"height":60,"color":"5"},
+		{"id":"89a4cd162c93b2be","type":"text","text":"Economy Area","x":-560,"y":-800,"width":250,"height":60,"color":"6"},
+		{"id":"30af324e9dce64ef","type":"text","text":"Government Area","x":-560,"y":-740,"width":250,"height":60,"color":"4"},
+		{"id":"b75e30b61b5b9ff8","type":"text","text":"Game Panel","x":-560,"y":-680,"width":250,"height":60,"color":"2"}
 	],
 	"edges":[]
 }

@@ -1,6 +1,38 @@
 {
 	"nodes":[
-		{"id":"bc32ba32f2277017","x":-305,"y":-278,"width":250,"height":60,"type":"text","text":""}
+		{"id":"e0f491264dc82be7","x":-749,"y":-1160,"width":1090,"height":500,"type":"group","label":"Economy Area"},
+		{"id":"b8e23b8e31e42eb3","x":-710,"y":-300,"width":1090,"height":120,"type":"group","label":"Resource Bar - Progress Bar - Not Section"},
+		{"id":"4455b9757209d82d","x":-690,"y":-280,"width":250,"height":80,"color":"1","type":"text","text":"Crisis Threshold"},
+		{"id":"55b056e2972afff0","x":-158,"y":-280,"width":518,"height":80,"type":"text","text":"Empty Max"},
+		{"id":"21ad1dc7de68b042","x":-440,"y":-280,"width":282,"height":80,"color":"4","type":"text","text":"Current Amount"},
+		{"id":"41260d9cd5136ec9","x":-800,"y":-40,"width":298,"height":306,"type":"text","text":"When the current amount reaches this point, crisis takes effect."},
+		{"id":"006a404a649b9996","x":-322,"y":6,"width":250,"height":260,"type":"text","text":"Simulates current amount, currently not in crisis."},
+		{"id":"30029f4a34c2da35","x":101,"y":-40,"width":286,"height":272,"type":"text","text":"Just indicates empty space.  Resource bars have a max of 10."},
+		{"id":"15bf2ba977227973","type":"text","text":"Crisis Threshold","x":-729,"y":-760,"width":250,"height":80,"color":"1"},
+		{"id":"ad91910aa020abe8","type":"text","text":"Empty Max","x":-197,"y":-760,"width":518,"height":80},
+		{"id":"45dd33d758865ad8","type":"text","text":"Current Amount","x":-479,"y":-760,"width":282,"height":80,"color":"4"},
+		{"id":"69348592e3fa0163","type":"text","text":"Crisis Threshold","x":-729,"y":-880,"width":250,"height":80,"color":"1"},
+		{"id":"be22a2fcebc0d956","type":"text","text":"Empty Max","x":-197,"y":-880,"width":518,"height":80},
+		{"id":"2dee11d2b9434696","type":"text","text":"Current Amount","x":-479,"y":-880,"width":282,"height":80,"color":"4"},
+		{"id":"cd588e6d649339ad","type":"text","text":"Crisis Threshold","x":-729,"y":-1000,"width":250,"height":80,"color":"1"},
+		{"id":"b5d99f87f3adf035","type":"text","text":"Empty Max","x":-197,"y":-1000,"width":518,"height":80},
+		{"id":"08bf1d28723f5ba8","type":"text","text":"Current Amount","x":-479,"y":-1000,"width":282,"height":80,"color":"4"},
+		{"id":"7f9406f2de650e23","x":-725,"y":-1140,"width":121,"height":120,"type":"text","text":""},
+		{"id":"bd3a5be840da0663","type":"text","text":"","x":-717,"y":-1130,"width":105,"height":100,"color":"1"},
+		{"id":"78e8c72f730a0345","type":"text","text":"","x":-398,"y":-1140,"width":121,"height":120},
+		{"id":"0d28b6287276d75d","type":"text","text":"","x":-560,"y":-1140,"width":121,"height":120},
+		{"id":"c104147c357da931","type":"text","text":"","x":-552,"y":-1130,"width":105,"height":100,"color":"5"},
+		{"id":"ad6d1b41166e346d","x":-1280,"y":-1300,"width":320,"height":300,"color":"3","type":"text","text":"Play Token Slot\n\nThree different states:\n\n- Coin Spent - This Token has been spent.\n- Coin Available - This Token is available to spend.\n- Slot Available - This Token can be made available."}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"6b91e615a7a4d1fd","fromNode":"4455b9757209d82d","fromSide":"bottom","toNode":"41260d9cd5136ec9","toSide":"top"},
+		{"id":"69aab06586c2be57","fromNode":"21ad1dc7de68b042","fromSide":"bottom","toNode":"006a404a649b9996","toSide":"top"},
+		{"id":"f14afb5d1ee920e7","fromNode":"55b056e2972afff0","fromSide":"bottom","toNode":"30029f4a34c2da35","toSide":"top"},
+		{"id":"69762dc6c4a48b00","fromNode":"21ad1dc7de68b042","fromSide":"right","toNode":"55b056e2972afff0","toSide":"left"},
+		{"id":"26340d811cf065ac","fromNode":"45dd33d758865ad8","fromSide":"right","toNode":"ad91910aa020abe8","toSide":"left"},
+		{"id":"a97030eeb4c79203","fromNode":"2dee11d2b9434696","fromSide":"right","toNode":"be22a2fcebc0d956","toSide":"left"},
+		{"id":"8c823e565607383c","fromNode":"08bf1d28723f5ba8","fromSide":"right","toNode":"b5d99f87f3adf035","toSide":"left"},
+		{"id":"a796ef73d49ec138","fromNode":"15bf2ba977227973","fromSide":"left","toNode":"b8e23b8e31e42eb3","toSide":"left"},
+		{"id":"e77ef31a414fa932","fromNode":"7f9406f2de650e23","fromSide":"left","toNode":"ad6d1b41166e346d","toSide":"right"}
+	]
 }
