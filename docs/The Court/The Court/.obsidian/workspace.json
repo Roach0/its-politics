@@ -6,7 +6,6 @@
       {
         "id": "911499ec7dadd2f0",
         "type": "tabs",
-        "dimension": 87.12998712998713,
         "children": [
           {
             "id": "6200355428d473b7",
@@ -67,81 +66,19 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government Area/Office/Office.canvas",
+                "file": "Game Phases/Game Phases.canvas",
                 "viewState": {
-                  "x": 320,
-                  "y": -476,
-                  "zoom": -1.14388243631264
+                  "x": -394.24703867351764,
+                  "y": -518.8126635903182,
+                  "zoom": -0.6424699562360199
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "title": "Game Phases"
             }
           }
         ],
         "currentTab": 3
-      },
-      {
-        "id": "7b8fe469083d2574",
-        "type": "tabs",
-        "dimension": 12.87001287001287,
-        "children": [
-          {
-            "id": "6d32f8bfa41a251d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Board/Economy Area/Card Cost, Economy & Liquidation.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Card Cost, Economy & Liquidation"
-            }
-          },
-          {
-            "id": "535930944b2dec7a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Government Area/Office/Office.canvas",
-                "viewState": {
-                  "x": 130.0379096840583,
-                  "y": -671.8176201748114,
-                  "zoom": -0.5913617190551506
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Office"
-            }
-          },
-          {
-            "id": "50542b166e730418",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Board/Cards/Card.canvas",
-                "viewState": {
-                  "x": -1649.9004555914755,
-                  "y": -1321.0661049841724,
-                  "zoom": -0.683218203803255
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "Card"
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -290,7 +227,11 @@
   },
   "active": "9b9663c19c31555d",
   "lastOpenFiles": [
-    "Board/Government Area/Office/Office Scoring List.md",
+    "Game Phases/Turn Actions.md",
+    "Game Phases/Game Phases.canvas",
+    "Lists/Contract Active Effects List.md",
+    "Board/Government Area/Office/Office.canvas",
+    "Lists/Office Scoring List.md",
     "Board/Board Layout.canvas",
     "Board/Government Area/Government Types.md",
     "Board/Government Area/Government.canvas",
@@ -300,18 +241,14 @@
     "Cards/Card Types/Official/Official.canvas",
     "Cards/Card Types/Official/Death Timer.md",
     "Cards/Card Types/Official/Assets, Pools, Alignments.md",
-    "Board/Government Area/Office/Office.canvas",
     "Alignments & Assets.md",
     "Lists",
     "Cards/Card Types/Official/Official Death.md",
-    "Cards/Card Types/Official/Official Passive Effect List.md",
+    "Lists/Official Passive Effect List.md",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
-    "Cards/Card Types/Contract Active Effects List.md",
     "Cards/Card.canvas",
     "Board/Economy Area/Economy Area.canvas",
     "Board/Economy Area/Card Cost, Economy & Liquidation.md",
-    "Game Phases/Game Phases.canvas",
-    "Game Phases/Turn Actions.md",
     "Game Phases/Points & Scoring.md",
     "Board/Card Panel",
     "Board/Cards/CardEffects.md",
