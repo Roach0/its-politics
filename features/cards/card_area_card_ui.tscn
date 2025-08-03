@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0j7gy4geh8fa"]
+
+[ext_resource type="Script" uid="uid://b5s451eua5nws" path="res://features/cards/card_area_card_ui.gd" id="1_6322g"]
+[ext_resource type="Resource" uid="uid://clju00mfs7v6m" path="res://features/cards/card_resources/test.tres" id="2_tpqxq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qglfw"]
+bg_color = Color(0.37, 0.266708, 0.1221, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="CardAreaCardUi" type="Panel"]
+z_index = 10
+custom_minimum_size = Vector2(0, 50)
+anchors_preset = -1
+anchor_right = 0.151
+anchor_bottom = 0.046
+offset_right = 0.0799866
+offset_bottom = 0.319996
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_qglfw")
+script = ExtResource("1_6322g")
+card = ExtResource("2_tpqxq")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

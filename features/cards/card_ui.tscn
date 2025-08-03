@@ -8,6 +8,12 @@
 script = ExtResource("1_cnisj")
 card = ExtResource("2_ka7wj")
 
+[node name="CardSprite2" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("3_l5nfe")
+
 [node name="CardSprite" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_l5nfe")

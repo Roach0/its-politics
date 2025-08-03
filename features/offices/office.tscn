@@ -1,20 +1,57 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd2q0r004u470"]
+[gd_scene load_steps=6 format=3 uid="uid://cd2q0r004u470"]
 
 [ext_resource type="Script" uid="uid://n8kuj2jjavn6" path="res://features/offices/office.gd" id="1_w1svc"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_efi7p"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n0qg7"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efi7p"]
+bg_color = Color(0.494118, 0.494118, 0.494118, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l0xs3"]
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
 
 [node name="Office" type="Node2D"]
 script = ExtResource("1_w1svc")
 metadata/_custom_type_script = "uid://n8kuj2jjavn6"
 
-[node name="Panel" type="Panel" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -72.0
-offset_top = -88.0
-offset_right = 72.0
-offset_bottom = 88.0
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("ViewportTexture_efi7p")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(385, 290)
+
+[node name="Panel" type="Panel" parent="SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_n0qg7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SubViewport/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Panel" type="Panel" parent="SubViewport/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.6
+theme_override_styles/panel = SubResource("StyleBoxFlat_efi7p")
+
+[node name="Panel2" type="Panel" parent="SubViewport/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+theme_override_styles/panel = SubResource("StyleBoxFlat_l0xs3")
