@@ -3,6 +3,7 @@
 		{"id":"aef3d1f37056387b","type":"group","x":-140,"y":-440,"width":1346,"height":760,"label":"States"},
 		{"id":"da7c4c5b75eb4c14","type":"group","x":-120,"y":-360,"width":546,"height":660,"label":"Official Card - In Pool"},
 		{"id":"99bdc5acb2c010e9","type":"group","x":640,"y":-360,"width":546,"height":660,"label":"Official Card - In Office"},
+		{"id":"e47712dd2223a292","x":1600,"y":300,"width":322,"height":169,"color":"3","type":"group","label":"Asset"},
 		{"id":"9d489d070228d024","type":"group","x":-140,"y":-780,"width":290,"height":160,"color":"#ffffff","label":"Key"},
 		{"id":"8fdf0fc6209dae26","type":"text","text":"Official Name","x":-120,"y":-360,"width":544,"height":111,"color":"5"},
 		{"id":"a7d74a283cc80d33","type":"file","file":"Board/Cards/Card Types/Official/Death Timer.md","x":610,"y":-1000,"width":240,"height":400,"color":"3"},
@@ -10,23 +11,33 @@
 		{"id":"38620fea762c877a","type":"text","text":"Official Portrait","x":-120,"y":-249,"width":544,"height":269,"color":"5"},
 		{"id":"eef424f639af5dd8","type":"text","text":"Cosmetic","x":-120,"y":-760,"width":250,"height":60,"color":"5"},
 		{"id":"4e9a2b2ad9bb7cab","type":"text","text":"Conditional","x":-120,"y":-700,"width":250,"height":60,"color":"6"},
-		{"id":"b656c49a7f5e1a72","type":"text","text":"Official Name","x":640,"y":-360,"width":420,"height":111,"color":"5"},
 		{"id":"bfe4bb458d18f418","type":"text","text":"Play Effect - For Official Cards, this is typically 'assign of start election for this official on the office this is played.'","x":-120,"y":20,"width":544,"height":180,"color":"2"},
-		{"id":"507ae6b6db54ffa2","type":"text","text":"Play Cost","x":-120,"y":200,"width":544,"height":100,"color":"6"},
+		{"id":"b656c49a7f5e1a72","type":"text","text":"Official Name","x":640,"y":-360,"width":420,"height":111,"color":"5"},
 		{"id":"ea83e960186a395e","type":"text","text":"Official Portrait","x":640,"y":-249,"width":544,"height":269,"color":"5"},
 		{"id":"052545aaffecb77a","type":"text","text":"","x":913,"y":20,"width":271,"height":280,"color":"2"},
 		{"id":"60f0c730b5db62b3","type":"text","text":"Death Timer - Active","x":1060,"y":-360,"width":124,"height":111,"color":"6"},
 		{"id":"4684efa9c124346b","type":"text","text":"","x":640,"y":20,"width":272,"height":280,"color":"1"},
 		{"id":"b65cfa4631733a74","type":"file","file":"Board/Cards/Effects.md","x":300,"y":900,"width":503,"height":180,"color":"3"},
-		{"id":"81e2b7c47717d926","type":"file","file":"Board/Cards/Card Types/Official/Assets, Asset Pools & Coup Conditions.md","x":1122,"y":500,"width":400,"height":400,"color":"3"},
-		{"id":"87fc133bd226e86a","type":"file","file":"Board/Economy Area/Card Cost, Economy & Liquidation.md","x":-720,"y":50,"width":400,"height":400,"color":"3"}
+		{"id":"74725916760ebc8f","type":"text","text":"Asset","x":1049,"y":100,"width":116,"height":60},
+		{"id":"e2275a254513e2dd","type":"text","text":"Asset","x":1049,"y":160,"width":116,"height":60},
+		{"id":"b2f5f737bd2014f1","type":"text","text":"Asset","x":928,"y":160,"width":116,"height":60},
+		{"id":"507ae6b6db54ffa2","type":"text","text":"Play Cost","x":-120,"y":200,"width":544,"height":100,"color":"6"},
+		{"id":"87fc133bd226e86a","type":"file","file":"Board/Economy Area/Card Cost, Economy & Liquidation.md","x":-720,"y":50,"width":400,"height":400,"color":"3"},
+		{"id":"8032f80c5ee3eeee","type":"file","file":"Board/Cards/Card Types/Official/Assets, Pools, Alignments.md","x":1140,"y":500,"width":400,"height":400,"color":"3"},
+		{"id":"c1a41ebf5d1af81d","type":"text","text":"Asset","x":1049,"y":40,"width":116,"height":60},
+		{"id":"40cec4a3f3511a31","type":"text","text":"Asset","x":928,"y":40,"width":116,"height":60},
+		{"id":"a0736041be2c1da0","type":"text","text":"Asset","x":928,"y":100,"width":116,"height":60},
+		{"id":"0c08b89b15304656","type":"text","text":"","x":1620,"y":320,"width":275,"height":129},
+		{"id":"9c3839e8661e8cf5","type":"text","text":"Player Name","x":1620,"y":320,"width":141,"height":129},
+		{"id":"0a5e7ba41878e719","type":"text","text":"Type","x":1761,"y":320,"width":141,"height":129}
 	],
 	"edges":[
 		{"id":"9ad38d7b4634ec51","fromNode":"60f0c730b5db62b3","fromSide":"top","toNode":"a7d74a283cc80d33","toSide":"bottom"},
 		{"id":"8386b95288194287","fromNode":"507ae6b6db54ffa2","fromSide":"left","toNode":"87fc133bd226e86a","toSide":"right"},
 		{"id":"13df29b766e40524","fromNode":"bfe4bb458d18f418","fromSide":"right","toNode":"b65cfa4631733a74","toSide":"top"},
-		{"id":"437fa863bcb53c94","fromNode":"052545aaffecb77a","fromSide":"right","toNode":"81e2b7c47717d926","toSide":"top","label":"Asset"},
-		{"id":"9644b50fdefaeefb","fromNode":"4684efa9c124346b","fromSide":"bottom","toNode":"81e2b7c47717d926","toSide":"left","label":"Coup Condition"},
-		{"id":"de7d9d7bb1b25874","fromNode":"a7d74a283cc80d33","fromSide":"right","toNode":"c2e8e03881091c73","toSide":"left"}
+		{"id":"9644b50fdefaeefb","fromNode":"4684efa9c124346b","fromSide":"bottom","toNode":"8032f80c5ee3eeee","toSide":"left","label":"Coup Condition"},
+		{"id":"de7d9d7bb1b25874","fromNode":"a7d74a283cc80d33","fromSide":"right","toNode":"c2e8e03881091c73","toSide":"left"},
+		{"id":"629257655e23ff08","fromNode":"c1a41ebf5d1af81d","fromSide":"right","toNode":"8032f80c5ee3eeee","toSide":"top"},
+		{"id":"9ed600a81f210bbf","fromNode":"c1a41ebf5d1af81d","fromSide":"right","toNode":"e47712dd2223a292","toSide":"left"}
 	]
 }

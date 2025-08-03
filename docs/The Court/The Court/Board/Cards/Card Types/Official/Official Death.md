@@ -1,5 +1,6 @@
 
 - The Official Death mechanic is a way to cycle cards back into players card pools.
 	- On death, plays will receive a payout of random cards.
-	- When an official dies, a player will receive another official. This is determined via this hierarchy:
-		1. The 
+	- When an official dies, players will receive other cards :
+		1. If they spawned the Official, I.E., they own the card effect.  They will receive  
+		2. 
