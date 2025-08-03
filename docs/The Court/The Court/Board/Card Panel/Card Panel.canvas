@@ -3,18 +3,18 @@
 		{"id":"1d4e42b31c0a8019","type":"group","x":-114,"y":-20,"width":290,"height":947,"label":"Card Panel"},
 		{"id":"8d2ea5f4cf28ed9d","type":"text","text":"","x":-94,"y":60,"width":250,"height":50,"color":"6"},
 		{"id":"2a8559b352d3f6a8","type":"text","text":"","x":-94,"y":120,"width":250,"height":50,"color":"2"},
-		{"id":"b38909a0c155678b","type":"text","text":"","x":-94,"y":0,"width":250,"height":50,"color":"5"},
+		{"id":"b38909a0c155678b","type":"text","text":"(Being Hovered On)","x":-94,"y":0,"width":250,"height":50,"color":"5"},
 		{"id":"f47317c9135e2f30","type":"text","text":"","x":-94,"y":240,"width":250,"height":50,"color":"4"},
 		{"id":"a1f31005caee076a","type":"text","text":"","x":-94,"y":300,"width":250,"height":50,"color":"5"},
 		{"id":"90f53a5734a03097","type":"text","text":"","x":-94,"y":180,"width":250,"height":50,"color":"5"},
 		{"id":"3d2b612db6e32c87","type":"text","text":"","x":-94,"y":420,"width":250,"height":50,"color":"3"},
-		{"id":"01b7ad0ba80aa8bd","type":"text","text":"","x":-94,"y":480,"width":250,"height":50,"color":"4"},
 		{"id":"ca3d5b33c7ef0787","type":"text","text":"","x":-94,"y":360,"width":250,"height":50,"color":"2"},
+		{"id":"01b7ad0ba80aa8bd","type":"text","text":"","x":-94,"y":480,"width":250,"height":50,"color":"4"},
 		{"id":"8e64995150809b76","type":"text","text":"","x":-94,"y":600,"width":250,"height":50,"color":"5"},
 		{"id":"7523953326e37026","type":"text","text":"","x":-94,"y":660,"width":250,"height":50,"color":"5"},
 		{"id":"8a8017758d903301","type":"text","text":"","x":-94,"y":540,"width":250,"height":50,"color":"6"},
 		{"id":"5d7c3022963d55ed","type":"text","text":"Economy Panel - For reference only","x":-94,"y":720,"width":250,"height":187,"color":"1"},
-		{"id":"2c61b5a7d9997652","x":200,"y":-209,"width":189,"height":259,"color":"5","type":"text","text":"Card Display (While tab is hovered, we display the card fully here)"}
+		{"id":"2c61b5a7d9997652","type":"text","text":"Card Display (While tab is hovered, we display the card fully here)","x":200,"y":-190,"width":189,"height":240,"color":"5"}
 	],
 	"edges":[]
 }

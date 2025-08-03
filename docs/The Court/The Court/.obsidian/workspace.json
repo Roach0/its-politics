@@ -50,19 +50,36 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government Area/Government Type Layouts.canvas",
+                "file": "Board/Card Panel/Card Panel.canvas",
                 "viewState": {
-                  "x": 722.6318341626251,
-                  "y": -2835.2960735126917,
-                  "zoom": -2.7898523890272444
+                  "x": 1070.7834095041803,
+                  "y": 227.5882109436218,
+                  "zoom": -2.0440242261512416
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Government Type Layouts"
+              "title": "Card Panel"
+            }
+          },
+          {
+            "id": "9b9663c19c31555d",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Board/Government Area/Office/Office.canvas",
+                "viewState": {
+                  "x": 320,
+                  "y": -476,
+                  "zoom": -1.14388243631264
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Office"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "7b8fe469083d2574",
@@ -271,15 +288,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8c8584bb9a266f95",
+  "active": "9b9663c19c31555d",
   "lastOpenFiles": [
     "Board/Government Area/Office/Office Scoring List.md",
-    "Lists",
-    "Board/Government Area/Office/Office.canvas",
-    "Cards/Card Types/Official/Assets, Pools, Alignments.md",
+    "Board/Board Layout.canvas",
+    "Board/Government Area/Government Types.md",
+    "Board/Government Area/Government.canvas",
+    "Board/Government Area/Government Type Layouts.canvas",
     "Board/Card Panel/Card Panel.canvas",
-    "Cards/Card Types/Official/Death Timer.md",
+    "Board/Game Panel/Game Panel.canvas",
     "Cards/Card Types/Official/Official.canvas",
+    "Cards/Card Types/Official/Death Timer.md",
+    "Cards/Card Types/Official/Assets, Pools, Alignments.md",
+    "Board/Government Area/Office/Office.canvas",
+    "Alignments & Assets.md",
+    "Lists",
     "Cards/Card Types/Official/Official Death.md",
     "Cards/Card Types/Official/Official Passive Effect List.md",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
@@ -287,15 +310,9 @@
     "Cards/Card.canvas",
     "Board/Economy Area/Economy Area.canvas",
     "Board/Economy Area/Card Cost, Economy & Liquidation.md",
-    "Board/Game Panel/Game Panel.canvas",
-    "Board/Government Area/Government.canvas",
-    "Board/Government Area/Government Type Layouts.canvas",
-    "Board/Government Area/Government Types.md",
     "Game Phases/Game Phases.canvas",
-    "Alignments & Assets.md",
     "Game Phases/Turn Actions.md",
     "Game Phases/Points & Scoring.md",
-    "Board/Board Layout.canvas",
     "Board/Card Panel",
     "Board/Cards/CardEffects.md",
     "Board/Cards/Card Types/Official/Assets, Asset Pools & Coup Conditions.md",
