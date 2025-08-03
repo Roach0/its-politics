@@ -66,15 +66,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government Area/Office/Office Layout.canvas",
+                "file": "Board/Government Area/Office/Office.canvas",
                 "viewState": {
-                  "x": 181.48682559337885,
-                  "y": -296.1098967041728,
-                  "zoom": -1
+                  "x": 9.349791244701805,
+                  "y": -335.3217710961607,
+                  "zoom": -1.9451236714799267
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Office Layout"
+              "title": "Office"
             }
           }
         ],
@@ -227,8 +227,8 @@
   },
   "active": "9b9663c19c31555d",
   "lastOpenFiles": [
-    "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Board/Government Area/Office/Office Layout.canvas",
+    "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Cards/Card Types/Official/Official.canvas",
     "Cards/Card Types/Official/Assets, Pools, Alignments.md",
     "Game Phases/Game Phases.canvas",
