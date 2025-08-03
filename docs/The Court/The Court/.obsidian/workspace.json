@@ -66,15 +66,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Game Phases/Game Phases.canvas",
+                "file": "Board/Government Area/Office/Office Layout.canvas",
                 "viewState": {
-                  "x": -394.24703867351764,
-                  "y": -518.8126635903182,
-                  "zoom": -0.6424699562360199
+                  "x": 181.48682559337885,
+                  "y": -296.1098967041728,
+                  "zoom": -1
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Game Phases"
+              "title": "Office Layout"
             }
           }
         ],
@@ -227,8 +227,12 @@
   },
   "active": "9b9663c19c31555d",
   "lastOpenFiles": [
-    "Game Phases/Turn Actions.md",
+    "Cards/Card Types/Card Types, Effects & Alignments.md",
+    "Board/Government Area/Office/Office Layout.canvas",
+    "Cards/Card Types/Official/Official.canvas",
+    "Cards/Card Types/Official/Assets, Pools, Alignments.md",
     "Game Phases/Game Phases.canvas",
+    "Game Phases/Turn Actions.md",
     "Lists/Contract Active Effects List.md",
     "Board/Government Area/Office/Office.canvas",
     "Lists/Office Scoring List.md",
@@ -238,16 +242,12 @@
     "Board/Government Area/Government Type Layouts.canvas",
     "Board/Card Panel/Card Panel.canvas",
     "Board/Game Panel/Game Panel.canvas",
-    "Cards/Card Types/Official/Official.canvas",
     "Cards/Card Types/Official/Death Timer.md",
-    "Cards/Card Types/Official/Assets, Pools, Alignments.md",
     "Alignments & Assets.md",
     "Lists",
     "Cards/Card Types/Official/Official Death.md",
     "Lists/Official Passive Effect List.md",
-    "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Cards/Card.canvas",
-    "Board/Economy Area/Economy Area.canvas",
     "Board/Economy Area/Card Cost, Economy & Liquidation.md",
     "Game Phases/Points & Scoring.md",
     "Board/Card Panel",

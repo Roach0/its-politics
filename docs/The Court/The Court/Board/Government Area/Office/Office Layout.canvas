@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"e5373dc4d00476b0","x":-240,"y":-160,"width":600,"height":418,"type":"group","label":"Office"},
+		{"id":"538f55debe171c31","x":-220,"y":-140,"width":560,"height":378,"color":"6","type":"text","text":""},
+		{"id":"25792a8d4ac4c9cf","x":140,"y":-140,"width":200,"height":378,"type":"text","text":"Scoring Info"},
+		{"id":"b189fa0a04b4ad0c","x":-220,"y":-140,"width":360,"height":378,"type":"text","text":"Office Portrait Art"},
+		{"id":"d58e4fc9a9feae73","x":-220,"y":-640,"width":331,"height":391,"color":"5","type":"text","text":"official"}
+	],
+	"edges":[]
+}
