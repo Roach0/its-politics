@@ -275,6 +275,11 @@ func handle_message(sender_id: int, payload: Dictionary) -> void:
 				game_started.emit(players)
 			else:
 				print("Non-owner tried to start game. Ignoring.")
+		"end_turn":
+			if TurnManager.current_player.id == sender_id:
+				TurnManager._process_turn_end()
+			else:
+				print("Player %s tried to end turn. Ignoring." % sender_id)
 
 func send_message(packet_data: Dictionary) -> void:
 	# Set the send_type and channel
