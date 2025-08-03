@@ -61,16 +61,16 @@
             }
           },
           {
-            "id": "9b9663c19c31555d",
+            "id": "6ad6eeece1b36232",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Board/Government Area/Office/Office.canvas",
                 "viewState": {
-                  "x": 9.349791244701805,
-                  "y": -335.3217710961607,
-                  "zoom": -1.9451236714799267
+                  "x": -550.3609807239234,
+                  "y": -575.3164029710282,
+                  "zoom": -0.6117903381465939
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -79,6 +79,28 @@
           }
         ],
         "currentTab": 3
+      },
+      {
+        "id": "ccafba96867da3df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b9663c19c31555d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lists/Office Scoring List.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Office Scoring List"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,20 +249,20 @@
   },
   "active": "9b9663c19c31555d",
   "lastOpenFiles": [
+    "Board/Government Area/Office/Office.canvas",
+    "Lists/Office Scoring List.md",
     "Board/Government Area/Office/Office Layout.canvas",
+    "Board/Board Layout.canvas",
+    "Board/Card Panel/Card Panel.canvas",
+    "Lists/Contract Active Effects List.md",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Cards/Card Types/Official/Official.canvas",
     "Cards/Card Types/Official/Assets, Pools, Alignments.md",
     "Game Phases/Game Phases.canvas",
     "Game Phases/Turn Actions.md",
-    "Lists/Contract Active Effects List.md",
-    "Board/Government Area/Office/Office.canvas",
-    "Lists/Office Scoring List.md",
-    "Board/Board Layout.canvas",
     "Board/Government Area/Government Types.md",
     "Board/Government Area/Government.canvas",
     "Board/Government Area/Government Type Layouts.canvas",
-    "Board/Card Panel/Card Panel.canvas",
     "Board/Game Panel/Game Panel.canvas",
     "Cards/Card Types/Official/Death Timer.md",
     "Alignments & Assets.md",
