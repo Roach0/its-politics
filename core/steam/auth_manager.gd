@@ -34,8 +34,8 @@ func _on_validate_auth_ticket_response(auth_id: int, response: Steam.AuthSession
 	print("Auth response: %s" % verbose_response)
 	print("Game owner ID: %s" % owner_id)
 
-func validate_auth_session(ticket: Dictionary, steam_id: int) -> void:
-	var auth_response: int = Steam.beginAuthSession(ticket.buffer, ticket.size, steam_id)
+func validate_auth_session(ticket: Dictionary, user_steam_id: int) -> void:
+	var auth_response: int = Steam.beginAuthSession(ticket.buffer, ticket.size, user_steam_id)
 
 	# Get a verbose response; unnecessary but useful in this example
 	var verbose_response: String
@@ -50,7 +50,7 @@ func validate_auth_session(ticket: Dictionary, steam_id: int) -> void:
 
 	if auth_response == 0:
 		print("Validation successful, adding user to client_auth_tickets")
-		client_auth_tickets.append({"id": steam_id, "ticket": ticket.id})
+		client_auth_tickets.append({"id": user_steam_id, "ticket": ticket.id})
 
 	# You can now add the client to the game
 

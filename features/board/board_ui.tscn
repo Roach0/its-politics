@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
 
 [node name="BoardUi" type="HBoxContainer"]
+custom_minimum_size = Vector2(750, 0)
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = 0
 script = ExtResource("1_vcn2k")
 
 [node name="Left" type="VBoxContainer" parent="."]
@@ -18,6 +20,7 @@ custom_minimum_size = Vector2(300, 500)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_stretch_ratio = 0.2
+theme_override_constants/separation = 0
 
 [node name="CardArea" type="ColorRect" parent="Left"]
 layout_mode = 2
