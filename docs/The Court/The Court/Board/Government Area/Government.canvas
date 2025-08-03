@@ -10,8 +10,8 @@
 		{"id":"575b9b91a4c08da1","type":"text","text":"5","x":-805,"y":-835,"width":250,"height":220,"color":"4"},
 		{"id":"d42f094e88ba8cd2","type":"text","text":"1","x":-485,"y":-1265,"width":250,"height":220,"color":"4"},
 		{"id":"65a82745fd08b4e7","type":"text","text":"4","x":-485,"y":-835,"width":250,"height":220,"color":"4"},
-		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government/Office/Office.canvas","x":400,"y":-1445,"width":400,"height":400,"color":"3"},
-		{"id":"0e262b50d6e491b5","x":400,"y":-480,"width":400,"height":400,"color":"3","type":"file","file":"Board/Government/Government Type Layouts.canvas"}
+		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government Area/Office/Office.canvas","x":400,"y":-1445,"width":400,"height":400,"color":"3"},
+		{"id":"0e262b50d6e491b5","x":400,"y":-480,"width":400,"height":400,"color":"3","type":"file","file":"Board/Government Area/Government Type Layouts.canvas"}
 	],
 	"edges":[
 		{"id":"dc9fd2ec37fe5597","fromNode":"65a82745fd08b4e7","fromSide":"right","toNode":"c8401b30ae34af5f","toSide":"left"},

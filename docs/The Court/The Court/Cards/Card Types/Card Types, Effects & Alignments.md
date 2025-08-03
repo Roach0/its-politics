@@ -2,7 +2,8 @@
 - Cards are gained when an official dies.  All players will gain random cards.  Some assets will ensure you gain more cards when an official dies.
 
 #### Card Types
-There are different card types, which carry out vastly different actions on the board.
+There two different card types, which carry out vastly different actions on the board.
+It's easiest to think though in terms of Officials being the conduit for passive effects, and Contracts being Active Effects.
 
 - Official Card - Spawn an official on the desired Office.
 - Contract Card - Initiate an effect on the desired Official or Office, as designated by the card.

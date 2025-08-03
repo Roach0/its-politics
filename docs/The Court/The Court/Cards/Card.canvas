@@ -2,14 +2,14 @@
 	"nodes":[
 		{"id":"5c26f11e01d33aa4","type":"group","x":-1400,"y":-1800,"width":584,"height":700,"label":"Base Card Layout"},
 		{"id":"a3464055eca4fc54","type":"group","x":-2180,"y":-1760,"width":531,"height":660,"label":"Card Types"},
-		{"id":"1ed4da52c3a486b6","type":"file","file":"Board/Cards/Card Types/Official/Official.canvas","x":-2160,"y":-1360,"width":491,"height":240},
+		{"id":"1ed4da52c3a486b6","type":"file","file":"Cards/Card Types/Official/Official.canvas","x":-2160,"y":-1360,"width":491,"height":240},
 		{"id":"27604b14212eeaa5","type":"text","text":"Official Name","x":-1380,"y":-1780,"width":544,"height":111,"color":"5"},
 		{"id":"9fe6f055ac78cb8f","type":"text","text":"Official Portrait","x":-1380,"y":-1669,"width":544,"height":269,"color":"5"},
 		{"id":"835a214b9d891707","type":"text","text":"Play Effect - For Official Cards, this is typically 'assign of start election for this official on the office this is played.'","x":-1380,"y":-1400,"width":544,"height":180,"color":"2"},
 		{"id":"85b956c976c7f297","type":"text","text":"Play Cost","x":-1380,"y":-1220,"width":544,"height":100,"color":"6"},
-		{"id":"82d863f53458c3cd","type":"file","file":"Board/Cards/Card Types/Card Types, Effects & Alignments.md","x":-240,"y":-1780,"width":400,"height":400,"color":"3"},
+		{"id":"82d863f53458c3cd","type":"file","file":"Cards/Card Types/Card Types, Effects & Alignments.md","x":-240,"y":-1780,"width":400,"height":400,"color":"3"},
 		{"id":"142e063beb5972bd","type":"text","text":"This has it's own states, own class extending card.","x":-2160,"y":-1020,"width":334,"height":106,"color":"3"},
-		{"id":"9c96de42e58bbbfc","type":"file","file":"Board/Cards/Card Types/Contract Active Effects List.md","x":-2160,"y":-1724,"width":491,"height":325},
+		{"id":"9c96de42e58bbbfc","type":"file","file":"Cards/Card Types/Contract Active Effects List.md","x":-2160,"y":-1724,"width":491,"height":325},
 		{"id":"fe226eec1811a7cb","type":"text","text":"Alignment\n\n-health\n-wealth\n-food\n-persona\n-etc\n\n","x":-640,"y":-1730,"width":250,"height":300}
 	],
 	"edges":[
