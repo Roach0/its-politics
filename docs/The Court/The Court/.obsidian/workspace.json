@@ -6,6 +6,7 @@
       {
         "id": "911499ec7dadd2f0",
         "type": "tabs",
+        "dimension": 41.312741312741316,
         "children": [
           {
             "id": "6200355428d473b7",
@@ -64,17 +65,14 @@
             "id": "6ad6eeece1b36232",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Board/Government Area/Government Type Layouts.canvas",
-                "viewState": {
-                  "x": -54.57276507276521,
-                  "y": -3200.9303534303535,
-                  "zoom": -2.4229826473826317
-                }
+                "file": "Lists/Office Scoring List.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Government Type Layouts"
+              "icon": "lucide-file",
+              "title": "Office Scoring List"
             }
           }
         ],
@@ -83,6 +81,7 @@
       {
         "id": "ccafba96867da3df",
         "type": "tabs",
+        "dimension": 58.68725868725869,
         "children": [
           {
             "id": "9b9663c19c31555d",
@@ -99,8 +98,26 @@
               "icon": "lucide-file",
               "title": "Office Scoring List"
             }
+          },
+          {
+            "id": "265c305bfcb79856",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Meta Worksheet - Do Not Delete.canvas",
+                "viewState": {
+                  "x": 258.0253539978819,
+                  "y": -497.91798231177995,
+                  "zoom": -0.6666666666666665
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Meta Worksheet - Do Not Delete"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -247,22 +264,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ad6eeece1b36232",
+  "active": "265c305bfcb79856",
   "lastOpenFiles": [
+    "Meta Worksheet - Do Not Delete.canvas",
+    "Lists/Office Scoring List.md",
+    "Lists/Contract Active Effects List.md",
+    "Board/Government Area/Government Type Layouts.canvas",
     "Board/Government Area/Government.canvas",
     "Board/Government Area/Office/Office Layout.canvas",
     "Board/Government Area/Office/Office.canvas",
     "Board/Board Layout.canvas",
-    "Lists/Office Scoring List.md",
     "Board/Card Panel/Card Panel.canvas",
-    "Lists/Contract Active Effects List.md",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Cards/Card Types/Official/Official.canvas",
     "Cards/Card Types/Official/Assets, Pools, Alignments.md",
     "Game Phases/Game Phases.canvas",
     "Game Phases/Turn Actions.md",
     "Board/Government Area/Government Types.md",
-    "Board/Government Area/Government Type Layouts.canvas",
     "Board/Game Panel/Game Panel.canvas",
     "Cards/Card Types/Official/Death Timer.md",
     "Alignments & Assets.md",
