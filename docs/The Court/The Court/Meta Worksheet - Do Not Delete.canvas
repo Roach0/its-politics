@@ -1,8 +1,6 @@
 {
 	"nodes":[
 		{"id":"fe4f15f43d99ddb9","type":"group","x":380,"y":-840,"width":290,"height":160,"label":"Adjacent Addition"},
-		{"id":"1db4ac34e18f8583","type":"text","text":"food","x":5,"y":580,"width":250,"height":60,"color":"1"},
-		{"id":"de5ed178ecadceaf","type":"text","text":"intel","x":-360,"y":580,"width":250,"height":60,"color":"1"},
 		{"id":"1f9d690fe38742bb","type":"text","text":"Grow","x":5,"y":-398,"width":250,"height":60,"color":"4"},
 		{"id":"bd96e058c14e74f8","type":"text","text":"Convert","x":480,"y":-188,"width":250,"height":60,"color":"6"},
 		{"id":"8500da053da1def8","type":"text","text":"Exploit","x":5,"y":52,"width":250,"height":60,"color":"1"},
@@ -18,16 +16,17 @@
 		{"id":"6b796ef07ab77c80","type":"text","text":"Food","x":-760,"y":-398,"width":250,"height":60},
 		{"id":"288a2ea63a5b71a2","type":"text","text":"Health","x":-760,"y":-338,"width":250,"height":60},
 		{"id":"3cf568cb6502e517","type":"text","text":"Wealth","x":-760,"y":-278,"width":250,"height":60},
-		{"id":"835b4cd434e8b5a0","type":"text","text":"","x":840,"y":-260,"width":246,"height":204},
-		{"id":"1f056f737f4907e6","type":"text","text":"Playable Mechanics - These mechanics can be manipulated through player actions, directly or indirectly, as a 'consequence' of how to game is designed.  But it's really a natural meta we can build around.","x":5,"y":-1320,"width":484,"height":118},
-		{"id":"624aa60a09e1f4c4","type":"text","text":"Death Timers","x":-40,"y":-1160,"width":250,"height":60},
-		{"id":"5c6f2325cc2fe5ca","type":"text","text":"Elections","x":291,"y":-1160,"width":250,"height":60},
-		{"id":"9ff39393ee805937","type":"text","text":"Economy","x":291,"y":-1040,"width":250,"height":60},
-		{"id":"9686440d1935007e","type":"text","text":"Positions: 1","x":-40,"y":-920,"width":250,"height":60},
-		{"id":"5ebe2f0932f86f21","type":"text","text":"Assets: 1","x":-40,"y":-1040,"width":250,"height":60},
+		{"id":"3ca20ab73d5a6eab","type":"text","text":"Terra-Genesis Command","x":5,"y":-620,"width":250,"height":60},
 		{"id":"948e9773efc8aa80","type":"text","text":"Assets","x":400,"y":-820,"width":250,"height":60},
 		{"id":"5916cff2555a2d40","type":"text","text":"Positions","x":400,"y":-760,"width":250,"height":60},
-		{"id":"3ca20ab73d5a6eab","type":"text","text":"Terra-Genesis Command","x":5,"y":-620,"width":250,"height":60}
+		{"id":"1f056f737f4907e6","type":"text","text":"Playable Mechanics - These mechanics can be manipulated through player actions, directly or indirectly, as a 'consequence' of how to game is designed.  But it's really a natural meta we can build around.","x":-156,"y":-1360,"width":484,"height":118},
+		{"id":"624aa60a09e1f4c4","type":"text","text":"Death Timers","x":-201,"y":-1200,"width":250,"height":60},
+		{"id":"5c6f2325cc2fe5ca","type":"text","text":"Elections","x":130,"y":-1200,"width":250,"height":60},
+		{"id":"5ebe2f0932f86f21","type":"text","text":"Assets: 1","x":-201,"y":-1080,"width":250,"height":60},
+		{"id":"9ff39393ee805937","type":"text","text":"Economy","x":130,"y":-1080,"width":250,"height":60},
+		{"id":"9686440d1935007e","type":"text","text":"Positions: 1","x":-201,"y":-960,"width":250,"height":60},
+		{"id":"c4a29253c06e4105","x":920,"y":-248,"width":250,"height":60,"type":"text","text":"Position Swap"},
+		{"id":"4685d09a2a8bbe41","x":795,"y":266,"width":250,"height":60,"type":"text","text":"Death Timer Elections"}
 	],
 	"edges":[
 		{"id":"07cedd2a9b8512af","fromNode":"6b796ef07ab77c80","fromSide":"right","toNode":"a0f4fa5d2b0a1263","toSide":"left","color":"4"},
