@@ -66,15 +66,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Board/Government Area/Office/Office.canvas",
+                "file": "Board/Government Area/Government Type Layouts.canvas",
                 "viewState": {
-                  "x": -550.3609807239234,
-                  "y": -575.3164029710282,
-                  "zoom": -0.6117903381465939
+                  "x": -800,
+                  "y": -3335,
+                  "zoom": -2.4229826473826317
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Office"
+              "title": "Government Type Layouts"
             }
           }
         ],
@@ -247,12 +247,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b9663c19c31555d",
+  "active": "6ad6eeece1b36232",
   "lastOpenFiles": [
-    "Board/Government Area/Office/Office.canvas",
-    "Lists/Office Scoring List.md",
+    "Board/Government Area/Government.canvas",
     "Board/Government Area/Office/Office Layout.canvas",
+    "Board/Government Area/Office/Office.canvas",
     "Board/Board Layout.canvas",
+    "Lists/Office Scoring List.md",
     "Board/Card Panel/Card Panel.canvas",
     "Lists/Contract Active Effects List.md",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
@@ -261,7 +262,6 @@
     "Game Phases/Game Phases.canvas",
     "Game Phases/Turn Actions.md",
     "Board/Government Area/Government Types.md",
-    "Board/Government Area/Government.canvas",
     "Board/Government Area/Government Type Layouts.canvas",
     "Board/Game Panel/Game Panel.canvas",
     "Cards/Card Types/Official/Death Timer.md",
