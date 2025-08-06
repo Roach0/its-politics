@@ -6,7 +6,7 @@
       {
         "id": "911499ec7dadd2f0",
         "type": "tabs",
-        "dimension": 41.312741312741316,
+        "dimension": 30.244530244530242,
         "children": [
           {
             "id": "6200355428d473b7",
@@ -81,7 +81,7 @@
       {
         "id": "ccafba96867da3df",
         "type": "tabs",
-        "dimension": 58.68725868725869,
+        "dimension": 69.75546975546976,
         "children": [
           {
             "id": "9b9663c19c31555d",
@@ -105,15 +105,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Meta Worksheet - Do Not Delete.canvas",
+                "file": "Board/Government Area/Government.canvas",
                 "viewState": {
-                  "x": 54.21359273570624,
-                  "y": -364.12713940775495,
-                  "zoom": -0.9999999999999998
+                  "x": 89.90032417007322,
+                  "y": -945.523555125492,
+                  "zoom": -1.3747249645302635
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Meta Worksheet - Do Not Delete"
+              "title": "Government"
             }
           }
         ],
@@ -266,14 +266,15 @@
   },
   "active": "265c305bfcb79856",
   "lastOpenFiles": [
-    "Meta Worksheet - Do Not Delete.canvas",
-    "Lists/Office Scoring List.md",
+    "Board/Board Layout.canvas",
     "Lists/Contract Active Effects List.md",
+    "Lists/Office Scoring List.md",
+    "Lists/Official Passive Effect List.md",
+    "Meta Worksheet - Do Not Delete.canvas",
     "Board/Government Area/Government Type Layouts.canvas",
     "Board/Government Area/Government.canvas",
     "Board/Government Area/Office/Office Layout.canvas",
     "Board/Government Area/Office/Office.canvas",
-    "Board/Board Layout.canvas",
     "Board/Card Panel/Card Panel.canvas",
     "Cards/Card Types/Card Types, Effects & Alignments.md",
     "Cards/Card Types/Official/Official.canvas",
@@ -286,8 +287,6 @@
     "Alignments & Assets.md",
     "Lists",
     "Cards/Card Types/Official/Official Death.md",
-    "Lists/Official Passive Effect List.md",
-    "Cards/Card.canvas",
     "Board/Economy Area/Card Cost, Economy & Liquidation.md",
     "Game Phases/Points & Scoring.md",
     "Board/Card Panel",
