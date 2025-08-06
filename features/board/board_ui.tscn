@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cll6o2mrrcxq5"]
+[gd_scene load_steps=6 format=3 uid="uid://cll6o2mrrcxq5"]
 
 [ext_resource type="Script" uid="uid://b0r62eay7h0tq" path="res://features/board/board_ui.gd" id="1_vcn2k"]
 [ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
 [ext_resource type="PackedScene" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
 [ext_resource type="Script" uid="uid://d2anuayq4sq80" path="res://features/board/economy_area_ui.gd" id="3_hhujw"]
+
+[sub_resource type="Theme" id="Theme_hhujw"]
 
 [node name="BoardUi" type="HBoxContainer"]
 custom_minimum_size = Vector2(750, 0)
@@ -49,6 +51,32 @@ theme_override_constants/margin_bottom = 5
 [node name="VBoxContainer" type="VBoxContainer" parent="Left/EconomyAreaUi/MarginContainer"]
 layout_mode = 2
 alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 15
+
+[node name="TokenDisplay" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="TokenSlot1" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_hhujw")
+
+[node name="TokenSlot2" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TokenSlot3" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
 layout_mode = 2
