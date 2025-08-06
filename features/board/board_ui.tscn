@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0r62eay7h0tq" path="res://features/board/board_ui.gd" id="1_vcn2k"]
 [ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
-[ext_resource type="PackedScene" uid="uid://c0j7gy4geh8fa" path="res://features/cards/card_area_card_ui.tscn" id="2_rlpto"]
+[ext_resource type="PackedScene" uid="uid://dfy6rnwmj1kjj" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
 
 [node name="BoardUi" type="HBoxContainer"]
 custom_minimum_size = Vector2(750, 0)
@@ -23,79 +23,16 @@ size_flags_horizontal = 0
 size_flags_stretch_ratio = 0.2
 theme_override_constants/separation = 0
 
-[node name="CardArea" type="ColorRect" parent="Left"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.8
-color = Color(0.243137, 0.54902, 0.545098, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="Left/CardArea"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
-
-[node name="ScrollContainer" type="ScrollContainer" parent="Left/CardArea/MarginContainer"]
-layout_mode = 2
-horizontal_scroll_mode = 0
-vertical_scroll_mode = 3
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Left/CardArea/MarginContainer/ScrollContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="CardAreaCardUi" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
+[node name="CardPanelUi" parent="Left" instance=ExtResource("2_rlpto")]
 layout_mode = 2
 
-[node name="CardAreaCardUi2" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi3" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi4" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi5" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi6" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi7" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi8" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi9" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi10" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi11" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi12" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="CardAreaCardUi13" parent="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_rlpto")]
-layout_mode = 2
-
-[node name="EconomyArea" type="ColorRect" parent="Left"]
+[node name="EconomyAreaUi" type="ColorRect" parent="Left"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.2
 color = Color(0.454902, 0.360784, 0.670588, 1)
 
-[node name="GovernmentArea" type="ColorRect" parent="."]
+[node name="GovernmenPanelUi" type="ColorRect" parent="."]
 clip_contents = true
 custom_minimum_size = Vector2(250, 500)
 layout_mode = 2
@@ -105,56 +42,3 @@ color = Color(0.494118, 0.494118, 0.494118, 1)
 
 [node name="GamePanelUi" parent="." instance=ExtResource("1_w4tip")]
 layout_mode = 2
-
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi2" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi2" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi2" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi2" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi3" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi3" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi3" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi3" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi4" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi4" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi4" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi4" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi5" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi5" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi5" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi5" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi6" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi6" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi6" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi6" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi7" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi7" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi7" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi7" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi8" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi8" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi8" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi8" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi9" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi9" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi9" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi9" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi10" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi10" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi10" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi10" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi11" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi11" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi11" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi11" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi12" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi12" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi12" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi12" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
-[connection signal="card_area_card_hovered" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi13" to="." method="_on_card_area_card_ui_card_area_card_hovered"]
-[connection signal="card_area_card_hovered_exited" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi13" to="." method="_on_card_area_card_ui_card_area_card_hovered_exited"]
-[connection signal="card_area_card_selected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi13" to="." method="_on_card_area_card_ui_card_area_card_selected"]
-[connection signal="card_area_card_unselected" from="Left/CardArea/MarginContainer/ScrollContainer/VBoxContainer/CardAreaCardUi13" to="." method="_on_card_area_card_ui_card_area_card_unselected"]
