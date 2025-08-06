@@ -31,5 +31,3 @@ func liquidation(card:Card):
 	bar_change(health_bar, card.health_cost)
 	bar_change(food_bar, card.food_cost)
 	bar_change(wealth_bar, card.wealth_cost)
-	
-	
