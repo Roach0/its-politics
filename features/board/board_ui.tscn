@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cll6o2mrrcxq5"]
+[gd_scene load_steps=5 format=3 uid="uid://cll6o2mrrcxq5"]
 
 [ext_resource type="Script" uid="uid://b0r62eay7h0tq" path="res://features/board/board_ui.gd" id="1_vcn2k"]
 [ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
 [ext_resource type="PackedScene" uid="uid://dfy6rnwmj1kjj" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
+[ext_resource type="Script" uid="uid://xd5dvwugepmw" path="res://features/board/economy_area_ui.gd" id="3_hhujw"]
 
 [node name="BoardUi" type="HBoxContainer"]
 custom_minimum_size = Vector2(750, 0)
@@ -31,6 +32,28 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.2
 color = Color(0.454902, 0.360784, 0.670588, 1)
+script = ExtResource("3_hhujw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Left/EconomyAreaUi"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" type="ProgressBar" parent="Left/EconomyAreaUi/VBoxContainer"]
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="FoodBar" type="ProgressBar" parent="Left/EconomyAreaUi/VBoxContainer"]
+layout_mode = 2
+show_percentage = false
+
+[node name="WealthBar" type="ProgressBar" parent="Left/EconomyAreaUi/VBoxContainer"]
+layout_mode = 2
+show_percentage = false
 
 [node name="GovernmenPanelUi" type="ColorRect" parent="."]
 clip_contents = true

@@ -11,7 +11,7 @@ extends Resource
 @export var health_cost: int
 
 func apply_effect(target: Node) -> void:
-    if type.can_apply_to(target):
-        effect.apply_effect(target)
-    else:
-        print("Invalid target")
+	if type.can_apply_to(target):
+		effect.apply_effect(target)
+	else:
+		print("Invalid target")

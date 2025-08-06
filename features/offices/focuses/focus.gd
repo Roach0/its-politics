@@ -3,7 +3,7 @@ extends Resource
 
 enum Category {
 	ECONOMY,
-    ASSET
+	ASSET
 }
 
 @export var name: String
