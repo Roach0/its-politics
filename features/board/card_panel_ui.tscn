@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfy6rnwmj1kjj"]
+[gd_scene load_steps=2 format=3 uid="uid://bs5nqe5dk3pmv"]
 
 [ext_resource type="Script" uid="uid://dj0p8w0grk8f6" path="res://features/board/card_panel_ui.gd" id="1_hgpwf"]
 
