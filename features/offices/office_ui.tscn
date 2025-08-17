@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cd2q0r004u470"]
 
-[ext_resource type="Script" uid="uid://n8kuj2jjavn6" path="res://features/offices/office.gd" id="1_w1svc"]
+[ext_resource type="Script" uid="uid://n8kuj2jjavn6" path="res://features/offices/office.gd" id="1_njtyl"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_efi7p"]
 viewport_path = NodePath("SubViewport")
@@ -30,7 +30,7 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 
 [node name="Office" type="Node2D"]
-script = ExtResource("1_w1svc")
+script = ExtResource("1_njtyl")
 metadata/_custom_type_script = "uid://n8kuj2jjavn6"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

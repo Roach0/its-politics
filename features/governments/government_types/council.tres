@@ -12,4 +12,5 @@ allowed_promotions = Dictionary[int, Array]({
 3: [4],
 4: [0]
 })
+positions = Array[Vector2]([Vector2(0, 0), Vector2(-200, 0), Vector2(-400, 0), Vector2(400, 0), Vector2(200, 0)])
 metadata/_custom_type_script = "uid://xu80j8nxr2bo"

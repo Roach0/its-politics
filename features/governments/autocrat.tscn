@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://1t1xrq7ctwcb"]
+[gd_scene load_steps=7 format=3 uid="uid://5yg7iyu1eh5b"]
 
 [ext_resource type="Script" uid="uid://bxt7cspfo0o0g" path="res://features/governments/government.gd" id="1_cwpuw"]
-[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/offices/office.tscn" id="2_6xedt"]
+[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/offices/office_ui.tscn" id="2_6xedt"]
 [ext_resource type="Resource" uid="uid://ustqmvesrs2i" path="res://features/governments/government_types/autocrat.tres" id="2_v0yfl"]
+[ext_resource type="PackedScene" uid="uid://7vf7k7omei4c" path="res://features/cards/arrow.tscn" id="4_ln5ou"]
+
+[sub_resource type="Curve2D" id="Curve2D_ehemx"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_lm5b5"]
+viewport_path = NodePath("SubViewport")
 
 [node name="Autocrat" type="Node2D"]
 physics_interpolation_mode = 2
@@ -11,11 +17,57 @@ government_type = ExtResource("2_v0yfl")
 metadata/_custom_type_script = "uid://bxt7cspfo0o0g"
 
 [node name="Office" parent="." instance=ExtResource("2_6xedt")]
+position = Vector2(0, -90)
 
 [node name="Office2" parent="." instance=ExtResource("2_6xedt")]
+position = Vector2(-360, 90)
 
 [node name="Office3" parent="." instance=ExtResource("2_6xedt")]
+position = Vector2(-120, 90)
 
 [node name="Office4" parent="." instance=ExtResource("2_6xedt")]
+position = Vector2(120, 90)
 
 [node name="Office5" parent="." instance=ExtResource("2_6xedt")]
+position = Vector2(360, 90)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_ehemx")
+
+[node name="Line2D" type="Line2D" parent="Path2D"]
+texture_repeat = 2
+points = PackedVector2Array(-264, 90, -228, 90)
+width = 5.0
+texture = SubResource("ViewportTexture_lm5b5")
+texture_mode = 1
+joint_mode = 1
+end_cap_mode = 1
+
+[node name="Arrow" parent="Path2D/Line2D" instance=ExtResource("4_ln5ou")]
+position = Vector2(-216, 90)
+rotation = 1.5708
+scale = Vector2(3, 3)
+polygon = PackedVector2Array(-2, 4, 0, 0, 2, 4, 0, 4)
+
+[node name="SubViewport" type="SubViewport" parent="Path2D"]
+size = Vector2i(150, 18)
+
+[node name="Line2D2" type="Line2D" parent="Path2D/SubViewport"]
+position = Vector2(-25, 25)
+points = PackedVector2Array(25, -16, 45, -16)
+
+[node name="Line2D3" type="Line2D" parent="Path2D/SubViewport"]
+position = Vector2(5, 25)
+points = PackedVector2Array(25, -16, 45, -16)
+
+[node name="Line2D4" type="Line2D" parent="Path2D/SubViewport"]
+position = Vector2(35, 25)
+points = PackedVector2Array(25, -16, 45, -16)
+
+[node name="Line2D5" type="Line2D" parent="Path2D/SubViewport"]
+position = Vector2(65, 25)
+points = PackedVector2Array(25, -16, 45, -16)
+
+[node name="Line2D6" type="Line2D" parent="Path2D/SubViewport"]
+position = Vector2(95, 25)
+points = PackedVector2Array(25, -16, 45, -16)

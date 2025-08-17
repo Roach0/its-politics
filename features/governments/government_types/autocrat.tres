@@ -6,4 +6,5 @@
 script = ExtResource("1_e3nuv")
 name = "Autocrat"
 allowed_promotions = Dictionary[int, Array]({})
+positions = Array[Vector2]([Vector2(0, -90), Vector2(-360, 90), Vector2(-120, 90), Vector2(120, 90), Vector2(360, 90)])
 metadata/_custom_type_script = "uid://xu80j8nxr2bo"

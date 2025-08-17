@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgd13gj6my7ax"]
+[gd_scene load_steps=4 format=3 uid="uid://dsy1lrpcvxmni"]
 
 [ext_resource type="Script" uid="uid://bxt7cspfo0o0g" path="res://features/governments/government.gd" id="1_0qla0"]
-[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/offices/office.tscn" id="2_6xedt"]
+[ext_resource type="PackedScene" uid="uid://cd2q0r004u470" path="res://features/offices/office_ui.tscn" id="2_6xedt"]
 [ext_resource type="Resource" uid="uid://dbaxlmbipj4j8" path="res://features/governments/government_types/council.tres" id="2_emdyo"]
 
 [node name="Council" type="Node2D"]
