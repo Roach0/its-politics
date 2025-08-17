@@ -7,7 +7,7 @@ var selection_arrow: SelectionArrow = null
 var hovered_card_ui: Node = null
 
 func _ready() -> void:
-	var card = preload("res://features/cards/card_resources/test.tres")
+	var card = load("res://features/cards/card_resources/wartime_rations.tres")
 	add_card(card)
 	add_card(card)
 	add_card(card)
