@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"fe4f15f43d99ddb9","type":"group","x":340,"y":-840,"width":290,"height":160,"label":"Adjacent Addition"},
+		{"id":"fe4f15f43d99ddb9","type":"group","x":380,"y":-900,"width":290,"height":140,"label":"Adjacent Addition"},
 		{"id":"6b796ef07ab77c80","type":"text","text":"Food","x":-760,"y":-398,"width":250,"height":60},
 		{"id":"1f056f737f4907e6","type":"text","text":"Playable Mechanics - These mechanics can be manipulated through player actions, directly or indirectly, as a 'consequence' of how to game is designed.  But it's really a natural meta we can build around.","x":-156,"y":-1360,"width":484,"height":118},
 		{"id":"624aa60a09e1f4c4","type":"text","text":"Death Timers","x":-201,"y":-1200,"width":250,"height":60},
@@ -26,8 +26,9 @@
 		{"id":"3ca20ab73d5a6eab","type":"text","text":"Terra-Genesis Command","x":5,"y":-660,"width":250,"height":60},
 		{"id":"716bc0d786b5465e","type":"text","text":"Grow: ","x":5,"y":-580,"width":250,"height":60,"color":"4"},
 		{"id":"1f9d690fe38742bb","type":"text","text":"Grow","x":5,"y":-438,"width":250,"height":60,"color":"4"},
-		{"id":"948e9773efc8aa80","type":"text","text":"Assets","x":360,"y":-860,"width":250,"height":60},
-		{"id":"5916cff2555a2d40","type":"text","text":"Positions","x":360,"y":-800,"width":250,"height":60}
+		{"id":"5916cff2555a2d40","type":"text","text":"Positions","x":400,"y":-830,"width":250,"height":60},
+		{"id":"948e9773efc8aa80","type":"text","text":"Assets","x":400,"y":-890,"width":250,"height":60},
+		{"id":"e49c3df3512254ab","x":853,"y":-1076,"width":250,"height":116,"type":"text","text":""}
 	],
 	"edges":[
 		{"id":"07cedd2a9b8512af","fromNode":"6b796ef07ab77c80","fromSide":"right","toNode":"a0f4fa5d2b0a1263","toSide":"left","color":"4"},
@@ -48,6 +49,7 @@
 		{"id":"9fb3824ad0db062d","fromNode":"4460139945862715","fromSide":"right","toNode":"1f9d690fe38742bb","toSide":"left","color":"4"},
 		{"id":"b12c1a7cb52f933d","fromNode":"f41ec504143f3346","fromSide":"right","toNode":"716bc0d786b5465e","toSide":"left","color":"4"},
 		{"id":"680e25a84cc8d777","fromNode":"f41ec504143f3346","fromSide":"right","toNode":"9561e0b38807b8cf","toSide":"left","color":"6"},
-		{"id":"50b441f4b4656b7c","fromNode":"a0f4fa5d2b0a1263","fromSide":"right","toNode":"fe4f15f43d99ddb9","toSide":"left","color":"4"}
+		{"id":"50b441f4b4656b7c","fromNode":"a0f4fa5d2b0a1263","fromSide":"right","toNode":"fe4f15f43d99ddb9","toSide":"left","color":"4"},
+		{"id":"8ba38a4cdcc9c6dc","fromNode":"fe4f15f43d99ddb9","fromSide":"right","toNode":"e49c3df3512254ab","toSide":"left"}
 	]
 }
