@@ -3,16 +3,17 @@
 		{"id":"93f2668d4fcc1c46","type":"group","x":-880,"y":-1400,"width":1039,"height":870,"label":"Example Government"},
 		{"id":"0706c152a96318d9","type":"group","x":-820,"y":-1295,"width":925,"height":700,"color":"5","label":"Succession Layout"},
 		{"id":"47a50e5e201d32cb","type":"group","x":-880,"y":-1640,"width":290,"height":160,"color":"#ffffff","label":"Key"},
+		{"id":"a3580ba3f1d2abff","type":"text","text":"","x":-214,"y":-1226,"width":250,"height":60},
 		{"id":"3a1581b18adbe34b","type":"text","text":"Offices","x":-860,"y":-1620,"width":250,"height":60,"color":"4"},
 		{"id":"ac88e1da4bd337db","type":"text","text":"Layout","x":-860,"y":-1560,"width":250,"height":60,"color":"5"},
-		{"id":"5db2e4bb49006305","type":"text","text":"2","x":-165,"y":-1115,"width":250,"height":220,"color":"4"},
 		{"id":"d42f094e88ba8cd2","type":"text","text":"1","x":-485,"y":-1265,"width":250,"height":220,"color":"4"},
 		{"id":"c38446976c9b4a9b","type":"text","text":"Position Number\n- Each spot has a number of 1-5\n- All 5 should be procedurally added to each office.\n- There should be no duplicate number, no offices should have the same position number.","x":-783,"y":-188,"width":423,"height":348,"color":"3"},
-		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government Area/Office/Office.canvas","x":400,"y":-1445,"width":400,"height":400,"color":"3"},
-		{"id":"0e262b50d6e491b5","type":"file","file":"Board/Government Area/Government Type Layouts.canvas","x":400,"y":-480,"width":400,"height":400,"color":"3"},
 		{"id":"575b9b91a4c08da1","type":"text","text":"5","x":-800,"y":-835,"width":270,"height":220,"color":"4"},
 		{"id":"65a82745fd08b4e7","type":"text","text":"4","x":-485,"y":-835,"width":250,"height":220,"color":"4"},
-		{"id":"c8401b30ae34af5f","type":"text","text":"3","x":-165,"y":-835,"width":250,"height":220,"color":"4"}
+		{"id":"c8401b30ae34af5f","type":"text","text":"3","x":-165,"y":-835,"width":250,"height":220,"color":"4"},
+		{"id":"5db2e4bb49006305","type":"text","text":"2","x":-165,"y":-1115,"width":250,"height":220,"color":"4"},
+		{"id":"6c086c8ec3a2a5cf","type":"file","file":"Board/Government Area/Office/Office.canvas","x":400,"y":-1445,"width":400,"height":400,"color":"3"},
+		{"id":"0e262b50d6e491b5","type":"file","file":"Board/Government Area/Government Type Layouts.canvas","x":400,"y":-480,"width":400,"height":400,"color":"3"}
 	],
 	"edges":[
 		{"id":"dc9fd2ec37fe5597","fromNode":"65a82745fd08b4e7","fromSide":"right","toNode":"c8401b30ae34af5f","toSide":"left"},

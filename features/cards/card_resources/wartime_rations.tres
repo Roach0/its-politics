@@ -1,0 +1,14 @@
+features/cards/card_resources/test.tres[gd_resource type="Card" load_steps=2 format=3]
+
+name = "Wartime Rations"
+description = "Play on an Office, change the EF of this Office to Food."
+portrait = ExtResource( 1 )
+type = ExtResource( 2 )
+effect = ExtResource( 3 )
+food_cost = 20
+wealth_cost = 0
+health_cost = 0
+
+[ext_resource path="res://assets/ui/card_portrait.png" type="Texture2D" id=1]
+[ext_resource path="res://features/cards/card_types/official_card_type.tres" type="CardType" id=2]
+[ext_resource path="res://features/cards/card_effects/example_effect.tres" type="CardEffect" id=3]
