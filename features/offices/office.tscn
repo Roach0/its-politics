@@ -10,10 +10,22 @@ bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efi7p"]
 bg_color = Color(0.494118, 0.494118, 0.494118, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
 corner_radius_top_left = 10
 corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l0xs3"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+border_blend = true
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 
@@ -22,9 +34,11 @@ script = ExtResource("1_w1svc")
 metadata/_custom_type_script = "uid://n8kuj2jjavn6"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
 texture = SubResource("ViewportTexture_efi7p")
 
 [node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
 size = Vector2i(385, 290)
 
 [node name="Panel" type="Panel" parent="SubViewport"]
@@ -55,3 +69,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
 theme_override_styles/panel = SubResource("StyleBoxFlat_l0xs3")
+
+[node name="OfficialPosition" type="Node2D" parent="."]
+position = Vector2(-35, 0)

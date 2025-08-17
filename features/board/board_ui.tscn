@@ -5,7 +5,12 @@
 [ext_resource type="PackedScene" uid="uid://bs5nqe5dk3pmv" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
 [ext_resource type="Script" uid="uid://d2anuayq4sq80" path="res://features/board/economy_area_ui.gd" id="3_hhujw"]
 
-[sub_resource type="Theme" id="Theme_hhujw"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlpto"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
 
 [node name="BoardUi" type="HBoxContainer"]
 custom_minimum_size = Vector2(750, 0)
@@ -34,96 +39,6 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.2
 color = Color(0.454902, 0.360784, 0.670588, 1)
-script = ExtResource("3_hhujw")
-
-[node name="MarginContainer" type="MarginContainer" parent="Left/EconomyAreaUi"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 5
-theme_override_constants/margin_bottom = 5
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Left/EconomyAreaUi/MarginContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="MarginContainer" type="MarginContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 15
-
-[node name="TokenDisplay" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-theme_override_constants/separation = 50
-
-[node name="TokenSlot1" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = SubResource("Theme_hhujw")
-
-[node name="TokenSlot2" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="TokenSlot3" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/MarginContainer/TokenDisplay"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-color = Color(1, 0.556863, 1, 1)
-
-[node name="HealthBar" type="ProgressBar" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(0, 30)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-value = 50.0
-show_percentage = false
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-color = Color(1, 1, 0.654902, 1)
-
-[node name="WealthBar" type="ProgressBar" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-show_percentage = false
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ColorRect" type="ColorRect" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(10, 0)
-layout_mode = 2
-color = Color(0.47451, 0.643137, 1, 1)
-
-[node name="FoodBar" type="ProgressBar" parent="Left/EconomyAreaUi/MarginContainer/VBoxContainer/HBoxContainer3"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 1
-show_percentage = false
 
 [node name="GovernmenPanelUi" type="ColorRect" parent="."]
 clip_contents = true
@@ -133,5 +48,35 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.6
 color = Color(0.494118, 0.494118, 0.494118, 1)
 
+[node name="MarginContainer" type="MarginContainer" parent="GovernmenPanelUi"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.015
+anchor_top = 0.019
+anchor_right = 0.985
+anchor_bottom = 0.981
+offset_left = -19.8
+offset_top = -20.52
+offset_right = 19.7999
+offset_bottom = 20.5199
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GovernmentPanel" type="Panel" parent="GovernmenPanelUi/MarginContainer"]
+custom_minimum_size = Vector2(1280, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_rlpto")
+
+[node name="Council" parent="GovernmenPanelUi/MarginContainer/GovernmentPanel" instance=ExtResource("4_hhujw")]
+position = Vector2(636, 540)
+scale = Vector2(1.25, 1.25)
+
 [node name="GamePanelUi" parent="." instance=ExtResource("1_w4tip")]
 layout_mode = 2
+
+[editable path="Left/CardPanelUi"]

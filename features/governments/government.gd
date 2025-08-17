@@ -14,7 +14,7 @@ func _ready():
 			continue
 
 		var official = preload("res://features/board/official.tscn").instantiate()
-		offices[i].set_official(official)
+		offices[i].add_child(official)
 
 	await get_tree().create_timer(1.0).timeout
 
@@ -24,13 +24,17 @@ func _ready():
 func get_competitors_for_office(office_id: int) -> Array[Official]:
 	var competitors: Array[Official] = []
 	var allowed_promotions = government_type.allowed_promotions[office_id]
+	print("allowed_promotions: %s" % allowed_promotions)
 	for competitor_position in allowed_promotions:
+		print("competitor_position: %s" % competitor_position)
 		if offices[competitor_position].is_occupied():
+			print("competitor_position is occupied, adding official to competitors")
 			competitors.append(offices[competitor_position].official)
 	return competitors
 
 func election(office_id: int) -> Official:
 	var competitors = get_competitors_for_office(office_id)
+	print("%s competitors for office %s: %s" % [competitors.size(), office_id, competitors])
 	if competitors.size() == 0:
 		return
 	if competitors.size() == 1:
@@ -39,4 +43,6 @@ func election(office_id: int) -> Official:
 	return winner
 
 func _on_election_finished(office_id: int, winner: Official):
+	if winner == null:
+		return
 	offices[office_id].set_official(winner)

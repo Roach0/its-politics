@@ -13,13 +13,13 @@ metadata/_custom_type_script = "uid://bxt7cspfo0o0g"
 [node name="Office" parent="." instance=ExtResource("2_6xedt")]
 
 [node name="Office2" parent="." instance=ExtResource("2_6xedt")]
-position = Vector2(163, 0)
+position = Vector2(-200, 0)
 
 [node name="Office3" parent="." instance=ExtResource("2_6xedt")]
-position = Vector2(331, 0)
+position = Vector2(-400, 0)
 
 [node name="Office4" parent="." instance=ExtResource("2_6xedt")]
-position = Vector2(496, 0)
+position = Vector2(400, 0)
 
 [node name="Office5" parent="." instance=ExtResource("2_6xedt")]
-position = Vector2(665, 0)
+position = Vector2(200, 0)
