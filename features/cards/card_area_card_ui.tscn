@@ -9,6 +9,7 @@ corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
+shadow_size = 2
 
 [node name="CardAreaCardUi" type="Panel"]
 z_index = 10
