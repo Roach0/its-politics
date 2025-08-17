@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b0r62eay7h0tq" path="res://features/board/board_ui.gd" id="1_vcn2k"]
 [ext_resource type="PackedScene" uid="uid://chheuflylxxcs" path="res://features/board/game_panel_ui.tscn" id="1_w4tip"]
-[ext_resource type="PackedScene" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
+[ext_resource type="PackedScene" uid="uid://bs5nqe5dk3pmv" path="res://features/board/card_panel_ui.tscn" id="2_rlpto"]
 [ext_resource type="Script" uid="uid://d2anuayq4sq80" path="res://features/board/economy_area_ui.gd" id="3_hhujw"]
 
 [sub_resource type="Theme" id="Theme_hhujw"]
